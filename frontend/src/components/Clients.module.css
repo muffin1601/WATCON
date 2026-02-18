@@ -1,0 +1,76 @@
+.clients {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.divider {
+  height: 1px;
+  margin-bottom: 30px;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2) 0,
+    rgba(0, 0, 0, 0.2) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.badge {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 18px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.badge strong {
+  color: #847e6b;
+  font-size: 20px;
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  transition: transform 0.6s ease;
+  will-change: transform;
+}
+
+.logo {
+  min-width: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  height: 42px;
+  width: auto;
+  opacity: 0.7;
+  filter: grayscale(100%);
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+.logo img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}

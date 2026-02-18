@@ -1,0 +1,185 @@
+.why {
+  padding: 120px 0;
+  background: #fff;
+}
+
+.inner {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.left {
+  position: relative;
+}
+
+.imageGrid {
+  display: flex;
+  
+  gap: 24px;
+}
+
+.imageLeft {
+  height: 520px;
+  width: 60%;
+}
+.imageRight {
+    position: absolute;
+  height: 420px;
+  width: 40%;
+  bottom: -70;
+}
+
+.imageLeft img,
+.imageRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imageRight {
+  position: relative;
+}
+
+.progressBox {
+  position: absolute;
+  left: 80;
+  right: -40;
+  bottom: -75;
+  background: #000000;
+  padding: 28px 26px;
+}
+
+.progress {
+  margin-bottom: 18px;
+}
+
+.progress:last-child {
+  margin-bottom: 0;
+}
+
+.progressHead {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.percent {
+  background: #847e6b;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.progressBar {
+  height: 100%;
+  width: 0%;
+  background: #847e6b;
+}
+
+.right {
+  position: relative;
+}
+
+.bgText {
+  position: absolute;
+  top: -95px;
+  /* text-align: start; */
+  left: 80px;
+  font-size: 110px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 600;
+  color: #847e6b;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.right h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.right h2 span {
+  color: #847e6b;
+}
+
+.right p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.features {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.feature {
+  display: flex;
+  gap: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.featureIcon {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #847e6b;
+}
+
+.featureIcon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.feature h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 992px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .imageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

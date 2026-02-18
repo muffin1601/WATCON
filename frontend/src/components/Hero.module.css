@@ -1,0 +1,139 @@
+.bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.content {
+  max-width: 820px;
+}
+
+.content h1 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.15;
+  color:#ebebeb;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 42px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #ffffff00;
+  color: #ffffff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #847e6b;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.cta:hover::after {
+  transform: scaleX(1);
+}
+
+.cta:hover {
+  color: #fff;
+  border-color: #847e6b;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bottomBar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  display: grid;
+ 
+  grid-template-columns: 240px 360px 1fr;
+  z-index: 3;
+  
+}
+
+.since {
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceBox {
+  background: #847e6b;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 34px 30px;
+}
+
+.desc {
+  background: #000;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 28px 40px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.desc p:not(:last-child) {
+  margin-bottom: 12px;
+}
