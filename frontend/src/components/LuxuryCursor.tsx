@@ -12,8 +12,8 @@ export default function LuxuryCursor() {
   useEffect(() => {
   const grow = () => {
     if (cursorRef.current) {
-      cursorRef.current.style.width = "32px";
-      cursorRef.current.style.height = "32px";
+      cursorRef.current.style.width = "30px";
+      cursorRef.current.style.height = "30px";
     }
   };
 
