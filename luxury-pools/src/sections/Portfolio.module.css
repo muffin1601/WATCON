@@ -13,7 +13,7 @@
 .subTitle {
   font-size: 12px;
   letter-spacing: 4px;
-  color: #847e6b;
+  color: #bdb595;
   margin-bottom: 20px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .title span {
-  color: #847e6b;
+  color: #bdb595;
 }
 
 .grid {
@@ -43,7 +43,7 @@
 
 .card:hover {
   /* transform: translateY(-10px); */
-  border-color: #847e6b;
+  border-color: #bdb595;
   box-shadow: 0 0 40px rgba(132, 126, 107, 0.15);
 }
 
@@ -70,7 +70,7 @@
 
 .content a {
   font-size: 14px;
-  color: #847e6b;
+  color: #bdb595;
   text-decoration: none;
   letter-spacing: 1px;
   transition: opacity 0.3s ease;
@@ -87,7 +87,7 @@
   font-size: 14px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #847e6b;
+  color: #bdb595;
   transition: all 0.3s ease;
 }
 

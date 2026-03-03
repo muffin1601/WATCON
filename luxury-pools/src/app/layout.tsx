@@ -1,9 +1,9 @@
-import { Playfair_Display } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const raleway = Raleway({
   subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: ["400", "600"], // add more if needed
 });
 
 export default function RootLayout({
@@ -13,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={playfair.className}>{children}</body>
+      <body className={raleway.className}>
+        {children}
+      </body>
     </html>
   );
 }

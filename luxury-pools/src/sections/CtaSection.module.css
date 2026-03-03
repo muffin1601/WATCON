@@ -33,7 +33,7 @@
 .subTitle {
   font-size: 12px;
   letter-spacing: 4px;
-  color: #847e6b;
+  color: #bdb595;
   margin-bottom: 20px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .title span {
-  color: #847e6b;
+  color: #bdb595;
 }
 
 .text {
@@ -69,7 +69,7 @@
   font-size: 16px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
-  background: #847e6b;
+  background: #bdb595;
   color: #fff;
   border: 1px solid #000000;
   text-decoration: none;
@@ -96,7 +96,7 @@
 
 .primaryBtn:hover {
   color: #000000;
-  border-color: #847e6b;
+  border-color: #bdb595;
 }
 
 .secondaryBtn {
@@ -122,7 +122,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: #847e6b;
+  background: #bdb595;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -135,7 +135,7 @@
 
 .secondaryBtn:hover {
   color: #fff;
-  border-color: #847e6b;
+  border-color: #bdb595;
 }
 
 /* Responsive */

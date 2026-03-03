@@ -39,7 +39,7 @@
 .subTitle {
   font-size: 14px;
   letter-spacing: 3px;
-  color: #847e6b;
+  color: #bdb595;
   margin-bottom: 20px;
 }
 
@@ -53,7 +53,7 @@
 
 .title span {
   font-style: italic;
-  color: #847e6b;
+  color: #bdb595;
 }
 
 .description {
@@ -87,7 +87,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: #847e6b;
+  background: #bdb595;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,5 +100,5 @@
 
 .buttonBase:hover {
   color: #fff;
-  border-color: #847e6b;
+  border-color: #bdb595;
 }

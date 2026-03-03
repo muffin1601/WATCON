@@ -60,7 +60,7 @@
 }
 
 .content h1 span {
-  color: #847e6b;
+  color: #bdb595;
   font-weight: 700;
 }
 
@@ -95,7 +95,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: #847e6b;
+  background: #bdb595;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -108,18 +108,6 @@
 
 .cta:hover {
   color: #fff;
-  border-color: #847e6b;
+  border-color: #bdb595;
 }
 
-.watch {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  opacity: 0.8;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.watch:hover {
-  color: #d4af37;
-}

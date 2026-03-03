@@ -18,7 +18,7 @@
 .subTitle {
   font-size: 13px;
   letter-spacing: 3px;
-  color: #847e6b;
+  color: #bdb595;
   margin-bottom: 20px;
 }
 
@@ -30,7 +30,7 @@
 
 .title span {
   font-style: italic;
-  color: #847e6b;
+  color: #bdb595;
 }
 
 .intro {
@@ -76,7 +76,7 @@
 .cardContent h3 {
   font-size: 22px;
   margin-bottom: 15px;
-  font-family: "Playfair Display", serif;
+  font-family: "Raleway", serif;
 }
 
 .cardContent p {
@@ -99,7 +99,7 @@
   font-family: "Raleway", sans-serif;
   background: transparent;
   color: #fff;
-  border: 1px solid #847e6b;
+  border: 1px solid #bdb595;
   text-decoration: none;
   overflow: hidden;
   z-index: 1;
@@ -110,7 +110,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: #847e6b;
+  background: #bdb595;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,5 +123,5 @@
 
 .buttonBase:hover {
   color: #fff;
-  border-color: #847e6b;
+  border-color: #bdb595;
 }

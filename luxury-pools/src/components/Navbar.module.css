@@ -62,12 +62,12 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background: #80785e;
+  background: #bdb595;
   transition: width 0.3s ease;
 }
 
 .menu li:hover {
-  color: #807657;
+  color: #bdb595;
 }
 
 .menu li:hover::after {
@@ -101,7 +101,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: #847e6b;
+  background: #bdb595;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -114,7 +114,7 @@
 
 .btnQuote:hover {
   color: #fff;
-  border-color: #847e6b;
+  border-color: #bdb595;
 }
 
 

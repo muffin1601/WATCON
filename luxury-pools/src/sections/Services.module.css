@@ -25,7 +25,7 @@
 .subTitle {
   letter-spacing: 4px;
   font-size: 12px;
-  color: #847e6b;
+  color: #bdb595;
   margin-bottom: 20px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .title span {
-  color: #847e6b;
+  color: #bdb595;
   font-weight: 600;
 }
 
@@ -64,13 +64,13 @@
 }
 
 .card:hover {
-  border-color: #847e6b;
+  border-color: #bdb595;
   /* transform: translateY(-8px); */
   box-shadow: 0 0 40px rgba(132,126,107,0.15);
 }
 
 .icon {
-  color: #847e6b;
+  color: #bdb595;
   margin-bottom: 25px;
 }
 
