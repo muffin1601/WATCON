@@ -1,0 +1,104 @@
+.portfolio {
+  background: #0c0c0c;
+  padding: 120px 20px;
+  color: #fff;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.subTitle {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #847e6b;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 70px;
+  font-family: "Raleway", sans-serif;
+}
+
+.title span {
+  color: #847e6b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: #111;
+  border: 1px solid rgba(132, 126, 107, 0.3);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  /* transform: translateY(-10px); */
+  border-color: #847e6b;
+  box-shadow: 0 0 40px rgba(132, 126, 107, 0.15);
+}
+
+.image {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.08);
+}
+
+.content {
+  padding: 30px;
+}
+
+.content h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.content a {
+  font-size: 14px;
+  color: #847e6b;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: opacity 0.3s ease;
+}
+
+.content a:hover {
+  opacity: 1;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #847e6b;
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.link:hover .arrow {
+  transform: translateX(6px);
+}

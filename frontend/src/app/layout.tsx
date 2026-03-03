@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.variable}>
-        <LuxuryCursor />
+        {/* <LuxuryCursor /> */}
         {children}
       </body>
     </html>

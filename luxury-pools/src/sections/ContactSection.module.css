@@ -1,0 +1,210 @@
+.section {
+  background: #050505;
+  padding: 160px 30px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold divider glow */
+.section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(132, 126, 107, 0.8),
+    transparent
+  );
+  box-shadow: 0 0 30px rgba(132, 126, 107, 0.6);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 80px;
+  border: 1px solid rgba(132, 126, 107, 0.2);
+  border-radius: 0px;
+}
+
+/* Typography */
+.subTitle {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #847e6b;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 52px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.title span {
+  font-style: italic;
+  color: #847e6b;
+}
+
+.description {
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  line-height: 1.8;
+}
+
+/* Fade-in animation */
+.container {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form */
+.form {
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.inputGroup,
+.inputGroupFull {
+  position: relative;
+  flex: 1;
+}
+
+/* Floating label */
+.inputGroup label,
+.inputGroupFull label {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-size: 13px;
+  color: #666;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+/* Inputs */
+.inputGroup input,
+.inputGroupFull textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 0;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Animated underline sweep */
+.inputGroup input:focus,
+.inputGroupFull textarea:focus {
+  border-bottom: 1px solid #847e6b;
+}
+
+.inputGroup input:focus + label,
+.inputGroup input:not(:placeholder-shown) + label,
+.inputGroupFull textarea:focus + label,
+.inputGroupFull textarea:not(:placeholder-shown) + label {
+  top: -12px;
+  font-size: 11px;
+  color: #847e6b;
+}
+
+.inputGroupFull textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.inputGroup input::placeholder,
+.inputGroupFull textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  /* font-style: italic; */
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.inputGroup input:focus::placeholder,
+.inputGroupFull textarea:focus::placeholder {
+  color: rgba(132, 126, 107, 0.6);
+}
+
+.buttonBase {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 40px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: transparent;
+  color: #fff;
+  font-family: 'RALEWAY', sans-serif;
+  border: 1px solid #847e6b;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.buttonBase::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #847e6b;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.buttonBase:hover::after {
+  transform: scaleX(1);
+}
+
+.buttonBase:hover {
+  color: #000;
+}
+
+/* Footer */
+.footerInfo {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 100px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.infoTitle {
+  color: #847e6b;
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}

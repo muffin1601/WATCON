@@ -1,0 +1,127 @@
+.section {
+  background: #050505;
+  padding: 120px 0px;
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.subTitle {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #847e6b;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+
+.title span {
+  font-style: italic;
+  color: #847e6b;
+}
+
+.intro {
+  max-width: 420px;
+  color: #bbb;
+  line-height: 1.8;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* CARD */
+.card {
+  background: #0b0b0b;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  /* transform: translateY(-8px); */
+  border-color: rgba(132, 126, 107, 0.6);
+    box-shadow:
+    0 0 0 1px rgba(132, 126, 107, 0.4),
+    0 10px 40px rgba(132, 126, 107, 0.25),
+    0 0 60px rgba(132, 126, 107, 0.15);
+
+}
+
+.image {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardContent {
+  padding: 30px;
+}
+
+.cardContent h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: "Playfair Display", serif;
+}
+
+.cardContent p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+/* YOUR BUTTON STYLE */
+.buttonBase {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #847e6b;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.buttonBase::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #847e6b;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.buttonBase:hover::after {
+  transform: scaleX(1);
+}
+
+.buttonBase:hover {
+  color: #fff;
+  border-color: #847e6b;
+}
