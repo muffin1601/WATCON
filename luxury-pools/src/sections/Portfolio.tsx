@@ -2,6 +2,7 @@
 
 import styles from "./Portfolio.module.css";
 import { FadeIn } from "../components/FadeIn";
+import Link from "next/link";
 
 type Project = {
   id: number;
@@ -102,6 +103,14 @@ export default function Portfolio() {
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn delay={0.6}>
+          <div className={styles.ctaWrapper}>
+            <Link href="/portfolio" className={styles.ctaButton}>
+              VIEW FULL PORTFOLIO
+            </Link>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

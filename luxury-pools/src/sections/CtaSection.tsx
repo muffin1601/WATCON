@@ -2,6 +2,7 @@
 
 import styles from "./CtaSection.module.css";
 import { FadeIn } from "../components/FadeIn";
+import Link from "next/link";
 
 export default function CtaSection() {
   return (
@@ -38,13 +39,13 @@ export default function CtaSection() {
           </p>
 
           {/* <div className={styles.actions}>
-            <a href="#" className={styles.primaryBtn}>
-              EXPLORE MORE
-            </a>
+            <Link href="/portfolio" className={styles.primaryBtn}>
+              OUR PROJECTS
+            </Link>
 
-            <a href="#" className={styles.secondaryBtn}>
+            <Link href="/contact" className={styles.secondaryBtn}>
               CONTACT US
-            </a>
+            </Link>
           </div> */}
         </FadeIn>
       </div>

@@ -24,11 +24,11 @@ export default function CustomCursor() {
         }
 
         const moveCursor = (e: MouseEvent) => {
-            cursorX.set(e.clientX - 10); // offset by half the width to center the 20px circle
+            cursorX.set(e.clientX - 10); 
             cursorY.set(e.clientY - 10);
             if (!isVisible) setIsVisible(true);
 
-            // Check if hovering over clickable elements to increase scale
+            
             const target = e.target as HTMLElement;
             const clickable = target.closest("a, button, input, textarea, li");
             setIsHovering(!!clickable);

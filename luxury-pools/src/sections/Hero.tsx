@@ -2,6 +2,7 @@
 
 import styles from "./Hero.module.css";
 import { FadeIn } from "../components/FadeIn";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -35,13 +36,9 @@ export default function Hero() {
           </p>
         </FadeIn>
 
-        {/* <a href="#" className={styles.cta}>
-            Learn More
-          </a> */}
-
-        {/* <div className={styles.watch}>
-          ▶ WATCH VIDEO
-        </div> */}
+        {/* <Link href="/about" className={styles.cta}>
+          Discover Our Story
+        </Link> */}
       </div>
     </section>
   );

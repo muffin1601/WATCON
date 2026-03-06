@@ -1,0 +1,136 @@
+.showcaseSection {
+  position: relative;
+  background: #050505;
+  padding: 140px 20px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.showcaseSection::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(132, 126, 107, 0.8),
+    transparent
+  );
+  box-shadow: 0 0 30px rgba(132, 126, 107, 0.6);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  margin-bottom: 180px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.itemReverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1024px) {
+  .item {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .item, .itemReverse {
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 120px;
+  }
+}
+
+.videoBlock {
+  flex: 1.3;
+  width: 100%;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: transparent;
+  border: 1px solid rgba(132, 126, 107, 0.3);
+  padding: 15px; 
+}
+
+.videoInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  overflow: hidden;
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textBlock {
+  flex: 0.8;
+  padding: 0 20px;
+}
+
+.projectNumber {
+  display: block;
+  font-size: 15px;
+  color: #bdb595;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.desc {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #999;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 45px;
+  max-width: 500px;
+}
+
+.line {
+  width: 60px;
+  height: 1px;
+  background: #bdb595;
+  transition: width 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.item:hover .line {
+  width: 150px;
+  background: #fff; 
+}

@@ -5,7 +5,7 @@ import SmoothScroll from "../components/SmoothScroll";
 
 const raleway = Raleway({
   subsets: ["latin"],
-  weight: ["400", "600"], // add more if needed
+  weight: ["400", "600"], 
 });
 
 export default function RootLayout({

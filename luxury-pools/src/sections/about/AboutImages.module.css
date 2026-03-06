@@ -1,0 +1,44 @@
+.imageSection {
+  position: relative;
+  padding: 60px 20px 60px;
+  background: #000;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.fadeWrapper {
+  height: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #000; 
+}
+.image {
+  object-fit: contain;   
+  transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.imageWrapper:hover .image {
+  transform: scale(1.05);
+}

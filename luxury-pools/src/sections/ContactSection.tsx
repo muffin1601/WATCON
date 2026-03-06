@@ -61,17 +61,20 @@ export default function ContactSection() {
           <div className={styles.footerInfo}>
             <div>
               <p className={styles.infoTitle}>Address</p>
-              <p>New Delhi, India</p>
+              <p>343, MG Road, Sultanpur</p>
+              <p>New Delhi 110030, India</p>
             </div>
 
             <div>
-              <p className={styles.infoTitle}>Phone</p>
-              <p>+1 (800) 000-0000</p>
+              <p className={styles.infoTitle}>Contact</p>
+              <p>+91 99998 39999</p>
+              <p>Message us on WhatsApp</p>
             </div>
 
             <div>
-              <p className={styles.infoTitle}>Email</p>
-              <p>adit@watcon.com</p>
+              <p className={styles.infoTitle}>Online</p>
+              <p>adit@watcon.net</p>
+              <p>watcon.co.in</p>
             </div>
           </div>
         </FadeIn>
