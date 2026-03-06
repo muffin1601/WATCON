@@ -2,6 +2,7 @@
 
 import styles from "./Services.module.css";
 import { Waves, Bath, Flame } from "lucide-react";
+import { FadeIn } from "../components/FadeIn";
 
 const services = [
   {
@@ -30,26 +31,30 @@ export default function Services() {
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>
-        <p className={styles.subTitle}>LUXURY AQUATIC DESIGN</p>
+        <FadeIn>
+          <p className={styles.subTitle}>LUXURY AQUATIC DESIGN</p>
+        </FadeIn>
 
-        <h2 className={styles.title}>
+        {/* <h2 className={styles.title}>
           Services We Offer <span>Worldwide</span>
         </h2>
 
         <p className={styles.description}>
           Discover unparalleled luxury across swimming pools, spas, wellness
           facilities, and outdoor environments.
-        </p>
+        </p> */}
 
         <div className={styles.grid}>
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div key={index} className={styles.card}>
-                <Icon size={34} className={styles.icon} />
-                <h3>{service.title}</h3>
-                <p>{service.desc}</p>
-              </div>
+              <FadeIn key={index} delay={0.15 * index}>
+                <div className={styles.card}>
+                  <Icon size={34} className={styles.icon} />
+                  <h3>{service.title}</h3>
+                  <p>{service.desc}</p>
+                </div>
+              </FadeIn>
             );
           })}
         </div>

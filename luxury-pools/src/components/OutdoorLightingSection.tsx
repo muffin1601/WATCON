@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./OutdoorLightingSection.module.css";
+import { FadeIn } from "./FadeIn";
 
 export default function OutdoorLightingSection() {
   return (
@@ -9,7 +10,7 @@ export default function OutdoorLightingSection() {
       <div className={styles.overlay} />
 
       <div className={styles.container}>
-        <div className={styles.content}>
+        <FadeIn delay={0.2} className={styles.content}>
           <p className={styles.subTitle}>OUTDOOR LIGHTING</p>
 
           <h2 className={styles.title}>
@@ -25,7 +26,7 @@ export default function OutdoorLightingSection() {
           <a href="#" className={styles.buttonBase}>
             LEARN MORE
           </a>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );

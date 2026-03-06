@@ -27,11 +27,11 @@ export default function Footer() {
 
         {/* Middle Column */}
         <div className={styles.column}>
-          <h4 className={styles.heading}>Navigation</h4>
+          <h4 className={styles.heading}>Quick Links</h4>
           <ul className={styles.links}>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Services</li>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li>Clients</li>
             <li>Contact</li>
           </ul>
         </div>
