@@ -1,6 +1,7 @@
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "../components/CustomCursor";
+import SmoothScroll from "../components/SmoothScroll";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -16,7 +17,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={raleway.className}>
         <CustomCursor />
-        {children}
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );
