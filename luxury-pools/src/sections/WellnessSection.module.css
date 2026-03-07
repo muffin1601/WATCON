@@ -2,7 +2,7 @@
   background: #050505;
   padding: 120px 0px;
   color: #fff;
-  max-width: 80%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
@@ -28,7 +28,6 @@
 }
 
 .title span {
-  font-style: italic;
   color: #bdb595;
 }
 
@@ -55,7 +54,7 @@
 .card:hover {
   /* transform: translateY(-8px); */
   border-color: rgba(132, 126, 107, 0.6);
-    box-shadow:
+  box-shadow:
     0 0 0 1px rgba(132, 126, 107, 0.4),
     0 10px 40px rgba(132, 126, 107, 0.25),
     0 0 60px rgba(132, 126, 107, 0.15);

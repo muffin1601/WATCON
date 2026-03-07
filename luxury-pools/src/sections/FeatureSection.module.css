@@ -10,7 +10,7 @@
 }
 
 .contentContainer {
-    max-width: 900px;
+    max-width: 60%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 80px;
@@ -34,7 +34,6 @@
 
 .title span {
     color: #bdb595;
-    font-style: italic;
 }
 
 .description {
@@ -46,7 +45,7 @@
 
 .imageWrapper {
     width: 100%;
-    max-width: 1600px;
+    max-width: 60%;
     margin: 0 auto;
     height: 50vh;
     position: relative;

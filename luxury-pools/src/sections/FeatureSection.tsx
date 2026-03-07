@@ -12,7 +12,7 @@ export default function FeatureSection() {
         offset: ["start end", "end start"]
     });
 
-    // Subtly scale the image down as user scrolls past it for parallax depth effect
+  
     const imageScale = useTransform(scrollYProgress, [0, 1], [1.1, 1]);
 
     return (

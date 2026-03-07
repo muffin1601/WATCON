@@ -47,14 +47,16 @@ export default function ContentSection() {
                     {expertiseData.map((item, index) => (
                         <FadeIn key={item.id} delay={0.15 * index}>
                             <div className={styles.card}>
-                                <div
-                                    className={styles.image}
-                                    style={{ backgroundImage: `url(${item.image})` }}
-                                />
+                                <div className={styles.imageContainer}>
+                                    <div
+                                        className={styles.image}
+                                        style={{ backgroundImage: `url(${item.image})` }}
+                                    />
+                                    <div className={styles.imageOverlay} />
+                                </div>
                                 <div className={styles.content}>
                                     <h3>{item.title}</h3>
                                     <p className={styles.description}>{item.description}</p>
-                                    <div className={styles.decorativeLine} />
                                 </div>
                             </div>
                         </FadeIn>

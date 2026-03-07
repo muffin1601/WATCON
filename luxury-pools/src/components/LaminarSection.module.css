@@ -1,10 +1,10 @@
 .section {
     position: relative;
     width: 100%;
-    min-height: 70vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     color: #fff;
     overflow: hidden;
 }
@@ -22,24 +22,22 @@
 .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right,
-            rgba(0, 0, 0, 0.55) 40%,
-            rgba(0, 0, 0, 0.2) 60%,
-            rgba(0, 0, 0, 0.2) 100%);
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.75) 100%);
     z-index: 1;
 }
 
 .container {
     position: relative;
     z-index: 2;
-    max-width: 80%;
+    max-width: 60%;
     width: 100%;
-    padding: 0 80px;
-    margin-left: 10%;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .content {
-    max-width: 550px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .subTitle {
@@ -57,7 +55,6 @@
 }
 
 .title span {
-    font-style: italic;
     color: #bdb595;
 }
 
@@ -65,6 +62,6 @@
     font-size: 16px;
     line-height: 1.8;
     color: #ddd;
-    margin-bottom: 40px;
-    max-width: 480px;
+    margin: 0 auto 40px;
+    max-width: 650px;
 }

@@ -6,7 +6,7 @@
 }
 
 .container {
-  max-width: 80%;
+  max-width: 60%;
   margin: auto;
 }
 
@@ -23,7 +23,6 @@
 }
 
 .title span {
-  font-style: italic;
   color: #bdb595;
 }
 
@@ -58,6 +57,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(132, 126, 107, 0.05); /* Slight gold tint */
-  pointer-events: none; /* Let clicks pass through to iframe */
+  background: rgba(132, 126, 107, 0.05);
+  /* Slight gold tint */
+  pointer-events: none;
+  /* Let clicks pass through to iframe */
 }

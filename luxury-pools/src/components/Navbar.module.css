@@ -188,8 +188,9 @@
 .sidebarLink {
   color: #fff;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1.2;
+  margin-bottom: 15px;
   letter-spacing: -1px;
   font-weight: 300;
   display: inline-flex;

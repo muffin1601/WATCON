@@ -31,18 +31,23 @@ export default function Services() {
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>
-        {/* <FadeIn>
-          <p className={styles.subTitle}>LUXURY AQUATIC DESIGN</p>
-        </FadeIn> */}
+        <div className={styles.bgDecoration}>
+          <div className={styles.circle}></div>
+          <div className={styles.circle}></div>
+        </div>
+
+        <FadeIn>
+          <p className={styles.subTitle}>WHAT WE CREATE</p>
+        </FadeIn>
 
         <h2 className={styles.title}>
-          Luxury Aquatic <span>Design</span>
+          Three Realms of <span>Excellence</span>
         </h2>
 
-        {/* <p className={styles.description}>
-          Discover unparalleled luxury across swimming pools, spas, wellness
-          facilities, and outdoor environments.
-        </p> */}
+        <p className={styles.description}>
+          Each project is a dialogue between your vision and our craft — resulting in spaces
+          that become your most prized possession.
+        </p>
 
         <div className={styles.grid}>
           {services.map((service, index) => {
@@ -50,9 +55,13 @@ export default function Services() {
             return (
               <FadeIn key={index} delay={0.15 * index}>
                 <div className={styles.card}>
-                  <Icon size={34} className={styles.icon} />
-                  <h3>{service.title}</h3>
-                  <p>{service.desc}</p>
+                  <div className={styles.iconWrapper}>
+                    <Icon size={34} className={styles.icon} />
+                  </div>
+                  <div className={styles.cardContent}>
+                    <h3>{service.title}</h3>
+                    <p>{service.desc}</p>
+                  </div>
                 </div>
               </FadeIn>
             );

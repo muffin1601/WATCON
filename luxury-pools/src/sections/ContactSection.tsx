@@ -8,15 +8,15 @@ export default function ContactSection() {
     <section className={styles.section}>
       <div className={styles.container}>
         <FadeIn delay={0.1}>
-          <p className={styles.subTitle}>SCHEDULE YOUR PRIVATE CONSULTATION</p>
+          <p className={styles.subTitle}>PRIVATE CONSULTATION</p>
 
           <h2 className={styles.title}>
             Begin Your <span>Journey</span>
           </h2>
 
           <p className={styles.description}>
-            Let us design your bespoke outdoor sanctuary tailored to your vision.
-            Complete the form below to start the conversation.
+            Tell us about your vision — our design consultants will reach out within 24 hours
+            to discuss how we can bring it to life.
           </p>
         </FadeIn>
 
@@ -24,57 +24,67 @@ export default function ContactSection() {
           <form className={styles.form}>
             <div className={styles.row}>
               <div className={styles.inputGroup}>
-                {/* <label>First Name</label> */}
-                <input type="text" placeholder="Your first name" />
+                <label>FULL NAME</label>
+                <input type="text" placeholder="Your full name" />
               </div>
 
               <div className={styles.inputGroup}>
-                {/* <label>Last Name</label> */}
-                <input type="text" placeholder="Your last name" />
+                <label>EMAIL ADDRESS</label>
+                <input type="email" placeholder="your@email.com" />
               </div>
             </div>
 
             <div className={styles.row}>
               <div className={styles.inputGroup}>
-                {/* <label>Email Address</label> */}
-                <input type="email" placeholder="you@email.com" />
+                <label>PHONE NUMBER</label>
+                <input type="tel" placeholder="+1 (000) 000-0000" />
               </div>
 
               <div className={styles.inputGroup}>
-                {/* <label>Phone Number</label> */}
-                <input type="tel" placeholder="Phone Number" />
+                <label>SERVICE OF INTEREST</label>
+                <select className={styles.select}>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="pools">Swimming Pools</option>
+                  <option value="wellness">Spa & Wellness</option>
+                  <option value="landscape">Landscape Design</option>
+                </select>
               </div>
             </div>
 
             <div className={styles.inputGroupFull}>
-              {/* <label>Project Details</label> */}
-              <textarea placeholder="Tell us about your vision..." />
+              <label>YOUR VISION</label>
+              <textarea placeholder="Describe your project, property, and aspirations..." />
             </div>
 
-            <button type="submit" className={styles.buttonBase}>
-              Request Consultation
-            </button>
+            <div className={styles.buttonWrapper}>
+              <button type="submit" className={styles.submitButton}>
+                SUBMIT INQUIRY
+              </button>
+            </div>
           </form>
         </FadeIn>
 
-        <FadeIn delay={0.5}>
+    
+
+        <FadeIn delay={0.6}>
           <div className={styles.footerInfo}>
-            <div>
-              <p className={styles.infoTitle}>Address</p>
-              <p>Experience Centre: <br></br> 343, MG Road, Sultanpur</p>
-              <p>New Delhi 110030, India</p>
+            <div className={styles.infoItem}>
+              <p className={styles.infoLabel}>ADDRESS</p>
+              <p className={styles.infoText}>Experience Centre:</p>
+              <p className={styles.infoText}>343, MG Road, Sultanpur</p>
+              <p className={styles.infoText}>New Delhi 110030, India</p>
             </div>
 
-            <div>
-              <p className={styles.infoTitle}>Contact</p>
-              <p>+91 99998 39999</p>
-              <p>Message us on WhatsApp</p>
+            <div className={styles.infoItem}>
+              <p className={styles.infoLabel}>CONTACT</p>
+              <p className={styles.infoText}>+91 99998 39999</p>
+              <p className={styles.infoText}>Message us on WhatsApp</p>
             </div>
 
-            <div>
-              <p className={styles.infoTitle}>Online</p>
-              <p>adit@watcon.net</p>
-              <p>watcon.co.in</p>
+            <div className={styles.infoItem}>
+              <p className={styles.infoLabel}>ONLINE</p>
+              <p className={styles.infoText}>adit@watcon.net</p>
+              <p className={styles.infoText}>watcon.co.in</p>
             </div>
           </div>
         </FadeIn>
