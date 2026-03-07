@@ -10,9 +10,9 @@
 
 .imageWrapper {
     width: 100%;
-    max-width: 60%;
+    max-width: 100%;
     margin: 0 auto;
-    height: 50vh;
+    height: 70vh;
     position: relative;
     overflow: hidden;
     margin-top: 80px;
