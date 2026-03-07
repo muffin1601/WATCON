@@ -28,7 +28,7 @@ section {
   margin: 0 auto !important;
 }
 
-/* Hide Native Scrollbar for custom progress bar */
+
 html {
   scrollbar-width: none;
 }

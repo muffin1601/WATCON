@@ -12,6 +12,6 @@
 .scrollThumb {
   width: 100%;
   background: #bdb595;
-  box-shadow: 0 0 15px rgba(189, 181, 149, 0.8), 0 0 5px rgba(189, 181, 149, 0.5);
+  /* box-shadow: 0 0 15px rgba(189, 181, 149, 0.8), 0 0 5px rgba(189, 181, 149, 0.5); */
   border-radius: 0 0 4px 4px;
 }
