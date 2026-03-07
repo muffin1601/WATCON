@@ -8,15 +8,18 @@ export default function CtaSection() {
   return (
     <section className={styles.cta}>
       <div className={styles.container}>
-        {/* Left Image */}
+        {/* Left Video */}
         <FadeIn delay={0.2} className={styles.imageWrapper}>
-          <div
-            className={styles.image}
-            style={{
-              backgroundImage:
-                "url(https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg)",
-            }}
-          />
+          <div className={styles.videoContainer}>
+            <iframe
+              className={styles.iframe}
+              src="https://www.youtube.com/embed/QsYfpaVFEeQ?autoplay=1&mute=1&loop=1&playlist=QsYfpaVFEeQ&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&vq=hd1080"
+              width="1920"
+              height="1080"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         </FadeIn>
 
         {/* Right Content */}

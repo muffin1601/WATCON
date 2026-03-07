@@ -31,15 +31,15 @@ export default function Services() {
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>
-        <FadeIn>
+        {/* <FadeIn>
           <p className={styles.subTitle}>LUXURY AQUATIC DESIGN</p>
-        </FadeIn>
+        </FadeIn> */}
 
-        {/* <h2 className={styles.title}>
-          Services We Offer <span>Worldwide</span>
+        <h2 className={styles.title}>
+          Luxury Aquatic <span>Design</span>
         </h2>
 
-        <p className={styles.description}>
+        {/* <p className={styles.description}>
           Discover unparalleled luxury across swimming pools, spas, wellness
           facilities, and outdoor environments.
         </p> */}

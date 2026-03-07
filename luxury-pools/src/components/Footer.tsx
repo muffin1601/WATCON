@@ -9,7 +9,7 @@ export default function Footer() {
       <div className={styles.container}>
 
         {/* Left Column */}
-        <div className={styles.column}>
+        <div className={styles.leftColumn}>
           <div className={styles.logo}>
             <Image
               src="/logo2.png"
@@ -25,24 +25,13 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Middle Column */}
-        <div className={styles.column}>
-          <h4 className={styles.heading}>Quick Links</h4>
-          <ul className={styles.links}>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Clients</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-
         {/* Right Column */}
-        <div className={styles.column}>
+        <div className={styles.rightColumn}>
           <h4 className={styles.heading}>Contact</h4>
           <ul className={styles.links}>
             <li>New Delhi, India</li>
-            <li>+1 (800) 000-0000</li>
-            <li>adit@watcon.com</li>
+            <li>+91 99998 39999</li>
+            <li>adit@watcon.net</li>
             {/* <li>Mon – Fri | 9AM – 6PM</li> */}
           </ul>
         </div>

@@ -61,7 +61,7 @@ export default function ContactSection() {
           <div className={styles.footerInfo}>
             <div>
               <p className={styles.infoTitle}>Address</p>
-              <p>343, MG Road, Sultanpur</p>
+              <p>Experience Centre: <br></br> 343, MG Road, Sultanpur</p>
               <p>New Delhi 110030, India</p>
             </div>
 

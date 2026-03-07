@@ -1,13 +1,13 @@
-import { Raleway } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "../components/CustomCursor";
 import SmoothScroll from "../components/SmoothScroll";
 import ScrollToTop from "../components/ScrollToTop";
 import ScrollProgress from "../components/ScrollProgress";
 
-const raleway = Raleway({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "600"], 
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body className={inter.className}>
         <CustomCursor />
         <ScrollProgress />
         <ScrollToTop />

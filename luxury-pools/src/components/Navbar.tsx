@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
-      
+
       {/* Logo */}
       <div className={styles.logo}>
         <Image
@@ -48,15 +48,19 @@ export default function Navbar() {
           </Link>
 
           <ul className={styles.dropdown}>
-            <li>
-              <Link href="/services/swimming-pools">SWIMMING POOLS</Link>
-            </li>
-            <li>
-              <Link href="/services/tiles-in-pools">TILES IN POOLS</Link>
-            </li>
-            <li>
-              <Link href="/services/water-bodies">WATER BODIES</Link>
-            </li>
+            <li><Link href="/services/swimming-pools">SWIMMING POOLS</Link></li>
+            <li><Link href="/services/tiles-in-pool">TILES IN POOL</Link></li>
+            <li><Link href="/services/water-bodies">WATER BODIES</Link></li>
+            <li><Link href="/services/dehumidifier">DEHUMIDIFIER</Link></li>
+            <li><Link href="/services/koi-ponds">KOI PONDS</Link></li>
+            <li><Link href="/services/competition-pool">COMPETITION POOL</Link></li>
+            <li><Link href="/services/spa">SPA</Link></li>
+            <li><Link href="/services/jacuzzi">JACUZZI</Link></li>
+            <li><Link href="/services/sauna">SAUNA</Link></li>
+            <li><Link href="/services/steam">STEAM</Link></li>
+            <li><Link href="/services/cryo-room">CRYO ROOM</Link></li>
+            <li><Link href="/services/outdoor-furniture">OUTDOOR FURNITURE</Link></li>
+            <li><Link href="/services/outdoor-fireplaces">OUTDOOR FIREPLACES</Link></li>
           </ul>
         </li>
 
@@ -75,7 +79,7 @@ export default function Navbar() {
 
       {/* Right Side */}
       <div className={styles.right}>
-        <Link href="/quote" className={styles.btnQuote}>
+        <Link href="/contact" className={styles.btnQuote}>
           Get A Quote
         </Link>
       </div>

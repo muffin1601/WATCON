@@ -24,7 +24,8 @@
 
 .subTitle {
   letter-spacing: 4px;
-  font-size: 22px;
+  font-size: 28px;
+  font-weight: 600;
   color: #bdb595;
   margin-bottom: 50px;
 }
@@ -33,7 +34,7 @@
   font-size: 48px;
   font-weight: 500;
   margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
+  margin-bottom: 50px;
 }
 
 .title span {

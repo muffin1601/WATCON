@@ -17,7 +17,6 @@
       rgba(0, 0, 0, 0.6),
       transparent);
   backdrop-filter: blur(6px);
-  font-family: 'Raleway', sans-serif;
 }
 
 .scrolled {
@@ -90,7 +89,9 @@
   top: calc(100% + 15px);
   left: -20px;
   background: #0a0a0a;
-  min-width: 220px;
+  min-width: 250px;
+  max-height: 60vh;
+  overflow-y: auto;
   list-style: none;
   padding: 10px 0;
   opacity: 0;

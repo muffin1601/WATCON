@@ -14,12 +14,10 @@
   transform: translateX(-50%);
   width: 60%;
   height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(132, 126, 107, 0.8),
-    transparent
-  );
+  background: linear-gradient(to right,
+      transparent,
+      rgba(132, 126, 107, 0.8),
+      transparent);
   box-shadow: 0 0 30px rgba(132, 126, 107, 0.6);
 }
 
@@ -28,12 +26,13 @@
   margin: 0 auto;
 }
 
+/* Base item structure using relative overlap rather than just flex gap */
 .item {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-  margin-bottom: 180px;
+  margin-bottom: 240px;
+  width: 100%;
 }
 
 .item:last-child {
@@ -41,44 +40,69 @@
 }
 
 .itemReverse {
-  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
-@media (max-width: 1024px) {
-  .item {
-    gap: 60px;
-  }
-}
-
-@media (max-width: 900px) {
-  .item, .itemReverse {
-    flex-direction: column;
-    gap: 50px;
-    margin-bottom: 120px;
-  }
-}
-
+/* The video block takes up a significant portion, but not all */
 .videoBlock {
-  flex: 1.3;
-  width: 100%;
+  width: 75%;
+  max-width: 1000px;
+  position: relative;
+  z-index: 1;
 }
 
+/* Full aspect ratio block */
 .videoWrapper {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
   background: transparent;
-  border: 1px solid rgba(132, 126, 107, 0.3);
-  padding: 15px; 
+  padding: 0;
 }
+
+/* Luxury overlapping floating frame effect */
+.videoWrapper::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: -30px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(132, 126, 107, 0.3);
+  z-index: 0;
+  pointer-events: none;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.6s ease;
+}
+
+.itemReverse .videoWrapper::before {
+  right: auto;
+  left: -30px;
+}
+
+.item:hover .videoWrapper::before {
+  transform: translate(-10px, -10px);
+  border-color: rgba(132, 126, 107, 0.7);
+}
+
+.itemReverse:hover .videoWrapper::before {
+  transform: translate(10px, -10px);
+}
+
 
 .videoInner {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #111;
+  background: #000;
   overflow: hidden;
+  z-index: 2;
+  box-shadow: 0 40px 60px -20px rgba(0, 0, 0, 0.9);
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+
+/* .item:hover .videoInner {
+  transform: translateY(-10px);
+} */
 
 .iframe {
   position: absolute;
@@ -87,50 +111,136 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(1.05);
+  /* Slight zoom by default */
+  transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  pointer-events: none;
 }
 
+.item:hover .iframe {
+  transform: scale(1);
+}
+
+.youtubeIframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none;
+  transform: scale(1.05);
+  transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.item:hover .youtubeIframe {
+  transform: scale(1);
+}
+
+/* Glassmorphism overlapping text block */
 .textBlock {
-  flex: 0.8;
-  padding: 0 20px;
+  position: absolute;
+  right: 0;
+  width: 40%;
+  max-width: 600px;
+  background: rgba(10, 10, 10, 0.85);
+  /* Deep dark glass */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 60px 50px;
+  border: 1px solid rgba(132, 126, 107, 0.2);
+  border-radius: 4px;
+  z-index: 10;
+  box-shadow: -20px 30px 60px rgba(0, 0, 0, 0.6);
+  transform: translateY(20px);
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.6s ease;
+}
+
+.itemReverse .textBlock {
+  right: auto;
+  left: 0;
+  box-shadow: 20px 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.item:hover .textBlock {
+  transform: translateY(0);
+  border-color: rgba(132, 126, 107, 0.5);
 }
 
 .projectNumber {
   display: block;
-  font-size: 15px;
+  font-size: 14px;
   color: #bdb595;
-  letter-spacing: 5px;
-  margin-bottom: 25px;
-  font-family: 'Raleway', sans-serif;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
   font-weight: 500;
+  opacity: 0.8;
 }
 
 .title {
-  font-family: 'Raleway', sans-serif;
-  font-size: clamp(28px, 4vw, 42px);
-  font-weight: 400;
+  font-size: clamp(26px, 3.5vw, 38px);
+  font-weight: 300;
   line-height: 1.25;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #fff;
+  letter-spacing: 1px;
 }
 
 .desc {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color: #999;
+  font-size: 15px;
+  color: #bbb;
   line-height: 1.8;
   font-weight: 300;
-  margin-bottom: 45px;
-  max-width: 500px;
+  margin-bottom: 40px;
 }
 
 .line {
-  width: 60px;
+  width: 40px;
   height: 1px;
   background: #bdb595;
   transition: width 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .item:hover .line {
-  width: 150px;
-  background: #fff; 
+  width: 100px;
+  background: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .textBlock {
+    width: 45%;
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .item {
+    flex-direction: column;
+    margin-bottom: 140px;
+  }
+
+  .itemReverse {
+    flex-direction: column;
+  }
+
+  .videoBlock {
+    width: 100%;
+    margin-bottom: -50px;
+    /* Pull text block up to overlap */
+  }
+
+  .textBlock {
+    position: relative;
+    width: 90%;
+    max-width: 100%;
+    right: auto;
+    left: 5%;
+    transform: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  .itemReverse .textBlock {
+    left: 5%;
+  }
 }
