@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./FullWidthVideoSection.module.css";
+import { FadeIn } from "./FadeIn";
 
 export default function FullWidthVideoSection() {
     return (
@@ -14,6 +15,18 @@ export default function FullWidthVideoSection() {
             >
                 <source src="/home.mp4" type="video/mp4" />
             </video>
+
+            <div className={styles.overlay} />
+
+            <div className={styles.content}>
+                <FadeIn delay={0.2}>
+                    <p className={styles.subTitle}>Experience Luxury</p>
+                    <h2 className={styles.title}>Dive into Elegance</h2>
+                    <p className={styles.description}>
+                        Transforming bold visions into breathtaking realities. Let the soothing rhythm of water elevate your senses.
+                    </p>
+                </FadeIn>
+            </div>
         </section>
     );
 }

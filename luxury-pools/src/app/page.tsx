@@ -5,17 +5,22 @@ import ContactSection from "@/sections/ContactSection";
 import CtaSection from "@/sections/CtaSection";
 import Hero from "@/sections/Hero";
 import Services from "@/sections/Services";
+import FeatureSection from "@/sections/FeatureSection";
 import Footer from "@/components/Footer";
+import ContentSection from "@/sections/ContentSection";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      <CtaSection />
       <Services />
-      <LaminarSection />
+      <CtaSection />
+      <ContentSection />
       <FullWidthVideoSection />
+      <FeatureSection />
+      <LaminarSection />
+
       <ContactSection />
       <Footer />
     </>

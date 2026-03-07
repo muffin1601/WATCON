@@ -1,7 +1,6 @@
 .section {
     width: 100%;
-    height: 100vh;
-    /* Using full viewport height for a grand cinematic feel */
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +10,64 @@
 }
 
 .video {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay to make text pop */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.subTitle {
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: #bdb595;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 52px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .section {
+        height: 50vh;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
 }
