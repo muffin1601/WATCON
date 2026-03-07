@@ -57,13 +57,12 @@ export default function Navbar() {
           </Link>
         </div>
 
-       
-        <div className={styles.right}>
-          {/* <Link href="/contact" className={styles.btnQuote}>
-            Get A Quote
-          </Link> */}
 
-        
+        <div className={styles.right}>
+          <Link href="/" className={styles.btnQuote}>
+            Home
+          </Link>
+
           <div
             className={`${styles.hamburger} ${isSidebarOpen ? styles.open : ""}`}
             onClick={toggleSidebar}
@@ -75,20 +74,20 @@ export default function Navbar() {
         </div>
       </nav>
 
-    
+
       <div
         className={`${styles.sidebarOverlay} ${isSidebarOpen ? styles.open : ""}`}
         onClick={closeSidebar}
       />
 
-     
+
       <div className={`${styles.sidebar} ${isSidebarOpen ? styles.open : ""}`}>
         <ul className={styles.sidebarNav}>
-          <li>
+          {/* <li>
             <Link href="/" className={styles.sidebarLink} onClick={closeSidebar}>
               <span className={styles.linkText}>Home</span>
             </Link>
-          </li>
+          </li> */}
 
           <li>
             <Link href="/about" className={styles.sidebarLink} onClick={closeSidebar}>
@@ -105,7 +104,7 @@ export default function Navbar() {
               <span className={styles.plusMinus}>{isServicesOpen ? "–" : "+"}</span>
             </div>
 
-          
+
             <div className={`${styles.servicesDropdown} ${isServicesOpen ? styles.open : ""}`}>
               <div className={styles.servicesDropdownInner}>
                 <ul className={styles.servicesDropdownList}>

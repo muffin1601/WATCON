@@ -48,10 +48,15 @@
   transform: scale(1.05);
 }
 
-/* ... (keeping up to line 41) */
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+/* Hide old menu */
 .menu {
   display: none;
-  /* Hide old menu */
 }
 
 /* Hamburger Icon */
@@ -258,7 +263,7 @@
 .servicesDropdownInner {
   overflow: hidden;
   min-height: 0;
-  
+
 }
 
 .servicesDropdownList {
@@ -267,7 +272,7 @@
   margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
+
   gap: 15px 30px;
   padding-bottom: 10px;
   padding-top: 5px;
@@ -359,3 +364,46 @@
 }
 
 
+.btnQuote {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 26px;
+  font-size: 15px;
+  font-weight: 700;
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  margin-right: 40px;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.btnQuote::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #bdb595;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.btnQuote:hover::after {
+  transform: scaleX(1);
+}
+
+.btnQuote:hover {
+  color: #fff;
+  border-color: #bdb595;
+}
+
+@media (max-width: 768px) {
+  .btnQuote {
+    display: none;
+  }
+}
