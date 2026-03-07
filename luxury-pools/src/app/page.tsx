@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import LaminarSection from "@/components/LaminarSection";
 import FullWidthVideoSection from "@/components/FullWidthVideoSection";
 import ContactSection from "@/sections/ContactSection";
 import CtaSection from "@/sections/CtaSection";
@@ -19,7 +18,6 @@ export default function Home() {
       <ContentSection />
       <FullWidthVideoSection />
       <FeatureSection />
-      <LaminarSection />
 
       <ContactSection />
       <Footer />
