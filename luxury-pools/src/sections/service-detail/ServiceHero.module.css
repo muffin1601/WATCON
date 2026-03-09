@@ -1,0 +1,86 @@
+.hero {
+    position: relative;
+    min-height: 80vh;
+    width: 100%;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px 180px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    z-index: 10;
+}
+
+.subTitle {
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #bdb595;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.title span {
+    color: #bdb595;
+    background: linear-gradient(to right, #bdb595, #e5e0c5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+
+.waveSeparator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waveSeparator svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 100px;
+}
+
+.shapeFill {
+    fill: #000;
+}

@@ -1,19 +1,114 @@
-﻿import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import CtaSection from "@/sections/CtaSection";
+﻿"use client";
 
-export default function ServicePlaceholder() {
+import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
+import { Flower2, Droplet, Sun, Waves, Settings, Heart } from "lucide-react";
+
+export default function KoiPondsPage() {
   return (
-    <>
-      <Navbar />
-      <main style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '100px', color: '#fff', textAlign: 'center' }}>
-        <div>
-          <h1 style={{ fontSize: '3rem', marginBottom: '1rem', color: '#bdb595' }}>Under Construction</h1>
-          <p>This service page is currently under development.</p>
-        </div>
-      </main>
-      <CtaSection />
-      <Footer />
-    </>
+    <ServiceDetailTemplate
+      hero={{
+        subtitle: "Ecosystems of Serenity",
+        title: "Bespoke Koi Ponds & Ecosystems",
+        description: "Create a living masterpiece in your garden. Our koi ponds are engineered with advanced life support systems for crystal clear water and healthy aquatic life.",
+        image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+      }}
+      services={{
+        subtitle: "LIVING WATER",
+        title: "Koi & Ecosystem Specialists",
+        items: [
+          {
+            title: "Pond Engineering",
+            description: "Precision-designed ponds featuring bottom drains and skimmers for optimal flow.",
+            icon: Waves,
+            href: "#"
+          },
+          {
+            title: "Filtration Systems",
+            description: "State-of-the-art biological and mechanical filtration for ultra-clear water.",
+            icon: Settings,
+            href: "#"
+          },
+          {
+            title: "Aquatic Landscaping",
+            description: "Natural stone placements and aquatic planting to create a harmonious ecosystem.",
+            icon: Flower2,
+            href: "#"
+          },
+          {
+            title: "Bio-Security",
+            description: "Systems designed to keep your valuable koi safe and healthy year-round.",
+            icon: Heart,
+            href: "#"
+          }
+        ]
+      }}
+      projects={{
+        subtitle: "RECENT ECOSYSTEMS",
+        title: "Selected Ponds & Lakes",
+        items: [
+          {
+            title: "Project 1",
+            description: "Traditional Japanese Koi Pond",
+            image: "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg"
+          },
+          {
+            title: "Project 2",
+            description: "Modern Infinity Pond",
+            image: "https://images.pexels.com/photos/12715508/pexels-photo-12715508.jpeg"
+          },
+          {
+            title: "Project 3",
+            description: "Courtyard Reflection Pond",
+            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+          },
+          {
+            title: "Project 4",
+            description: "Large Estate Lake",
+            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+          },
+          {
+            title: "Project 5",
+            description: "Indoor Atrium Pond",
+            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+          },
+          {
+            title: "Project 6",
+            description: "Waterfall-Fed Pond",
+            image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+          }
+        ]
+      }}
+      testimonials={{
+        subtitle: "LIVING TESTIMONIALS",
+        title: "Stories from the Water Edge",
+        items: [
+          {
+            name: "Masao T.",
+            role: "Collector",
+            avatar: "https://i.pravatar.cc/150?u=masao",
+            content: "Watcon's understanding of water chemistry is unmatched. My koi have never been healthier.",
+            rating: 5
+          },
+          {
+            name: "Sarah M.",
+            role: "Garden Designer",
+            avatar: "https://i.pravatar.cc/150?u=sarah",
+            content: "They blend technical necessity with pure art. The pond detail is the soul of our garden.",
+            rating: 5
+          },
+          {
+            name: "William J.",
+            role: "Nature Lover",
+            avatar: "https://i.pravatar.cc/150?u=william",
+            content: "Sitting by the pond they built is the most peaceful part of my day. A true masterpiece.",
+            rating: 5
+          }
+        ]
+      }}
+      contact={{
+        title: "Start Your Living Water Journey",
+        description: "Let's design a sustainable and beautiful koi pond for your home."
+      }}
+    />
   );
 }

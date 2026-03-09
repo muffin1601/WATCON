@@ -1,0 +1,94 @@
+.section {
+    padding: 100px 20px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.subTitle {
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #bdb595;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #080808;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 50px 40px;
+    border-radius: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.4s ease;
+}
+
+.card:hover {
+    border-color: rgba(189, 181, 149, 0.2);
+}
+
+.ratingBox {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.userBox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 0;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #bdb595;
+}
+
+.userName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.userRole {
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
