@@ -2,7 +2,7 @@
 "use client";
 
 import styles from "./WellnessSection.module.css";
-import { FadeIn } from "../components/FadeIn";
+import { FadeIn } from "@/components/FadeIn";
 
 const services = [
   {

@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./LaminarSection.module.css";
-import { FadeIn } from "./FadeIn";
+import { FadeIn } from "@/components/FadeIn";
 
 export default function LaminarSection() {
     return (
