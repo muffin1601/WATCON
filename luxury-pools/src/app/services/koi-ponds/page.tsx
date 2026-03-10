@@ -10,7 +10,16 @@ export default function KoiPondsPage() {
         subtitle: "Ecosystems of Serenity",
         title: "Bespoke Koi Ponds & Ecosystems",
         description: "Create a living masterpiece in your garden. Our koi ponds are engineered with advanced life support systems for crystal clear water and healthy aquatic life.",
-        image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+        image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg",
+        stats: [
+          { label: "Ponds Built", value: "150+" },
+          { label: "Healthy Ecosystems", value: "100%" },
+          { label: "Years Experience", value: "20+" }
+        ],
+        actions: [
+          { label: "Consult an Expert", href: "#contact", primary: true },
+          { label: "View Ponds", href: "#projects" }
+        ]
       }}
       services={{
         subtitle: "LIVING WATER",

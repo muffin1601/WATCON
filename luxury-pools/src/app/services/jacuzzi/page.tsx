@@ -10,7 +10,16 @@ export default function JacuzziPage() {
         subtitle: "Luxury Hydrotherapy",
         title: "Bespoke Jacuzzi & Hot Tub Solutions",
         description: "Immerse yourself in pure relaxation with our custom-engineered jacuzzis, designed to blend luxury with therapeutic benefits.",
-        image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+        image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg",
+        stats: [
+          { label: "Jacuzzis Installed", value: "300+" },
+          { label: "Therapeutic Precision", value: "100%" },
+          { label: "Expert Craft", value: "20+ Yrs" }
+        ],
+        actions: [
+          { label: "Get Free Quote", href: "#contact", primary: true },
+          { label: "View Systems", href: "#" }
+        ]
       }}
       services={{
         subtitle: "WHAT WE OFFER",

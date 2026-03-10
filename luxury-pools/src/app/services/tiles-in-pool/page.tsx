@@ -10,7 +10,16 @@ export default function TilesInPoolPage() {
         subtitle: "The Art of Finish",
         title: "Exquisite Pool Tiling & Mosaics",
         description: "Transform the base of your pool into a radiant work of art. We specialize in high-end porcelain, glass, and natural stone mosaics that capture light and elevate your aquatic experience.",
-        image: "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg"
+        image: "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg",
+        stats: [
+          { label: "Mosaic Projects", value: "350+" },
+          { label: "Material Quality", value: "SUPREME" },
+          { label: "Expert Craft", value: "20+ Yrs" }
+        ],
+        actions: [
+          { label: "Start Selection", href: "#contact", primary: true },
+          { label: "View Portfolio", href: "#projects" }
+        ]
       }}
       services={{
         subtitle: "ARTISTIC CRAFT",

@@ -2,92 +2,116 @@
 
 import styles from "./ContactSection.module.css";
 import { FadeIn } from "../components/FadeIn";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
-export default function ContactSection() {
+interface ContactSectionProps {
+  title?: string;
+  description?: string;
+}
+
+export default function ContactSection({
+  title = "Begin Your Journey",
+  description = "Tell us about your vision — our design consultants will reach out within 24 hours to discuss how we can bring it to life."
+}: ContactSectionProps) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <FadeIn delay={0.1}>
-          <p className={styles.subTitle}>PRIVATE CONSULTATION</p>
+        <div className={styles.header}>
+          <FadeIn delay={0.1}>
+            <p className={styles.subTitle}>PRIVATE CONSULTATION</p>
+            <h2 className={styles.title}>
+              {title.split(' ').map((word, i) => (
+                word.toLowerCase() === 'journey' || word.toLowerCase() === 'pool' || word.toLowerCase() === 'dream' ?
+                  <span key={i}>{word} </span> : word + ' '
+              ))}
+            </h2>
+            <p className={styles.description}>{description}</p>
+          </FadeIn>
+        </div>
 
-          <h2 className={styles.title}>
-            Begin Your <span>Journey</span>
-          </h2>
+        <div className={styles.mainGrid}>
+          {/* Form Side */}
+          <FadeIn delay={0.3}>
+            <div className={styles.formCard}>
+              <h3 className={styles.formHeading}>Send an Enquiry</h3>
+              <form className={styles.form}>
+                <div className={styles.inputGroup}>
+                  <label>YOUR NAME</label>
+                  <input type="text" placeholder="John Doe" />
+                </div>
 
-          <p className={styles.description}>
-            Tell us about your vision — our design consultants will reach out within 24 hours
-            to discuss how we can bring it to life.
-          </p>
-        </FadeIn>
+                <div className={styles.inputGroup}>
+                  <label>EMAIL ADDRESS</label>
+                  <input type="email" placeholder="john@example.com" />
+                </div>
 
-        <FadeIn delay={0.3}>
-          <form className={styles.form}>
-            <div className={styles.row}>
-              <div className={styles.inputGroup}>
-                <label>FULL NAME</label>
-                <input type="text" placeholder="Your full name" />
+                <div className={styles.inputGroup}>
+                  <label>PHONE NUMBER</label>
+                  <input type="tel" placeholder="+91 00000 00000" />
+                </div>
+
+                <div className={styles.inputGroup}>
+                  <label>YOUR VISION</label>
+                  <textarea placeholder="Describe your project aspirations..." />
+                </div>
+
+                <button type="submit" className={styles.submitButton}>
+                  Send Enquiry →
+                </button>
+              </form>
+            </div>
+          </FadeIn>
+
+          {/* Info Side */}
+          <FadeIn delay={0.5}>
+            <div className={styles.infoCard}>
+              <h3 className={styles.infoHeading}>Get in Touch</h3>
+              <p className={styles.infoDesc}>We have built projects across the country, building your pool of your dreams. Reach us out via email or phone call within 24 hours.</p>
+
+              <div className={styles.contactList}>
+                <div className={styles.contactItem}>
+                  <div className={styles.iconCircle}>
+                    <Phone size={18} />
+                  </div>
+                  <div>
+                    <p className={styles.contactLabel}>Phone</p>
+                    <p className={styles.contactValue}>+91 99998 39999</p>
+                  </div>
+                </div>
+
+                <div className={styles.contactItem}>
+                  <div className={styles.iconCircle}>
+                    <Mail size={18} />
+                  </div>
+                  <div>
+                    <p className={styles.contactLabel}>Email</p>
+                    <p className={styles.contactValue}>info@watcon.net</p>
+                  </div>
+                </div>
+
+                <div className={styles.contactItem}>
+                  <div className={styles.iconCircle}>
+                    <MapPin size={18} />
+                  </div>
+                  <div>
+                    <p className={styles.contactLabel}>Address</p>
+                    <p className={styles.contactValue}>343, MG Road, Sultanpur, New Delhi</p>
+                  </div>
+                </div>
+
+                <div className={styles.contactItem}>
+                  <div className={styles.iconCircle}>
+                    <Clock size={18} />
+                  </div>
+                  <div>
+                    <p className={styles.contactLabel}>Business Hours</p>
+                    <p className={styles.contactValue}>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                  </div>
+                </div>
               </div>
-
-              <div className={styles.inputGroup}>
-                <label>EMAIL ADDRESS</label>
-                <input type="email" placeholder="your@email.com" />
-              </div>
             </div>
-
-            <div className={styles.row}>
-              <div className={styles.inputGroup}>
-                <label>PHONE NUMBER</label>
-                <input type="tel" placeholder="+1 (000) 000-0000" />
-              </div>
-
-              <div className={styles.inputGroup}>
-                <label>SERVICE OF INTEREST</label>
-                <select className={styles.select}>
-                  <option value="" disabled selected>Select a service</option>
-                  <option value="pools">Swimming Pools</option>
-                  <option value="wellness">Spa & Wellness</option>
-                  <option value="landscape">Landscape Design</option>
-                </select>
-              </div>
-            </div>
-
-            <div className={styles.inputGroupFull}>
-              <label>YOUR VISION</label>
-              <textarea placeholder="Describe your project, property, and aspirations..." />
-            </div>
-
-            <div className={styles.buttonWrapper}>
-              <button type="submit" className={styles.submitButton}>
-                SUBMIT INQUIRY
-              </button>
-            </div>
-          </form>
-        </FadeIn>
-
-    
-
-        <FadeIn delay={0.6}>
-          <div className={styles.footerInfo}>
-            <div className={styles.infoItem}>
-              <p className={styles.infoLabel}>ADDRESS</p>
-              <p className={styles.infoText}>Experience Centre:</p>
-              <p className={styles.infoText}>343, MG Road, Sultanpur</p>
-              <p className={styles.infoText}>New Delhi 110030, India</p>
-            </div>
-
-            <div className={styles.infoItem}>
-              <p className={styles.infoLabel}>CONTACT</p>
-              <p className={styles.infoText}>+91 99998 39999</p>
-              <p className={styles.infoText}>Message us on WhatsApp</p>
-            </div>
-
-            <div className={styles.infoItem}>
-              <p className={styles.infoLabel}>ONLINE</p>
-              <p className={styles.infoText}>adit@watcon.net</p>
-              <p className={styles.infoText}>watcon.co.in</p>
-            </div>
-          </div>
-        </FadeIn>
+          </FadeIn>
+        </div>
       </div>
     </section>
   );

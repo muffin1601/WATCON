@@ -10,7 +10,16 @@ export default function WaterBodiesPage() {
         subtitle: "Aquatic Artistry",
         title: "Experimental Water Bodies & Fountains",
         description: "From tranquil reflecting pools to dramatic architectural fountains, we create water features that define the character of your space.",
-        image: "https://images.pexels.com/photos/12715508/pexels-photo-12715508.jpeg"
+        image: "https://images.pexels.com/photos/12715508/pexels-photo-12715508.jpeg",
+        stats: [
+          { label: "Water Features", value: "120+" },
+          { label: "Bespoke Designs", value: "100%" },
+          { label: "Years Mastery", value: "20+" }
+        ],
+        actions: [
+          { label: "Request Design", href: "#contact", primary: true },
+          { label: "View Portfolio", href: "#projects" }
+        ]
       }}
       services={{
         subtitle: "OUR SERVICES",

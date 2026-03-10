@@ -10,7 +10,16 @@ export default function CryoRoomPage() {
         subtitle: "Advanced Recovery",
         title: "Bespoke Cryotherapy & Cold Plunge Suites",
         description: "Harness the power of extreme cold for recovery and longevity. Our custom cryo rooms and cold plunges are designed with surgical precision for elite performance.",
-        image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg"
+        image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg",
+        stats: [
+          { label: "Recovery Suites", value: "50+" },
+          { label: "Sub-Zero Accuracy", value: "100%" },
+          { label: "Expert Craft", value: "20+ Yrs" }
+        ],
+        actions: [
+          { label: "Consult Recovery", href: "#contact", primary: true },
+          { label: "View Projects", href: "#projects" }
+        ]
       }}
       services={{
         subtitle: "THERMAL SHOCK TECH",

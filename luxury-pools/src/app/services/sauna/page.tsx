@@ -10,7 +10,16 @@ export default function SaunaPage() {
         subtitle: "Traditional Detoxification",
         title: "Bespoke Sauna & Heat Therapy",
         description: "Experience the timeless ritual of sauna therapy. Our custom-built timber saunas use premium Canadian cedar and smart heating technology for a perfect detox.",
-        image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+        image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+        stats: [
+          { label: "Saunas Built", value: "250+" },
+          { label: "Premium Timber", value: "CEDAR" },
+          { label: "Expert Craft", value: "20+ Yrs" }
+        ],
+        actions: [
+          { label: "Get Free Quote", href: "#contact", primary: true },
+          { label: "View Designs", href: "#projects" }
+        ]
       }}
       services={{
         subtitle: "THERMAL MASTERY",

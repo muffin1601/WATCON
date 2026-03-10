@@ -10,7 +10,16 @@ export default function DehumidifierPage() {
         subtitle: "Precision Climate Control",
         title: "Bespoke Dehumidification & Air Quality",
         description: "Protect your luxury indoor pool and spa areas from moisture damage. We design high-performance air handling systems that ensure perfect comfort and structural longevity.",
-        image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg"
+        image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg",
+        stats: [
+          { label: "Systems Installed", value: "200+" },
+          { label: "Moisture Control", value: "100%" },
+          { label: "Expert Craft", value: "20+ Yrs" }
+        ],
+        actions: [
+          { label: "Consult Expert", href: "#contact", primary: true },
+          { label: "Learn More", href: "#" }
+        ]
       }}
       services={{
         subtitle: "AIR MASTERY",

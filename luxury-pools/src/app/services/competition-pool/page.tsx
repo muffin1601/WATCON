@@ -10,7 +10,16 @@ export default function CompetitionPoolPage() {
         subtitle: "Olympic Standards",
         title: "High-Performance Competition Pools",
         description: "Engineered for speed and precision. We design and build Olympic-standard pools with advanced overflow systems and FINA-compliant dimensions.",
-        image: "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg"
+        image: "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg",
+        stats: [
+          { label: "Arenas Built", value: "85+" },
+          { label: "FINA Compliant", value: "100%" },
+          { label: "Engineering Flow", value: "Expert" }
+        ],
+        actions: [
+          { label: "Consult Engineers", href: "#contact", primary: true },
+          { label: "View Arenas", href: "#projects" }
+        ]
       }}
       services={{
         subtitle: "PERFORMANCE ENGINEERING",

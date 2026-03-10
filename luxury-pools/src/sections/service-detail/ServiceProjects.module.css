@@ -1,42 +1,70 @@
 .section {
     padding: 100px 20px;
-    background: #050505;
+    background: #000000; /* Dark background */
     color: #fff;
     text-align: center;
 }
 
 .container {
-    max-width: 60%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .subTitle {
-    letter-spacing: 5px;
-    font-size: 13px;
-    font-weight: 500;
-    color: #bdb595;
-    margin-bottom: 25px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #bdb595; /* Accent color */
+    margin-bottom: 15px;
     text-transform: uppercase;
 }
 
 .title {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.description {
+    font-size: 16px;
+    color: #aaaaaa;
     margin-bottom: 60px;
-    font-weight: 600;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 24px;
+    margin-bottom: 50px;
 }
 
 .card {
-    height: 400px;
-    border-radius: 0;
+    height: 300px; 
+    border-radius: 16px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.02);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .imageWrapper {
@@ -55,11 +83,33 @@
 }
 
 .card:hover .image {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.ctaWrapper {
+    margin-top: 40px;
+}
+
+.ctaButton {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 1.5px solid #bdb595; /* Match button border color to accent */
+    color: #bdb595;
+    background: transparent;
+    border-radius: 50px; /* Pill shape matching other buttons */
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+    background: #bdb595;
+    color: #000;
 }
 
 @media (max-width: 992px) {
@@ -74,6 +124,6 @@
     }
 
     .card {
-        height: 300px;
+        height: 250px;
     }
 }

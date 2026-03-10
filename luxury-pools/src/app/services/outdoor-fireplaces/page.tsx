@@ -10,7 +10,16 @@ export default function OutdoorFireplacesPage() {
         subtitle: "The Element of Fire",
         title: "Bespoke Outdoor Fireplaces & Fire Pits",
         description: "Add warmth and soul to your outdoor spaces. Our custom-engineered fireplaces and automated fire pits create the perfect evening ambiance for your terrace or pool deck.",
-        image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+        image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg",
+        stats: [
+          { label: "Fire Projects", value: "110+" },
+          { label: "Safety Rating", value: "100%" },
+          { label: "Expert Craft", value: "20+ Yrs" }
+        ],
+        actions: [
+          { label: "Ignite Vision", href: "#contact", primary: true },
+          { label: "View Portfolio", href: "#projects" }
+        ]
       }}
       services={{
         subtitle: "WARMTH & DESIGN",

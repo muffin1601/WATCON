@@ -10,7 +10,16 @@ export default function OutdoorFurniturePage() {
         subtitle: "Alfresco Living",
         title: "Curated Luxury Outdoor Furniture",
         description: "Transform your terraces and pool decks into sophisticated living spaces. We provide weather-resistant, designer outdoor furniture that blends comfort with high-end aesthetics.",
-        image: "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg"
+        image: "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg",
+        stats: [
+          { label: "Designer Projects", value: "400+" },
+          { label: "Clients Served", value: "1000+" },
+          { label: "Design Mastery", value: "20+ Yrs" }
+        ],
+        actions: [
+          { label: "View Collection", href: "#projects", primary: true },
+          { label: "Consult Curator", href: "#contact" }
+        ]
       }}
       services={{
         subtitle: "LIFESTYLE CURATION",

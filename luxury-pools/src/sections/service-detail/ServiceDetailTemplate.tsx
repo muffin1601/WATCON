@@ -24,6 +24,7 @@ interface Project {
     title: string;
     description: string;
     image: string;
+    badge?: string;
 }
 
 interface FeatureItem {
@@ -41,12 +42,25 @@ interface Testimonial {
     avatar: string;
 }
 
+interface Stat {
+    label: string;
+    value: string;
+}
+
+interface Action {
+    label: string;
+    href: string;
+    primary?: boolean;
+}
+
 interface ServiceDetailTemplateProps {
     hero: {
         subtitle: string;
         title: string;
         description: string;
         image?: string;
+        stats?: Stat[];
+        actions?: Action[];
     };
     services: {
         subtitle: string;
@@ -56,7 +70,12 @@ interface ServiceDetailTemplateProps {
     projects: {
         subtitle: string;
         title: string;
+        description?: string;
         items: Project[];
+        cta?: {
+            label: string;
+            href?: string;
+        };
     };
     testimonials: {
         subtitle: string;
@@ -85,6 +104,8 @@ export default function ServiceDetailTemplate({
                     title={hero.title}
                     description={hero.description}
                     image={hero.image}
+                    stats={hero.stats}
+                    actions={hero.actions}
                 />
 
                 <ServiceGrid
@@ -96,7 +117,9 @@ export default function ServiceDetailTemplate({
                 <ServiceProjects
                     subtitle={projects.subtitle}
                     title={projects.title}
+                    description={projects.description}
                     projects={projects.items}
+                    cta={projects.cta}
                 />
 
 
@@ -112,7 +135,10 @@ export default function ServiceDetailTemplate({
                 {/* <CtaSection /> */}
                 {/* <ContentSection /> */}
 
-                <ContactSection />
+                <ContactSection
+                    title={contact.title}
+                    description={contact.description}
+                />
             </main>
             <Footer />
         </>

@@ -10,7 +10,16 @@ export default function SpaPage() {
         subtitle: "Sanctuary of Wellness",
         title: "Bespoke Spa & Wellness Environments",
         description: "Experience the pinnacle of restoration with our custom-designed spa solutions, from aromatic steam rooms to detoxifying saunas.",
-        image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+        image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+        stats: [
+          { label: "Spas Designed", value: "200+" },
+          { label: "Wellness Projects", value: "150+" },
+          { label: "Expert Craft", value: "20+ Yrs" }
+        ],
+        actions: [
+          { label: "Book Consultation", href: "#contact", primary: true },
+          { label: "Explore Features", href: "#" }
+        ]
       }}
       services={{
         subtitle: "OUR EXPERTISE",
