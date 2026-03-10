@@ -6,7 +6,7 @@
 }
 
 .container {
-    max-width: 60%;
+    max-width: 65%;
     margin: 0 auto;
 }
 
@@ -27,7 +27,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
@@ -41,7 +41,7 @@
     flex-direction: column;
     height: 100%; /* Better flexibility for variable content */
     min-height: 320px;
-    border-radius: 16px;
+    border-radius: 8px;
 }
 
 .card:hover {
@@ -107,6 +107,18 @@
 
 .learnMore:hover .arrow {
     margin-left: 5px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {

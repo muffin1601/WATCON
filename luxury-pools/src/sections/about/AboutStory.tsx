@@ -2,62 +2,68 @@
 
 import styles from "./AboutStory.module.css";
 import { FadeIn } from "@/components/FadeIn";
+import Image from "next/image";
 
 export default function AboutStory() {
   return (
-    <section className={styles.storySection}>
+    <section className={styles.storySection} id="story">
       <div className={styles.container}>
         <div className={styles.grid}>
           <div className={styles.left}>
             <FadeIn>
+              <p className={styles.subTitle}>OUR MISSION</p>
               <h2 className={styles.title}>
-                Our <span>Story</span>
+                Where Water Meets<br/>
+                <span>Vision</span>
               </h2>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className={styles.text}>
-                We are a 5-decade-old company, established in India with our headquarters 
-                in Delhi. With extensive experience working in various countries like 
-                Nepal, Bhutan, Dubai, Bangladesh, and beyond, we have built a reputation 
-                for delivering uncompromising quality and sophisticated design.
+                Born on the edge of the ocean, Watcon was founded with a singular 
+                conviction: every body of water is an opportunity for wonder. From 
+                rooftop infinity pools overlooking cityscapes to private island lagoons, we 
+                translate the boundless power of the sea into intimate, unforgettable 
+                spaces.
               </p>
             </FadeIn>
             <FadeIn delay={0.4}>
               <p className={styles.text}>
-                We take immense pride in being the <strong>1st Indian company</strong> to be approved 
-                by the American Embassy in India for American companies—a testament to 
-                our rigorous standards and global trust.
+                Our methodology is born from luxury resort wellness, and underpins our 
+                every endeavor—from testing new filtration and monitoring technologies to 
+                applying state-of-the-art sensory technologies that redefine deep relaxation.
               </p>
+            </FadeIn>
+
+            <FadeIn delay={0.6}>
+              <div className={styles.statsRow}>
+                <div className={styles.statItem}>
+                  <h3>200+</h3>
+                  <p>Projects Completed</p>
+                </div>
+                <div className={styles.statItem}>
+                  <h3>48</h3>
+                  <p>Countries Served</p>
+                </div>
+                <div className={styles.statItem}>
+                  <h3>20yr</h3>
+                  <p>Of Excellence</p>
+                </div>
+              </div>
             </FadeIn>
           </div>
           
           <div className={styles.right}>
-            <div className={styles.statsGrid}>
-              <FadeIn delay={0.3}>
-                <div className={styles.statCard}>
-                  <h3>50+</h3>
-                  <p>Years of Legacy</p>
+            <FadeIn delay={0.4}>
+              <div className={styles.imageCard}>
+                <div className={styles.imageWrapper}>
+                  <Image src="https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg" alt="Infinity Pool" fill className={styles.image} />
                 </div>
-              </FadeIn>
-              <FadeIn delay={0.4}>
-                <div className={styles.statCard}>
-                  <h3>Global</h3>
-                  <p>Presence across Asia & Middle East</p>
+                <div className={styles.imageBadge}>
+                  <h4>Signature Series</h4>
+                  <p>Infinity Pool Collection</p>
                 </div>
-              </FadeIn>
-              <FadeIn delay={0.5}>
-                <div className={styles.statCard}>
-                  <h3>1st</h3>
-                  <p>Indian Co. Approved by US Embassy</p>
-                </div>
-              </FadeIn>
-              <FadeIn delay={0.6}>
-                <div className={styles.statCard}>
-                  <h3>100%</h3>
-                  <p>Commitment to Excellence</p>
-                </div>
-              </FadeIn>
-            </div>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 65%;
     margin: 0 auto;
 }
 
@@ -97,10 +97,10 @@
 .ctaButton {
     display: inline-block;
     padding: 12px 32px;
-    border: 1.5px solid #bdb595; /* Match button border color to accent */
+    border: 1.5px solid #bdb595;
     color: #bdb595;
     background: transparent;
-    border-radius: 50px; /* Pill shape matching other buttons */
+    border-radius: 12px; 
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;

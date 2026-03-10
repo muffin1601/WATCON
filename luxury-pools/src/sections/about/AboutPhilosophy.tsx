@@ -2,6 +2,7 @@
 
 import styles from "./AboutPhilosophy.module.css";
 import { FadeIn } from "@/components/FadeIn";
+import { Star, Settings, Leaf } from "lucide-react";
 
 export default function AboutPhilosophy() {
   return (
@@ -9,35 +10,46 @@ export default function AboutPhilosophy() {
       <div className={styles.container}>
         <FadeIn>
           <div className={styles.centerBlock}>
-            <p className={styles.subTitle}>OUR VISION</p>
+            <p className={styles.subTitle}>CORE VALUES</p>
             <h2 className={styles.title}>
-              Redefining <span>Outdoor Living</span>
+              Built on Principles as Deep as the Ocean
             </h2>
           </div>
         </FadeIn>
 
         <div className={styles.contentBlocks}>
           <FadeIn delay={0.2}>
-            <div className={styles.block}>
+            <div className={styles.card}>
+              <div className={styles.iconWrapper}>
+                <Star size={20} />
+              </div>
+              <h3>Excellence</h3>
               <p>
-                At Watcon International, we specialize in creating unparalleled luxury experiences 
-                through our exquisite range of swimming pools, SPA, waterbodies, and outdoor furniture. 
-                We combine innovative designs, premium materials, and meticulous craftsmanship to 
-                transform your outdoor spaces into personal retreats of beauty and comfort. Founded 
-                with a passion for excellence, we are committed to delivering bespoke solutions that 
-                cater to your unique style and needs.
+                Every element from tile selection to pump installation is executed to exacting international standards.
               </p>
             </div>
           </FadeIn>
           
           <FadeIn delay={0.4}>
-            <div className={styles.block}>
+            <div className={styles.card}>
+              <div className={styles.iconWrapper}>
+                <Settings size={20} />
+              </div>
+              <h3>Innovation</h3>
               <p>
-                Our journey is rooted in a belief that outdoor spaces should be an extension of your 
-                lifestyle. That&apos;s why we collaborate with the world&apos;s leading designers, 
-                architects, and craftsmen to bring your vision to life. Every piece we offer is a testament 
-                to our dedication to quality, luxury, and innovation. We create timeless spaces 
-                for relaxation, entertainment, and rejuvenation, enhancing the value and beauty of your home.
+                Deploying progressive technologies from infinity edge precision to smart app-controlled heating.
+              </p>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.6}>
+            <div className={styles.card}>
+              <div className={styles.iconWrapper}>
+                <Leaf size={20} />
+              </div>
+              <h3>Sustainability</h3>
+              <p>
+                Water-saving systems, low-energy pumps, and materials selected to stay beautiful while respecting our environment.
               </p>
             </div>
           </FadeIn>

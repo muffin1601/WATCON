@@ -103,23 +103,23 @@ export default function SwimmingPoolsPage() {
         items: [
           {
             name: "Sarah M.",
-            role: "Home Owner",
-            avatar: "https://i.pravatar.cc/150?u=sarah",
-            content: "The team at Watcon turned my backyard into a resort. The attention to detail is simply unmatched.",
+            role: "Homeowner",
+            avatar: "SM",
+            content: "Watcon transformed our backyard completely. The pool is stunning and the team was professional throughout.",
             rating: 5
           },
           {
-            name: "James K.",
-            role: "Architect",
-            avatar: "https://i.pravatar.cc/150?u=james",
-            content: "As an architect, I appreciate their technical precision. They are the best in the business.",
+            name: "James T.",
+            role: "Villa Owner",
+            avatar: "JT",
+            content: "Best investment we ever made. The maintenance team keeps our pool in perfect condition all year.",
             rating: 5
           },
           {
-            name: "Linda P.",
+            name: "Linda K.",
             role: "Hotel Manager",
-            avatar: "https://i.pravatar.cc/150?u=linda",
-            content: "Professional, timely, and luxury finishes. Our guests love the new pool installation.",
+            avatar: "LK",
+            content: "The renovation they did on our old pool exceeded all expectations. Highly recommend!",
             rating: 5
           }
         ]

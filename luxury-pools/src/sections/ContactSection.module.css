@@ -7,7 +7,7 @@
 }
 
 .container {
-  max-width: 60%;
+  max-width: 65%;
   margin: 0 auto;
 }
 
@@ -53,15 +53,16 @@
 }
 
 .formCard {
-  padding: 0;
-  background: transparent;
-  border: none;
+  padding: 40px;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
 }
 
 .formHeading,
 .infoHeading {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600; /* Bolder in image */
   margin-bottom: 30px;
   color: #fff;
 }
@@ -79,11 +80,9 @@
 }
 
 .inputGroup label {
-  font-size: 10px;
-  letter-spacing: 2px;
-  color: #fff; /* Updated label color to match image style */
-  font-weight: 500;
-  margin-left: 15px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
 }
 
 .inputGroup input,
@@ -96,7 +95,7 @@
   outline: none;
   transition: all 0.3s ease;
   font-family: inherit;
-  border-radius: 50px;
+  border-radius: 8px; /* matching images */
 }
 
 .inputGroup input:focus,
@@ -117,15 +116,17 @@
   background: #bdb595;
   color: #000;
   border: none;
+  width: 100%;
   padding: 16px 36px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
-  border-radius: 50px;
+  border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
+  justify-content:  center;
   gap: 10px;
 }
 
@@ -149,20 +150,34 @@
 .contactList {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 15px; /* compact */
 }
 
-.contactItem {
+.contactItemBox {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
+  background: #111; /* slightly lighter than the card background */
+  padding: 15px 25px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.contactItemBoxHours {
+  background: #111;
+  padding: 20px 25px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .iconCircle {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   background: rgba(189, 181, 149, 0.1);
-  border-radius: 12px;
+  border-radius: 50%; /* updated to circle in image */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,8 +186,8 @@
 }
 
 .contactLabel {
-  font-size: 11px;
-  letter-spacing: 2px;
+  font-size: 10px;
+  letter-spacing: 1px;
   color: #888;
   text-transform: uppercase;
   margin-bottom: 4px;
@@ -180,9 +195,15 @@
 }
 
 .contactValue {
-  font-size: 15px;
+  font-size: 14px;
   color: #fff;
-  font-weight: 300;
+  font-weight: 500;
+}
+
+.contactValueHours {
+  font-size: 13px;
+  color: #aaa;
+  font-weight: 400;
 }
 
 @media (max-width: 1200px) {

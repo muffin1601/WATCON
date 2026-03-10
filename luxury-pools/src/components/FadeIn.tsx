@@ -18,7 +18,7 @@ export const FadeIn = ({
             viewport={{ once: true, margin: "-100px" }}
             transition={{
                 duration: 1,
-                ease: [0.21, 0.47, 0.32, 0.98], // smooth luxury easing curve
+                ease: [0.21, 0.47, 0.32, 0.98],
                 delay,
             }}
             className={className}

@@ -1,5 +1,6 @@
 import styles from './ServiceHero.module.css';
 import { FadeIn } from '@/components/FadeIn';
+import { ArrowRight } from 'lucide-react';
 
 interface Stat {
     label: string;
@@ -30,7 +31,7 @@ export default function ServiceHero({
     actions = []
 }: ServiceHeroProps) {
     const highlightWords = [
-        'swimming', 'pool', 'luxury', 'dream', 'excellence', 'bespoke',
+        'swimming', 'pool', 'luxury',  'excellence', 'bespoke',
         'masterpiece', 'sanctuary', 'athletic', 'lifestyle', 'wellness',
         'spa', 'jacuzzi', 'sauna', 'steam', 'cryotherapy', 'recovery',
         'fire', 'water', 'artistry', 'mosaic', 'ecosystem', 'performance',
@@ -66,7 +67,7 @@ export default function ServiceHero({
                                             href={action.href}
                                             className={action.primary ? styles.primaryBtn : styles.secondaryBtn}
                                         >
-                                            {action.label}
+                                            {action.label} <ArrowRight size={18} className="ml-2" />
                                         </a>
                                     ))}
                                 </div>

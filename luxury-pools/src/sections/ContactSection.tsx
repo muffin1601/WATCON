@@ -2,7 +2,7 @@
 
 import styles from "./ContactSection.module.css";
 import { FadeIn } from "../components/FadeIn";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
 
 interface ContactSectionProps {
   title?: string;
@@ -36,27 +36,17 @@ export default function ContactSection({
               <h3 className={styles.formHeading}>Send an Enquiry</h3>
               <form className={styles.form}>
                 <div className={styles.inputGroup}>
-                  <label>YOUR NAME</label>
-                  <input type="text" placeholder="John Doe" />
+                  <label>Your Name</label>
+                  <input type="text" placeholder="Your Name" />
                 </div>
 
                 <div className={styles.inputGroup}>
-                  <label>EMAIL ADDRESS</label>
-                  <input type="email" placeholder="john@example.com" />
-                </div>
-
-                <div className={styles.inputGroup}>
-                  <label>PHONE NUMBER</label>
-                  <input type="tel" placeholder="+91 00000 00000" />
-                </div>
-
-                <div className={styles.inputGroup}>
-                  <label>YOUR VISION</label>
-                  <textarea placeholder="Describe your project aspirations..." />
+                  <label>Email Address</label>
+                  <input type="email" placeholder="mail@example.com" />
                 </div>
 
                 <button type="submit" className={styles.submitButton}>
-                  Send Enquiry →
+                  Send Enquiry <ArrowRight size={18} className="ml-2" />
                 </button>
               </form>
             </div>
@@ -66,47 +56,34 @@ export default function ContactSection({
           <FadeIn delay={0.5}>
             <div className={styles.infoCard}>
               <h3 className={styles.infoHeading}>Get in Touch</h3>
-              <p className={styles.infoDesc}>We have built projects across the country, building your pool of your dreams. Reach us out via email or phone call within 24 hours.</p>
+              <p className={styles.infoDesc}>Our team of pool specialists is ready to help you create the pool of your dreams. Reach us via phone or email — we respond within 24 hours.</p>
 
               <div className={styles.contactList}>
-                <div className={styles.contactItem}>
+                <div className={styles.contactItemBox}>
                   <div className={styles.iconCircle}>
                     <Phone size={18} />
                   </div>
                   <div>
-                    <p className={styles.contactLabel}>Phone</p>
+                    <p className={styles.contactLabel}>PHONE</p>
                     <p className={styles.contactValue}>+91 99998 39999</p>
                   </div>
                 </div>
 
-                <div className={styles.contactItem}>
+                <div className={styles.contactItemBox}>
                   <div className={styles.iconCircle}>
                     <Mail size={18} />
                   </div>
                   <div>
-                    <p className={styles.contactLabel}>Email</p>
-                    <p className={styles.contactValue}>info@watcon.net</p>
+                    <p className={styles.contactLabel}>EMAIL</p>
+                    <p className={styles.contactValue}>adit@watcon.net</p>
                   </div>
                 </div>
 
-                <div className={styles.contactItem}>
-                  <div className={styles.iconCircle}>
-                    <MapPin size={18} />
-                  </div>
-                  <div>
-                    <p className={styles.contactLabel}>Address</p>
-                    <p className={styles.contactValue}>343, MG Road, Sultanpur, New Delhi</p>
-                  </div>
-                </div>
-
-                <div className={styles.contactItem}>
-                  <div className={styles.iconCircle}>
-                    <Clock size={18} />
-                  </div>
-                  <div>
-                    <p className={styles.contactLabel}>Business Hours</p>
-                    <p className={styles.contactValue}>Mon - Sat: 9:00 AM - 6:00 PM</p>
-                  </div>
+                <div className={styles.contactItemBoxHours}>
+                  <p className={styles.contactLabel}>WORKING HOURS</p>
+                  <p className={styles.contactValueHours}>Mon - Sat: 10:00 AM - 6:00 PM</p>
+                  {/* <p className={styles.contactValueHours}>Saturday: 10:00 AM - 4:00 PM</p> */}
+                  <p className={styles.contactValueHours}>Sunday: Closed</p>
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@
 }
 
 .container {
-    max-width: 60%;
+    max-width: 65%;
     margin: 0 auto;
 }
 
@@ -34,8 +34,8 @@
 .card {
     background: #080808;
     border: 1px solid rgba(255, 255, 255, 0.04);
-    padding: 40px 30px;
-    border-radius: 16px;
+    padding: 30px;
+    border-radius: 8px; /* matching images */
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@
 }
 
 .content {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 35px;
     font-style: italic;
@@ -70,12 +70,18 @@
 }
 
 .avatar {
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-    border: 1px solid #bdb595;
+    background-color: #bdb595;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .userName {

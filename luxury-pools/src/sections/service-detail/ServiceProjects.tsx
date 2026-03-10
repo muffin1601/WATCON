@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './ServiceProjects.module.css';
 import { FadeIn } from '@/components/FadeIn';
+import { ArrowRight } from 'lucide-react';
 
 interface Project {
     title: string;
@@ -52,7 +53,7 @@ export default function ServiceProjects({ subtitle, title, description, projects
                     <FadeIn delay={0.3}>
                         <div className={styles.ctaWrapper}>
                             <Link href={cta.href || "#contact"} className={styles.ctaButton}>
-                                {cta.label}
+                                {cta.label} <ArrowRight size={18} className="ml-2" />
                             </Link>
                         </div>
                     </FadeIn>

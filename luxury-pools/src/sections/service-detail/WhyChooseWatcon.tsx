@@ -13,20 +13,20 @@ interface Feature {
 
 const features: Feature[] = [
     {
-        title: "EXPERIENCE",
-        description: "Decades of engineering mastery in building high-end pools and sophisticated water features with precision.",
+        title: "Years Experience",
+        description: "Trusted by thousands of homeowners and businesses across the region.",
         icon: Award,
         value: "20+"
     },
     {
-        title: "ASSURANCE",
-        description: "Every phase of our construction is fully certified and insured for your complete peace of mind.",
+        title: "Licensed & Insured",
+        description: "Fully certified professionals with comprehensive insurance coverage.",
         icon: ShieldCheck,
         value: "100%"
     },
     {
-        title: "COMMITMENT",
-        description: "We provide an industry-leading warranty on our meticulous craftsmanship and premium materials.",
+        title: "Warranty",
+        description: "All installations backed by our industry-leading 5-year workmanship warranty.",
         icon: Timer,
         value: "5-Year"
     }

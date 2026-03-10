@@ -36,7 +36,12 @@ export default function ServiceTestimonials({ subtitle, title, testimonials }: S
                                 </div>
                                 <p className={styles.content}>"{testi.content}"</p>
                                 <div className={styles.userBox}>
-                                    <div className={styles.avatar} style={{ backgroundImage: `url(${testi.avatar})` }}></div>
+                                    <div 
+                                        className={styles.avatar} 
+                                        style={testi.avatar.length > 3 ? { backgroundImage: `url(${testi.avatar})` } : {}}
+                                    >
+                                        {testi.avatar.length <= 3 && testi.avatar}
+                                    </div>
                                     <div className={styles.userInfo}>
                                         <h4 className={styles.userName}>{testi.name}</h4>
                                         <p className={styles.userRole}>{testi.role}</p>

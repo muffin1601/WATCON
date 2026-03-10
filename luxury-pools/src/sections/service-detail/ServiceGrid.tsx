@@ -1,8 +1,8 @@
 import styles from './ServiceGrid.module.css';
 import { FadeIn } from '@/components/FadeIn';
-import { LucideIcon } from 'lucide-react';
+import { LucideIcon, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-
+ 
 interface ServiceItem {
     title: string;
     description: string;
@@ -36,9 +36,9 @@ export default function ServiceGrid({ subtitle, title, services }: ServiceGridPr
                                     </div>
                                     <h3 className={styles.itemTitle}>{service.title}</h3>
                                     <p className={styles.itemDesc}>{service.description}</p>
-                                    {/* <Link href={service.href} className={styles.learnMore}>
-                                        Learn More <span className={styles.arrow}>→</span>
-                                    </Link> */}
+                                    <Link href={service.href} className={styles.learnMore}>
+                                        Learn More <ArrowRight size={16} className="ml-2" />
+                                    </Link>
                                 </div>
                             </FadeIn>
                         );
