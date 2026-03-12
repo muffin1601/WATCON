@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Flame, Sun, Wind, Sparkles, Settings, ShieldCheck } from "lucide-react";
@@ -54,6 +54,7 @@ export default function OutdoorFireplacesPage() {
       projects={{
         subtitle: "EVENING PORTFOLIO",
         title: "Selected Fire Projects",
+        description: "From architectural masonry to automated gas pits, our fire features are designed to be the heart of your outdoor gatherings.",  
         items: [
           {
             title: "Project 1",

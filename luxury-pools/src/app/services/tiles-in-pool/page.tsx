@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Layers, Sparkles, Droplets, ShieldCheck, Sun, Settings } from "lucide-react";
@@ -54,6 +54,7 @@ export default function TilesInPoolPage() {
       projects={{
         subtitle: "MOSAIC PORTFOLIO",
         title: "Iconic Tiled Masterpieces",
+        description: "From intricate mosaics to large-format porcelain slabs, we create stunning underwater finishes that define luxury.",
         items: [
           {
             title: "Project 1",

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Thermometer, Zap, ShieldCheck, Settings, Heart, Wind } from "lucide-react";
@@ -54,6 +54,8 @@ export default function CryoRoomPage() {
       projects={{
         subtitle: "RECOVERY PORTFOLIO",
         title: "Iconic Cold Suites",
+         description: "Explore our collection of cutting-edge recovery environments, where cryogenic science meets sophisticated architectural design to deliver unparalleled wellness benefits.",
+        
         items: [
           {
             title: "Project 1",

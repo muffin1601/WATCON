@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Wind, Droplets, Settings, ShieldCheck, Thermometer, Zap } from "lucide-react";
@@ -54,6 +54,7 @@ export default function DehumidifierPage() {
       projects={{
         subtitle: "ENGINEERING PROJECTS",
         title: "Climate Control Installations",
+        description: "Engineered for performance, our dehumidification systems maintain perfect air quality in the most demanding environments.",
         items: [
           {
             title: "Project 1",
