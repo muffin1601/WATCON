@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Flower2, Droplet, Sun, Waves, Settings, Heart } from "lucide-react";
@@ -54,6 +54,7 @@ export default function KoiPondsPage() {
       projects={{
         subtitle: "RECENT ECOSYSTEMS",
         title: "Selected Ponds & Lakes",
+        description: "From traditional Japanese ponds to modern infinity pools, our koi ponds are designed to be the centerpiece of your garden.",
         items: [
           {
             title: "Project 1",
