@@ -105,7 +105,6 @@ export default function ServiceDetailTemplate({
                     description={hero.description}
                     image={hero.image}
                     stats={hero.stats}
-                    actions={hero.actions}
                 />
 
                 <ServiceGrid
@@ -126,11 +125,11 @@ export default function ServiceDetailTemplate({
 
                 <WhyChooseWatcon />
 
-                <ServiceTestimonials
+                {/* <ServiceTestimonials
                     subtitle={testimonials.subtitle}
                     title={testimonials.title}
                     testimonials={testimonials.items}
-                />
+                /> */}
 
                 {/* <CtaSection /> */}
                 {/* <ContentSection /> */}

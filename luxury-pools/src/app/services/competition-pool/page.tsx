@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Timer, Ruler, Waves, Settings, ShieldCheck, Zap } from "lucide-react";
@@ -10,11 +10,11 @@ export default function CompetitionPoolPage() {
         subtitle: "Olympic Standards",
         title: "High-Performance Competition Pools",
         description: "Engineered for speed and precision. We design and build Olympic-standard pools with advanced overflow systems and FINA-compliant dimensions.",
-        image: "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg",
+        image: "/services/competitionpools%20(1).webp",
         stats: [
-          { label: "Arenas Built", value: "85+" },
+          { label: "Arenas Built", value: "2500+" },
           { label: "FINA Compliant", value: "100%" },
-          { label: "Engineering Flow", value: "Expert" }
+          { label: "Engineering Flow", value: "50+ Yrs" }
         ],
         actions: [
           { label: "Consult Engineers", href: "#contact", primary: true },
@@ -54,38 +54,48 @@ export default function CompetitionPoolPage() {
       projects={{
         subtitle: "INSTITUTIONAL PORTFOLIO",
         title: "Public & Private Arenas",
+        description: "Explore our collection of Olympic-standard competition pools and professional training facilities.",
         items: [
           {
             title: "Project 1",
             description: "University Olympic Center",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            image: "/services/competitionpools%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Semi-Olympic Training Pool",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            image: "/services/competitionpools%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Municipal Aquatic Hub",
-            image: "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg"
+            image: "/services/competitionpools%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "Diving Well & Platform",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            image: "/services/competitionpools%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "Elite Swim Academy",
-            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+            image: "/services/competitionpools%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Commercial Lap Pool",
-            image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+            image: "/services/competitionpools%20(6).webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "COACH & ATHLETE STORIES",

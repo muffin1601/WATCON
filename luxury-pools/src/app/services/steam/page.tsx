@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Cloud, Droplets, Sparkles, Settings, Bath, Wind } from "lucide-react";
@@ -10,11 +10,11 @@ export default function SteamRoomPage() {
         subtitle: "Atmospheric Rejuvenation",
         title: "Bespoke Steam Rooms & Turkish Baths",
         description: "Envelop yourself in therapeutic vapor. Our custom steam rooms blend sophisticated mosaic tiling with high-performance steam generation systems.",
-        image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg",
+        image: "/services/steam.webp",
         stats: [
-          { label: "Steam Suites", value: "180+" },
+          { label: "Steam Suites", value: "2500+" },
           { label: "Mosaic Precision", value: "100%" },
-          { label: "Expert Craft", value: "20+ Yrs" }
+          { label: "Expert Craft", value: "50+ Yrs" }
         ],
         actions: [
           { label: "Request Quote", href: "#contact", primary: true },
@@ -54,38 +54,48 @@ export default function SteamRoomPage() {
       projects={{
         subtitle: "GLOBAL PROJECTS",
         title: "Select Steam Suites",
+        description: "Traditional Turkish baths and modern steam rooms built with exquisite mosaic artistry.",
         items: [
           {
             title: "Project 1",
             description: "Onyx Mosaic Hammam",
-            image: "https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg"
+            image: "/services/steam%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Glass-Fronted Steam Suite",
-            image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg"
+            image: "/services/steam%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Traditional Marble Spa",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            image: "/services/steam%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "Modern Recessed Cabin",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            image: "/services/steam%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "Light-Sculpted Vapor Room",
-            image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+            image: "/services/steam%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Executive Wellness Suite",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            image: "/services/steam.webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "GUEST REVIEWS",

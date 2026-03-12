@@ -68,7 +68,7 @@ export default function Portfolio() {
               <div className={styles.card}>
                 <div
                   className={styles.image}
-                  style={{ backgroundImage: `url(${project.image})` }}
+                  style={{ backgroundImage: `url("${project.image}")` }}
                 />
                 <div className={styles.content}>
                   <h3>{project.title}</h3>

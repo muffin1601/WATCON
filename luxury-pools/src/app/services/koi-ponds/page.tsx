@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Flower2, Droplet, Sun, Waves, Settings, Heart } from "lucide-react";
@@ -10,11 +10,11 @@ export default function KoiPondsPage() {
         subtitle: "Ecosystems of Serenity",
         title: "Bespoke Koi Ponds & Ecosystems",
         description: "Create a living masterpiece in your garden. Our koi ponds are engineered with advanced life support systems for crystal clear water and healthy aquatic life.",
-        image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg",
+        image: "/services/koiponds%20(1).webp",
         stats: [
-          { label: "Ponds Built", value: "150+" },
+          { label: "Ponds Built", value: "2500+" },
           { label: "Healthy Ecosystems", value: "100%" },
-          { label: "Years Experience", value: "20+" }
+          { label: "Years Experience", value: "50+" }
         ],
         actions: [
           { label: "Consult an Expert", href: "#contact", primary: true },
@@ -58,34 +58,43 @@ export default function KoiPondsPage() {
           {
             title: "Project 1",
             description: "Traditional Japanese Koi Pond",
-            image: "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg"
+            image: "/services/koiponds%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Modern Infinity Pond",
-            image: "https://images.pexels.com/photos/12715508/pexels-photo-12715508.jpeg"
+            image: "/services/koiponds%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Courtyard Reflection Pond",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            image: "/services/koiponds%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "Large Estate Lake",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            image: "/services/koiponds%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "Indoor Atrium Pond",
-            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+            image: "/services/koiponds%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Waterfall-Fed Pond",
-            image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+            image: "/services/koiponds%20(6).webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "LIVING TESTIMONIALS",

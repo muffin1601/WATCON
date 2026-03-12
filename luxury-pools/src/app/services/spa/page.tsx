@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Sparkles, Wind, Droplet, Heart, Thermometer, UserCheck } from "lucide-react";
@@ -10,11 +10,11 @@ export default function SpaPage() {
         subtitle: "Sanctuary of Wellness",
         title: "Bespoke Spa & Wellness Environments",
         description: "Experience the pinnacle of restoration with our custom-designed spa solutions, from aromatic steam rooms to detoxifying saunas.",
-        image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+        image: "/services/spa.webp",
         stats: [
-          { label: "Spas Designed", value: "200+" },
+          { label: "Spas Designed", value: "2500+" },
           { label: "Wellness Projects", value: "150+" },
-          { label: "Expert Craft", value: "20+ Yrs" }
+          { label: "Expert Craft", value: "50+ Yrs" }
         ],
         actions: [
           { label: "Book Consultation", href: "#contact", primary: true },
@@ -54,38 +54,48 @@ export default function SpaPage() {
       projects={{
         subtitle: "WELLNESS PORTFOLIO",
         title: "Premier Spa Installations",
+        description: "Immersive wellness environments designed to provide the ultimate sanctuary for health and relaxation.",
         items: [
           {
             title: "Project 1",
             description: "Floating Forest Spa",
-            image: "https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg"
+            image: "/services/spa%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Minimalist Zen Retreat",
-            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+            image: "/services/spa%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Urban Sanctuary",
-            image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg"
+            image: "/services/spa%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "Mountain Vista Wellness",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            image: "/services/spa%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "Desert Oasis Spa",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            image: "/services/spa%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Coastal Vitality Suite",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            image: "/services/spa.webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "HEALING STORIES",

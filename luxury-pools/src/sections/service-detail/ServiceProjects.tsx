@@ -41,15 +41,19 @@ export default function ServiceProjects({ subtitle, title, description, projects
                                 <div className={styles.imageWrapper}>
                                     <div
                                         className={styles.image}
-                                        style={{ backgroundImage: `url(${project.image})` }}
+                                        style={{ backgroundImage: `url("${project.image}")` }}
                                     />
                                 </div>
+                                {/* <div className={styles.projectContent}>
+                                    <h3 className={styles.projectTitle}>{project.title}</h3>
+                                    <p className={styles.projectDesc}>{project.description}</p>
+                                </div> */}
                             </div>
                         </FadeIn>
                     ))}
                 </div>
 
-                {cta && (
+                {/* {cta && (
                     <FadeIn delay={0.3}>
                         <div className={styles.ctaWrapper}>
                             <Link href={cta.href || "#contact"} className={styles.ctaButton}>
@@ -57,7 +61,7 @@ export default function ServiceProjects({ subtitle, title, description, projects
                             </Link>
                         </div>
                     </FadeIn>
-                )}
+                )} */}
             </div>
         </section>
     );

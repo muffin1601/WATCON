@@ -16,7 +16,7 @@ const features: Feature[] = [
         title: "Years Experience",
         description: "Trusted by thousands of homeowners and businesses across the region.",
         icon: Award,
-        value: "20+"
+        value: "50+"
     },
     {
         title: "Licensed & Insured",
@@ -26,9 +26,9 @@ const features: Feature[] = [
     },
     {
         title: "Warranty",
-        description: "All installations backed by our industry-leading 5-year workmanship warranty.",
+        description: "All installations backed by our industry-leading 1-year workmanship warranty.",
         icon: Timer,
-        value: "5-Year"
+        value: "1-Year"
     }
 ];
 

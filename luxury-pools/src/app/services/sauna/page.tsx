@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Wind, Thermometer, Sparkles, Settings, Timer, ShieldCheck } from "lucide-react";
@@ -10,11 +10,11 @@ export default function SaunaPage() {
         subtitle: "Traditional Detoxification",
         title: "Bespoke Sauna & Heat Therapy",
         description: "Experience the timeless ritual of sauna therapy. Our custom-built timber saunas use premium Canadian cedar and smart heating technology for a perfect detox.",
-        image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+        image: "/services/sauna.webp",
         stats: [
-          { label: "Saunas Built", value: "250+" },
+          { label: "Saunas Built", value: "2500+" },
           { label: "Premium Timber", value: "CEDAR" },
-          { label: "Expert Craft", value: "20+ Yrs" }
+          { label: "Expert Craft", value: "50+ Yrs" }
         ],
         actions: [
           { label: "Get Free Quote", href: "#contact", primary: true },
@@ -54,38 +54,48 @@ export default function SaunaPage() {
       projects={{
         subtitle: "RECENT INSTALLATIONS",
         title: "Iconic Sauna Projects",
+        description: "Crafted with precision and premium timber, explore our collection of traditional and modern saunas.",
         items: [
           {
             title: "Project 1",
             description: "Panoramic Glass Sauna",
-            image: "https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg"
+            image: "/services/sauna%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Minimalist Hemlock Suite",
-            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+            image: "/services/sauna%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Outdoor Garden Sauna",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            image: "/services/sauna%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "Luxury Hotel Spa",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            image: "/services/sauna%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "Penthouse Private Suite",
-            image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg"
+            image: "/services/sauna%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Classic Cedar Cabin",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            image: "/services/sauna.webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "MEMBER STORIES",

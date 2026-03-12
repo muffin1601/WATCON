@@ -38,7 +38,7 @@ export default function ServiceTestimonials({ subtitle, title, testimonials }: S
                                 <div className={styles.userBox}>
                                     <div 
                                         className={styles.avatar} 
-                                        style={testi.avatar.length > 3 ? { backgroundImage: `url(${testi.avatar})` } : {}}
+                                        style={testi.avatar.length > 3 ? { backgroundImage: `url("${testi.avatar}")` } : {}}
                                     >
                                         {testi.avatar.length <= 3 && testi.avatar}
                                     </div>

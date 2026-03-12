@@ -8,44 +8,40 @@ export default function WaterBodiesPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "Aquatic Artistry",
-        title: "Experimental Water Bodies & Fountains",
-        description: "From tranquil reflecting pools to dramatic architectural fountains, we create water features that define the character of your space.",
-        image: "https://images.pexels.com/photos/12715508/pexels-photo-12715508.jpeg",
+        title: "Bespoke Water Bodies & Architectural Fountains",
+        description: "From tranquil reflecting pools to dramatic architectural fountains, we create water features that define the soul of your landscape. Engineering beauty since 1974.",
+        image: "/services/wb-hero.png",
         stats: [
-          { label: "Water Features", value: "120+" },
-          { label: "Bespoke Designs", value: "100%" },
-          { label: "Years Mastery", value: "20+" }
-        ],
-        actions: [
-          { label: "Request Design", href: "#contact", primary: true },
-          { label: "View Portfolio", href: "#projects" }
+          { label: "Water Features", value: "2500+" },
+          { label: "Design Mastery", value: "100%" },
+          { label: "Years Experience", value: "50+" }
         ]
       }}
       services={{
-        subtitle: "OUR SERVICES",
+        subtitle: "OUR EXPERTISE",
         title: "Crafting Liquid Masterpieces",
         items: [
           {
             title: "Architectural Fountains",
-            description: "Dynamic water displays featuring advanced nozzle tech and choreographed lighting.",
+            description: "Grand, choreographed water displays featuring advanced nozzle technology and artistic lighting.",
             icon: Waves,
             href: "#"
           },
           {
             title: "Reflecting Pools",
-            description: "Silent, mirror-like water surfaces that complement modern architecture.",
+            description: "Minimalist, mirror-like water surfaces that bring serenity and architectural depth to any space.",
             icon: Layers,
             href: "#"
           },
           {
             title: "Cascading Waterfalls",
-            description: "Naturalistic and modern waterfall designs for indoor and outdoor settings.",
+            description: "Dynamic vertical water features designed for both dramatic impact and soothing acoustics.",
             icon: Droplet,
             href: "#"
           },
           {
-            title: "Lake Management",
-            description: "Comprehensive solutions for larger water bodies, ensuring ecological balance.",
+            title: "Bio-Pools & Ponds",
+            description: "Sustainable, ecologically balanced water bodies that blend seamlessly with the natural environment.",
             icon: Anchor,
             href: "#"
           }
@@ -53,70 +49,58 @@ export default function WaterBodiesPage() {
       }}
       projects={{
         subtitle: "AQUATIC PORTFOLIO",
-        title: "Selected Water Features",
+        title: "Stunning Water Features",
+        description: "Explore our collection of world-class water bodies and architectural fountains.",
         items: [
           {
-            title: "Project 1",
-            description: "Corporate Plaza Fountain",
-            image: "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg"
+            title: "Corporate Grand Fountain",
+            description: "Architectural Landmark",
+            image: "/services/wb-hero.png",
+            badge: "Premium"
           },
           {
-            title: "Project 2",
-            description: "Zen Reflecting Pond",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            title: "Zen Reflecting Pond",
+            description: "Tranquil Sanctuary",
+            image: "/services/wb-reflecting.png",
+            badge: "Signature"
           },
           {
-            title: "Project 3",
-            description: "Infinite Cascade Wall",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            title: "Infinite Cascade Wall",
+            description: "Modern Vertical Feature",
+            image: "/services/wb-cascade.png",
+            badge: "Exclusive"
           },
           {
-            title: "Project 4",
-            description: "Sculptural Water Piece",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            title: "Estate Entrance Water",
+            description: "Grand Entryway",
+            image: "/services/wb-entrance.png",
+            badge: "Popular"
           },
           {
-            title: "Project 5",
-            description: "Estate Entrance Waterway",
-            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+            title: "Interior Atrium Flow",
+            description: "Indoor Oasis",
+            image: "/services/wb-zen.png",
+            badge: "Service"
           },
           {
-            title: "Project 6",
-            description: "Interior Atrium Cascade",
-            image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+            title: "Biological Luxury Pond",
+            description: "Natural Ecosystem",
+            image: "/services/wb-bio.png",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Design Your Water Feature"
+        }
       }}
       testimonials={{
-        subtitle: "CLIENT FEEDBACK",
-        title: "Impact of Water Design",
-        items: [
-          {
-            name: "Robert H.",
-            role: "Commercial Developer",
-            avatar: "https://i.pravatar.cc/150?u=robert",
-            content: "The fountain they built for our plaza has become a local landmark. Incredible engineering.",
-            rating: 5
-          },
-          {
-            name: "Lisa V.",
-            role: "Landscape Architect",
-            avatar: "https://i.pravatar.cc/150?u=lisa",
-            content: "They understand the play of light on water perfectly. A true asset to our design team.",
-            rating: 5
-          },
-          {
-            name: "Kevin S.",
-            role: "Private Homeowner",
-            avatar: "https://i.pravatar.cc/150?u=kevin",
-            content: "The reflecting pool adds a level of peace to our home that we never thought possible.",
-            rating: 5
-          }
-        ]
+        subtitle: "CLIENT STORIES",
+        title: "What Our Clients Say",
+        items: [] 
       }}
       contact={{
-        title: "Elevate Your Landscape with Water",
-        description: "Let's discuss how a custom water feature can transform your environment."
+        title: "Ready to Elevate Your Space?",
+        description: "Contact us for a bespoke water feature consultation."
       }}
     />
   );

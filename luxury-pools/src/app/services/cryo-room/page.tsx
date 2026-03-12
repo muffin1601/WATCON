@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Thermometer, Zap, ShieldCheck, Settings, Heart, Wind } from "lucide-react";
@@ -10,11 +10,11 @@ export default function CryoRoomPage() {
         subtitle: "Advanced Recovery",
         title: "Bespoke Cryotherapy & Cold Plunge Suites",
         description: "Harness the power of extreme cold for recovery and longevity. Our custom cryo rooms and cold plunges are designed with surgical precision for elite performance.",
-        image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg",
+        image: "/services/cryoroom.webp",
         stats: [
-          { label: "Recovery Suites", value: "50+" },
+          { label: "Recovery Suites", value: "2500+" },
           { label: "Sub-Zero Accuracy", value: "100%" },
-          { label: "Expert Craft", value: "20+ Yrs" }
+          { label: "Expert Craft", value: "50+ Yrs" }
         ],
         actions: [
           { label: "Consult Recovery", href: "#contact", primary: true },
@@ -58,34 +58,43 @@ export default function CryoRoomPage() {
           {
             title: "Project 1",
             description: "Electric Cryo Chamber",
-            image: "https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg"
+            image: "/services/cryoroom%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Modern Cold Plunge",
-            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+            image: "/services/cryoroom%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Sports Medicine Wing",
-            image: "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg"
+            image: "/services/cryoroom%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "Luxury Home Recovery",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            image: "/services/cryoroom%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "Biohacking Suite",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            image: "/services/cryoroom%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Executive Health Club",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            image: "/services/cryoroom.webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "RECOVERY STORIES",

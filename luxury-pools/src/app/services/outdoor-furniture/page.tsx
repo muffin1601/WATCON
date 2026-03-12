@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Sofa, Sun, Wind, ShieldCheck, Settings, Heart } from "lucide-react";
@@ -10,11 +10,11 @@ export default function OutdoorFurniturePage() {
         subtitle: "Alfresco Living",
         title: "Curated Luxury Outdoor Furniture",
         description: "Transform your terraces and pool decks into sophisticated living spaces. We provide weather-resistant, designer outdoor furniture that blends comfort with high-end aesthetics.",
-        image: "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg",
+        image: "/services/outdoorfurniture.webp",
         stats: [
-          { label: "Designer Projects", value: "400+" },
+          { label: "Designer Projects", value: "2500+" },
           { label: "Clients Served", value: "1000+" },
-          { label: "Design Mastery", value: "20+ Yrs" }
+          { label: "Design Mastery", value: "50+ Yrs" }
         ],
         actions: [
           { label: "View Collection", href: "#projects", primary: true },
@@ -54,38 +54,48 @@ export default function OutdoorFurniturePage() {
       projects={{
         subtitle: "LEISURE PORTFOLIO",
         title: "Iconic Living Spaces",
+        description: "Sophisticated outdoor furniture arrangements that redefine alfresco comfort and style.",
         items: [
           {
             title: "Project 1",
             description: "Poolside Lounge Suite",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            image: "/services/outdoorfurniture%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Terrace Dining Pavilion",
-            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+            image: "/services/outdoorfurniture%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Modern Rooftop Deck",
-            image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg"
+            image: "/services/outdoorfurniture%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "Resort Cabana Furnishing",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            image: "/services/outdoorfurniture%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "Courtyard Sunroom",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            image: "/services/outdoorfurniture%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Private Villa Veranda",
-            image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+            image: "/services/outdoorfurniture.webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "LIVING TESTIMONIALS",

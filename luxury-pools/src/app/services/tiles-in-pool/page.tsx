@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Layers, Sparkles, Droplets, ShieldCheck, Sun, Settings } from "lucide-react";
@@ -10,11 +10,11 @@ export default function TilesInPoolPage() {
         subtitle: "The Art of Finish",
         title: "Exquisite Pool Tiling & Mosaics",
         description: "Transform the base of your pool into a radiant work of art. We specialize in high-end porcelain, glass, and natural stone mosaics that capture light and elevate your aquatic experience.",
-        image: "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg",
+        image: "/services/tilespool%20(1).webp",
         stats: [
-          { label: "Mosaic Projects", value: "350+" },
+          { label: "Mosaic Projects", value: "2500+" },
           { label: "Material Quality", value: "SUPREME" },
-          { label: "Expert Craft", value: "20+ Yrs" }
+          { label: "Expert Craft", value: "50+ Yrs" }
         ],
         actions: [
           { label: "Start Selection", href: "#contact", primary: true },
@@ -58,34 +58,43 @@ export default function TilesInPoolPage() {
           {
             title: "Project 1",
             description: "Geometric Blue Mosaic",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            image: "/services/tilespool%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Modern Slate Lap Pool",
-            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+            image: "/services/tilespool%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Mediterranean Stone Suite",
-            image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg"
+            image: "/services/tilespool%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "White Porcelain Infinity Pool",
-            image: "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg"
+            image: "/services/tilespool%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "Dark Minimalist Basin",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            image: "/services/tilespool%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Golden Glass Spa Basin",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            image: "/services/tilespool%20(6).webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "CRAFTSMAN REVIEWS",

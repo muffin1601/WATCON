@@ -41,7 +41,7 @@ export default function ServiceHero({
     return (
         <section
             className={styles.hero}
-            style={{ backgroundImage: image ? `url(${image})` : 'none' }}
+            style={{ backgroundImage: image ? `url("${image}")` : 'none' }}
         >
             <div className={styles.overlay}></div>
             <div className={styles.container}>

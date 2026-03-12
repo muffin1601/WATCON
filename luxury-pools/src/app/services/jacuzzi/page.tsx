@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Waves, Droplet, Sparkles, Settings, Bath, Wind } from "lucide-react";
@@ -10,11 +10,11 @@ export default function JacuzziPage() {
         subtitle: "Luxury Hydrotherapy",
         title: "Bespoke Jacuzzi & Hot Tub Solutions",
         description: "Immerse yourself in pure relaxation with our custom-engineered jacuzzis, designed to blend luxury with therapeutic benefits.",
-        image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg",
+        image: "/services/jacuzzi%20(1).webp",
         stats: [
-          { label: "Jacuzzis Installed", value: "300+" },
+          { label: "Jacuzzis Installed", value: "2500+" },
           { label: "Therapeutic Precision", value: "100%" },
-          { label: "Expert Craft", value: "20+ Yrs" }
+          { label: "Expert Craft", value: "50+ Yrs" }
         ],
         actions: [
           { label: "Get Free Quote", href: "#contact", primary: true },
@@ -54,38 +54,48 @@ export default function JacuzziPage() {
       projects={{
         subtitle: "OUR PORTFOLIO",
         title: "Iconic Jacuzzi Projects",
+        description: "Discover our bespoke hydrotherapy installations designed for absolute comfort and relaxation.",
         items: [
           {
             title: "Project 1",
             description: "Luxury Indoor Suite",
-            image: "https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg"
+            image: "/services/jacuzzi%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Outdoor Wellness Retreat",
-            image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+            image: "/services/jacuzzi%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Modern Rooftop Spa",
-            image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg"
+            image: "/services/jacuzzi%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "Serene Garden Hideaway",
-            image: "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg"
+            image: "/services/jacuzzi%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "Penthouse Hydrotherapy",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            image: "/services/jacuzzi%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Bespoke Hotel Wellness",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            image: "/services/jacuzzi%20(6).webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "CLIENT STORIES",

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Wind, Droplets, Settings, ShieldCheck, Thermometer, Zap } from "lucide-react";
@@ -10,11 +10,11 @@ export default function DehumidifierPage() {
         subtitle: "Precision Climate Control",
         title: "Bespoke Dehumidification & Air Quality",
         description: "Protect your luxury indoor pool and spa areas from moisture damage. We design high-performance air handling systems that ensure perfect comfort and structural longevity.",
-        image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg",
+        image: "/services/dehumidifier.webp",
         stats: [
-          { label: "Systems Installed", value: "200+" },
+          { label: "Systems Installed", value: "2500+" },
           { label: "Moisture Control", value: "100%" },
-          { label: "Expert Craft", value: "20+ Yrs" }
+          { label: "Expert Craft", value: "50+ Yrs" }
         ],
         actions: [
           { label: "Consult Expert", href: "#contact", primary: true },
@@ -58,34 +58,43 @@ export default function DehumidifierPage() {
           {
             title: "Project 1",
             description: "Indoor Olympic Center",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            image: "/services/dehumidifier%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Luxury Hotel Wellness Wing",
-            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+            image: "/services/dehumidifier%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Private Mansion Pool Suite",
-            image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg"
+            image: "/services/dehumidifier%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "Public Aquatic Arena",
-            image: "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg"
+            image: "/services/dehumidifier%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "High-Tech Recovery Lab",
-            image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg"
+            image: "/services/dehumidifier%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Commercial Spa Complex",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            image: "/services/dehumidifier.webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "ENGINEER TESTIMONIALS",

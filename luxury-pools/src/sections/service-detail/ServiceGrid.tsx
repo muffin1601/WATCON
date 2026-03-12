@@ -36,9 +36,9 @@ export default function ServiceGrid({ subtitle, title, services }: ServiceGridPr
                                     </div>
                                     <h3 className={styles.itemTitle}>{service.title}</h3>
                                     <p className={styles.itemDesc}>{service.description}</p>
-                                    <Link href={service.href} className={styles.learnMore}>
+                                    {/* <Link href={service.href} className={styles.learnMore}>
                                         Learn More <ArrowRight size={16} className="ml-2" />
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </FadeIn>
                         );

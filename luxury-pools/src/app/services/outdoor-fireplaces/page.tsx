@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Flame, Sun, Wind, Sparkles, Settings, ShieldCheck } from "lucide-react";
@@ -10,11 +10,11 @@ export default function OutdoorFireplacesPage() {
         subtitle: "The Element of Fire",
         title: "Bespoke Outdoor Fireplaces & Fire Pits",
         description: "Add warmth and soul to your outdoor spaces. Our custom-engineered fireplaces and automated fire pits create the perfect evening ambiance for your terrace or pool deck.",
-        image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg",
+        image: "/services/outdoorfire.webp",
         stats: [
-          { label: "Fire Projects", value: "110+" },
+          { label: "Fire Projects", value: "2500+" },
           { label: "Safety Rating", value: "100%" },
-          { label: "Expert Craft", value: "20+ Yrs" }
+          { label: "Expert Craft", value: "50+ Yrs" }
         ],
         actions: [
           { label: "Ignite Vision", href: "#contact", primary: true },
@@ -58,34 +58,43 @@ export default function OutdoorFireplacesPage() {
           {
             title: "Project 1",
             description: "Modern Travertine Fireplace",
-            image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg"
+            image: "/services/outdoorfire%20(1).webp",
+            badge: "Premium"
           },
           {
             title: "Project 2",
             description: "Infinite Rim Fire Pit",
-            image: "https://images.pexels.com/photos/14929512/pexels-photo-14929512.jpeg"
+            image: "/services/outdoorfire%20(2).webp",
+            badge: "Signature"
           },
           {
             title: "Project 3",
             description: "Rooftop Gas Hearth",
-            image: "https://images.pexels.com/photos/1036323/pexels-photo-1036323.jpeg"
+            image: "/services/outdoorfire%20(3).webp",
+            badge: "Exclusive"
           },
           {
             title: "Project 4",
             description: "Sunken Fire Seating",
-            image: "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg"
+            image: "/services/outdoorfire%20(4).webp",
+            badge: "Popular"
           },
           {
             title: "Project 5",
             description: "Dual Element Cascade",
-            image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg"
+            image: "/services/outdoorfire%20(5).webp",
+            badge: "Service"
           },
           {
             title: "Project 6",
             description: "Villa Courtyard Hearth",
-            image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+            image: "/services/outdoorfire.webp",
+            badge: "Urban"
           }
-        ]
+        ],
+        cta: {
+          label: "Request a Custom Design"
+        }
       }}
       testimonials={{
         subtitle: "GATHERING STORIES",

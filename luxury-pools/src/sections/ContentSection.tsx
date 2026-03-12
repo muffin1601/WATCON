@@ -50,7 +50,7 @@ export default function ContentSection() {
                                 <div className={styles.imageContainer}>
                                     <div
                                         className={styles.image}
-                                        style={{ backgroundImage: `url(${item.image})` }}
+                                        style={{ backgroundImage: `url("${item.image}")` }}
                                     />
                                     <div className={styles.imageOverlay} />
                                 </div>
