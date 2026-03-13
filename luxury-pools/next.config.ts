@@ -7,11 +7,11 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.pexels.com',
+        hostname: 'logo.clearbit.com',
       },
       {
         protocol: 'https',
-        hostname: 'i.pravatar.cc',
+        hostname: 'www.ddasports.in',
       }
     ],
   },

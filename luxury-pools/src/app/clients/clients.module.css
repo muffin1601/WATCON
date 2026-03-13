@@ -1,0 +1,259 @@
+.clientsPage {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero {
+  padding: 180px 20px 100px;
+  text-align: center;
+  background: radial-gradient(circle at center, rgba(189, 181, 149, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+  position: relative;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 4.3rem);
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+  color: #bdb595;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #a1a1aa;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 40px 120px;
+}
+
+.categorySection {
+  margin-bottom: 150px;
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.categoryHeader h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #bdb595;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.line {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(189, 181, 149, 0.4) 0%, rgba(189, 181, 149, 0) 100%);
+  flex-grow: 1;
+}
+
+.clientGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.clientCard {
+  background: rgba(15, 15, 15, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(189, 181, 149, 0.1);
+  padding: 48px 32px;
+  border-radius: 2px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.clientCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(189, 181, 149, 0.05), transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.clientCard:hover {
+  border-color: rgba(189, 181, 149, 0.4);
+  transform: translateY(-8px);
+  background: rgba(20, 20, 20, 0.8);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.clientCard:hover::after {
+  opacity: 1;
+}
+
+.clientName {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #fff;
+  letter-spacing: 0.02em;
+  z-index: 1;
+}
+
+.clientSub {
+  font-size: 0.75rem;
+  color: #71717a;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.logoPlaceholder {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(189, 181, 149, 0.4);
+  padding: 8px 16px;
+  border: 1px dashed rgba(189, 181, 149, 0.2);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.logoWrapper {
+  margin-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.logoContainer {
+  width: 100%;
+  height: 100px;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.clientLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.4s ease;
+}
+
+.clientCard:hover .logoContainer {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(189, 181, 149, 0.2);
+}
+
+.clientCard:hover .clientLogo {
+  transform: scale(1.05);
+}
+
+.clientCard:hover .logoPlaceholder {
+  color: #bdb595;
+  border-color: #bdb595;
+  background: rgba(189, 181, 149, 0.05);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 120px;
+  }
+  
+  .categoryHeader h2 {
+    font-size: 1.5rem;
+  }
+  
+  .clientGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pdfCtaSection {
+  text-align: center;
+  margin: 100px auto;
+  padding: 80px 40px;
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, rgba(189, 181, 149, 0.05) 100%);
+  border-top: 1px solid rgba(189, 181, 149, 0.1);
+  border-bottom: 1px solid rgba(189, 181, 149, 0.1);
+  max-width: 1000px;
+}
+
+.pdfCtaSection h3 {
+  font-size: 2.2rem;
+  font-weight: 200;
+  color: #bdb595;
+  margin-bottom: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pdfCtaSection p {
+  font-size: 1.1rem;
+  color: #a1a1aa;
+  margin-bottom: 48px;
+  letter-spacing: 0.02em;
+}
+
+.pdfButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 48px;
+  background: transparent;
+  border: 1px solid #bdb595;
+  color: #bdb595;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.pdfButton:hover {
+  background: #bdb595;
+  color: #000;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(189, 181, 149, 0.2);
+}
+
+.pdfButton svg {
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.pdfButton:hover svg {
+  transform: translateY(2px);
+}
