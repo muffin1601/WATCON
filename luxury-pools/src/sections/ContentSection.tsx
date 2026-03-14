@@ -2,6 +2,8 @@
 
 import styles from "./ContentSection.module.css";
 import { FadeIn } from "../components/FadeIn";
+import { StaggerContainer, StaggerItem } from "../components/StaggerContainer";
+import { ScrollParallax } from "../components/ScrollParallax";
 
 type Expertise = {
     id: number;
@@ -37,32 +39,39 @@ export default function ContentSection() {
             <div className={styles.container}>
                 <FadeIn delay={0.1}>
                     <p className={styles.subTitle}>WHY CHOOSE WATCON</p>
-
-                    <h2 className={styles.title}>
-                        Our <span>Expertise</span>
-                    </h2>
                 </FadeIn>
 
-                <div className={styles.grid}>
+                <ScrollParallax distance={40}>
+                    <FadeIn delay={0.2}>
+                        <h2 className={styles.title}>
+                            Our <span>Expertise</span>
+                        </h2>
+                    </FadeIn>
+                </ScrollParallax>
+
+                <StaggerContainer className={styles.grid} delay={0.3}>
                     {expertiseData.map((item, index) => (
-                        <FadeIn key={item.id} delay={0.15 * index}>
-                            <div className={styles.card}>
-                                <div className={styles.imageContainer}>
-                                    <div
-                                        className={styles.image}
-                                        style={{ backgroundImage: `url("${item.image}")` }}
-                                    />
-                                    <div className={styles.imageOverlay} />
+                        <StaggerItem key={item.id}>
+                            <ScrollParallax distance={20 + (index * 20)} direction={index % 2 === 0 ? "up" : "down"}>
+                                <div className={styles.card}>
+                                    <div className={styles.imageContainer}>
+                                        <div
+                                            className={styles.image}
+                                            style={{ backgroundImage: `url("${item.image}")` }}
+                                        />
+                                        <div className={styles.imageOverlay} />
+                                    </div>
+                                    <div className={styles.content}>
+                                        <h3>{item.title}</h3>
+                                        <p className={styles.description}>{item.description}</p>
+                                    </div>
                                 </div>
-                                <div className={styles.content}>
-                                    <h3>{item.title}</h3>
-                                    <p className={styles.description}>{item.description}</p>
-                                </div>
-                            </div>
-                        </FadeIn>
+                            </ScrollParallax>
+                        </StaggerItem>
                     ))}
-                </div>
+                </StaggerContainer>
             </div>
         </section>
     );
 }
+

@@ -44,7 +44,7 @@
 
 .card {
     height: 300px; 
-    border-radius: 16px;
+    border-radius: 0;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -58,7 +58,7 @@
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 4px 12px;
-    border-radius: 20px;
+    border-radius: 0;
     font-size: 12px;
     font-weight: 700;
     z-index: 10;
@@ -138,7 +138,7 @@
     border: 1.5px solid #bdb595;
     color: #bdb595;
     background: transparent;
-    border-radius: 12px; 
+    border-radius: 0;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;

@@ -1,5 +1,8 @@
+"use client";
+
 import styles from './ServiceTestimonials.module.css';
 import { FadeIn } from '@/components/FadeIn';
+import { ScrollParallax } from '@/components/ScrollParallax';
 import { Star } from 'lucide-react';
 
 interface Testimonial {
@@ -20,34 +23,38 @@ export default function ServiceTestimonials({ subtitle, title, testimonials }: S
     return (
         <section className={styles.section}>
             <div className={styles.container}>
-                <FadeIn delay={0.1}>
-                    <p className={styles.subTitle}>{subtitle}</p>
-                    <h2 className={styles.title}>{title}</h2>
-                </FadeIn>
+                <ScrollParallax distance={30}>
+                    <FadeIn delay={0.1}>
+                        <p className={styles.subTitle}>{subtitle}</p>
+                        <h2 className={styles.title}>{title}</h2>
+                    </FadeIn>
+                </ScrollParallax>
 
                 <div className={styles.grid}>
                     {testimonials.map((testi, index) => (
                         <FadeIn key={index} delay={0.1 * index}>
-                            <div className={styles.card}>
-                                <div className={styles.ratingBox}>
-                                    {[...Array(5)].map((_, i) => (
-                                        <Star key={i} size={16} fill={i < testi.rating ? "#bdb595" : "none"} stroke="#bdb595" />
-                                    ))}
-                                </div>
-                                <p className={styles.content}>"{testi.content}"</p>
-                                <div className={styles.userBox}>
-                                    <div 
-                                        className={styles.avatar} 
-                                        style={testi.avatar.length > 3 ? { backgroundImage: `url("${testi.avatar}")` } : {}}
-                                    >
-                                        {testi.avatar.length <= 3 && testi.avatar}
+                            <ScrollParallax distance={20 + index * 10} direction={index % 2 === 0 ? "up" : "down"}>
+                                <div className={styles.card}>
+                                    <div className={styles.ratingBox}>
+                                        {[...Array(5)].map((_, i) => (
+                                            <Star key={i} size={16} fill={i < testi.rating ? "#bdb595" : "none"} stroke="#bdb595" />
+                                        ))}
                                     </div>
-                                    <div className={styles.userInfo}>
-                                        <h4 className={styles.userName}>{testi.name}</h4>
-                                        <p className={styles.userRole}>{testi.role}</p>
+                                    <p className={styles.content}>"{testi.content}"</p>
+                                    <div className={styles.userBox}>
+                                        <div 
+                                            className={styles.avatar} 
+                                            style={testi.avatar.length > 3 ? { backgroundImage: `url("${testi.avatar}")` } : {}}
+                                        >
+                                            {testi.avatar.length <= 3 && testi.avatar}
+                                        </div>
+                                        <div className={styles.userInfo}>
+                                            <h4 className={styles.userName}>{testi.name}</h4>
+                                            <p className={styles.userRole}>{testi.role}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ScrollParallax>
                         </FadeIn>
                     ))}
                 </div>

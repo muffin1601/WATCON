@@ -2,6 +2,7 @@
 
 import styles from "./AboutStory.module.css";
 import { FadeIn } from "@/components/FadeIn";
+import { ScrollParallax } from "@/components/ScrollParallax";
 import Image from "next/image";
 
 export default function AboutStory() {
@@ -9,7 +10,7 @@ export default function AboutStory() {
     <section className={styles.storySection} id="story">
       <div className={styles.container}>
         <div className={styles.grid}>
-          <div className={styles.left}>
+          <ScrollParallax distance={40} direction="up" className={styles.left}>
             <FadeIn>
               <p className={styles.subTitle}>OUR MISSION</p>
               <h2 className={styles.title}>
@@ -50,9 +51,9 @@ export default function AboutStory() {
                 </div>
               </div>
             </FadeIn>
-          </div>
+          </ScrollParallax>
           
-          <div className={styles.right}>
+          <ScrollParallax distance={40} direction="down" className={styles.right}>
             <FadeIn delay={0.4}>
               <div className={styles.imageCard}>
                 <div className={styles.imageWrapper}>
@@ -64,7 +65,7 @@ export default function AboutStory() {
                 </div>
               </div>
             </FadeIn>
-          </div>
+          </ScrollParallax>
         </div>
       </div>
     </section>

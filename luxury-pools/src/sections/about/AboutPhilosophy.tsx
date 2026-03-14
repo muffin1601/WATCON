@@ -2,6 +2,7 @@
 
 import styles from "./AboutPhilosophy.module.css";
 import { FadeIn } from "@/components/FadeIn";
+import { ScrollParallax } from "@/components/ScrollParallax";
 import { Star, Settings, Leaf } from "lucide-react";
 
 export default function AboutPhilosophy() {
@@ -19,39 +20,45 @@ export default function AboutPhilosophy() {
 
         <div className={styles.contentBlocks}>
           <FadeIn delay={0.2}>
-            <div className={styles.card}>
-              <div className={styles.iconWrapper}>
-                <Star size={20} />
+            <ScrollParallax distance={30} direction="up">
+              <div className={styles.card}>
+                <div className={styles.iconWrapper}>
+                  <Star size={20} />
+                </div>
+                <h3>Excellence</h3>
+                <p>
+                  Every element from tile selection to pump installation is executed to exacting international standards.
+                </p>
               </div>
-              <h3>Excellence</h3>
-              <p>
-                Every element from tile selection to pump installation is executed to exacting international standards.
-              </p>
-            </div>
+            </ScrollParallax>
           </FadeIn>
           
           <FadeIn delay={0.4}>
-            <div className={styles.card}>
-              <div className={styles.iconWrapper}>
-                <Settings size={20} />
+            <ScrollParallax distance={50} direction="up">
+              <div className={styles.card}>
+                <div className={styles.iconWrapper}>
+                  <Settings size={20} />
+                </div>
+                <h3>Innovation</h3>
+                <p>
+                  Deploying progressive technologies from infinity edge precision to smart app-controlled heating.
+                </p>
               </div>
-              <h3>Innovation</h3>
-              <p>
-                Deploying progressive technologies from infinity edge precision to smart app-controlled heating.
-              </p>
-            </div>
+            </ScrollParallax>
           </FadeIn>
 
           <FadeIn delay={0.6}>
-            <div className={styles.card}>
-              <div className={styles.iconWrapper}>
-                <Leaf size={20} />
+            <ScrollParallax distance={30} direction="up">
+              <div className={styles.card}>
+                <div className={styles.iconWrapper}>
+                  <Leaf size={20} />
+                </div>
+                <h3>Sustainability</h3>
+                <p>
+                  Water-saving systems, low-energy pumps, and materials selected to stay beautiful while respecting our environment.
+                </p>
               </div>
-              <h3>Sustainability</h3>
-              <p>
-                Water-saving systems, low-energy pumps, and materials selected to stay beautiful while respecting our environment.
-              </p>
-            </div>
+            </ScrollParallax>
           </FadeIn>
         </div>
       </div>

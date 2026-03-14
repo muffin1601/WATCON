@@ -2,6 +2,8 @@
 
 import styles from "./Hero.module.css";
 import { FadeIn } from "../components/FadeIn";
+import { PerspectiveReveal } from "../components/PerspectiveReveal";
+import { ScrollParallax } from "../components/ScrollParallax";
 import Link from "next/link";
 
 export default function Hero() {
@@ -20,26 +22,23 @@ export default function Hero() {
 
       <div className={styles.overlay}></div>
 
-      <div className={styles.content}>
-        <FadeIn delay={0.2}>
+      <ScrollParallax distance={40} className={styles.content}>
+        <PerspectiveReveal delay={0.2}>
           <h1>
             Where Water <em>Meets</em>
             <br />
             <span>Luxury</span>
           </h1>
-        </FadeIn>
+        </PerspectiveReveal>
 
-        <FadeIn delay={0.4}>
+        <FadeIn delay={0.6} distance={20}>
           <p>
             Discover an exquisite resort-style design seamlessly blending
             water and refined elegance.
           </p>
         </FadeIn>
-
-        {/* <Link href="/about" className={styles.cta}>
-          Discover Our Story
-        </Link> */}
-      </div>
+      </ScrollParallax>
     </section>
   );
 }
+

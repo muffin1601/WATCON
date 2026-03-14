@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ScrollParallax } from "@/components/ScrollParallax";
 import ContactSection from "@/sections/ContactSection";
 import styles from './clients.module.css';
 import { Users, Building2, School, Trophy, Briefcase, FileText } from 'lucide-react';
@@ -98,33 +99,37 @@ export default function ClientsPage() {
             <Navbar />
             
             <section className={styles.hero}>
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <h1>Our Distinguished Clients</h1>
-                    <p>
-                        Partnering with visionaries and industry leaders to create aquatic 
-                        masterpieces that define luxury and excellence across the globe.
-                    </p>
-                </motion.div>
+                <ScrollParallax distance={40}>
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <h1>Our Distinguished Clients</h1>
+                        <p>
+                            Partnering with visionaries and industry leaders to create aquatic 
+                            masterpieces that define luxury and excellence across the globe.
+                        </p>
+                    </motion.div>
+                </ScrollParallax>
             </section>
 
             <main className={styles.content}>
                 {clientData.map((section, sectionIdx) => (
                     <section key={sectionIdx} className={styles.categorySection}>
-                        <motion.div 
-                            className={styles.categoryHeader}
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6 }}
-                        >
-                            <span style={{ color: '#bdb595' }}>{section.icon}</span>
-                            <h2>{section.category}</h2>
-                            <div className={styles.line}></div>
-                        </motion.div>
+                        <ScrollParallax distance={20} direction="up">
+                            <motion.div 
+                                className={styles.categoryHeader}
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.6 }}
+                            >
+                                <span style={{ color: '#bdb595' }}>{section.icon}</span>
+                                <h2>{section.category}</h2>
+                                <div className={styles.line}></div>
+                            </motion.div>
+                        </ScrollParallax>
 
                         <motion.div 
                             className={styles.clientGrid}
@@ -139,26 +144,28 @@ export default function ClientsPage() {
                                     className={styles.clientCard}
                                     variants={itemVariants}
                                 >
-                                    <div className={styles.logoWrapper}>
-                                        {client.logo ? (
-                                            <div className={styles.logoContainer}>
-                                                <Image 
-                                                    src={client.logo} 
-                                                    alt={`${client.name} logo`}
-                                                    width={80}
-                                                    height={80}
-                                                    className={styles.clientLogo}
-                                                    unoptimized
-                                                />
-                                            </div>
-                                        ) : (
-                                            <div className={styles.logoPlaceholder}>
-                                                {client.entity.split(' ').filter(word => word.length > 0).map(word => word[0].toUpperCase()).join('')}
-                                            </div>
-                                        )}
-                                    </div>
-                                    <div className={styles.clientName}>{client.name}</div>
-                                    <div className={styles.clientSub}>{client.entity}</div>
+                                    <ScrollParallax distance={15 + (clientIdx % 3) * 10} direction={clientIdx % 2 === 0 ? "up" : "down"}>
+                                        <div className={styles.logoWrapper}>
+                                            {client.logo ? (
+                                                <div className={styles.logoContainer}>
+                                                    <Image 
+                                                        src={client.logo} 
+                                                        alt={`${client.name} logo`}
+                                                        width={80}
+                                                        height={80}
+                                                        className={styles.clientLogo}
+                                                        unoptimized
+                                                    />
+                                                </div>
+                                            ) : (
+                                                <div className={styles.logoPlaceholder}>
+                                                    {client.entity.split(' ').filter(word => word.length > 0).map(word => word[0].toUpperCase()).join('')}
+                                                </div>
+                                            )}
+                                        </div>
+                                        <div className={styles.clientName}>{client.name}</div>
+                                        <div className={styles.clientSub}>{client.entity}</div>
+                                    </ScrollParallax>
                                 </motion.div>
                             ))}
                         </motion.div>

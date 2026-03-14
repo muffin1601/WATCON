@@ -2,6 +2,7 @@
 
 import styles from "./FullWidthVideoSection.module.css";
 import { FadeIn } from "./FadeIn";
+import { ScrollParallax } from "./ScrollParallax";
 
 export default function FullWidthVideoSection() {
     return (
@@ -18,7 +19,7 @@ export default function FullWidthVideoSection() {
 
             <div className={styles.overlay} />
 
-            <div className={styles.content}>
+            <ScrollParallax distance={50} className={styles.content}>
                 <FadeIn delay={0.2}>
                     <p className={styles.subTitle}>Experience Luxury</p>
                     <h2 className={styles.title}>Dive into Elegance</h2>
@@ -26,7 +27,7 @@ export default function FullWidthVideoSection() {
                         Transforming bold visions into breathtaking realities. Let the soothing rhythm of water elevate your senses.
                     </p>
                 </FadeIn>
-            </div>
+            </ScrollParallax>
         </section>
     );
 }

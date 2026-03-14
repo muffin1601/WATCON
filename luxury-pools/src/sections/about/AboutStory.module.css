@@ -81,7 +81,7 @@
 
 .imageCard {
   position: relative;
-  border-radius: 8px; /* Squared radius */
+  border-radius: 0; /* Squared radius */
   overflow: hidden;
   height: 550px;
   width: 100%;
@@ -109,7 +109,7 @@
   background: #000; /* Fully black background */
   padding: 15px 25px;
 
-  border-radius: 8px;
+  border-radius: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.05); /* very soft border separation */
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }

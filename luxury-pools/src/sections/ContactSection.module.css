@@ -56,7 +56,7 @@
   padding: 40px;
   background: #111;
   border: 1px solid rgba(255, 255, 255, 0.04);
-  border-radius: 12px;
+  border-radius: 0;
 }
 
 .formHeading,
@@ -95,7 +95,7 @@
   outline: none;
   transition: all 0.3s ease;
   font-family: inherit;
-  border-radius: 8px; /* matching images */
+  border-radius: 0; /* matching images */
 }
 
 .inputGroup input:focus,
@@ -106,33 +106,51 @@
 
 .inputGroup textarea {
   min-height: 120px;
-  border-radius: 20px;
+  border-radius: 0;
   resize: none;
 }
 
 .submitButton {
   margin-top: 10px;
   align-self: flex-start;
-  background: #bdb595;
-  color: #000;
-  border: none;
-  width: 100%;
-  padding: 16px 36px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  position: relative;
   display: inline-flex;
   align-items: center;
-  justify-content:  center;
-  gap: 10px;
+  justify-content: center;
+  padding: 12px 32px;
+  font-size: 15px;
+  font-weight: 700;
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+  width: auto;
+  border-radius: 0;
+}
+
+.submitButton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #bdb595;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.submitButton:hover::after {
+  transform: scaleX(1);
 }
 
 .submitButton:hover {
-  background: #fff;
-  transform: translateY(-3px);
+  color: #fff;
+  border-color: #bdb595;
+  transform: none;
 }
 
 .infoCard {
@@ -159,14 +177,14 @@
   gap: 20px;
   background: #111; /* slightly lighter than the card background */
   padding: 15px 25px;
-  border-radius: 8px;
+  border-radius: 0;
   border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .contactItemBoxHours {
   background: #111;
   padding: 20px 25px;
-  border-radius: 8px;
+  border-radius: 0;
   border: 1px solid rgba(255, 255, 255, 0.04);
   display: flex;
   flex-direction: column;

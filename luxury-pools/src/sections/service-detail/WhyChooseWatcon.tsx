@@ -2,6 +2,8 @@
 
 import styles from "./WhyChooseWatcon.module.css";
 import { FadeIn } from "../../components/FadeIn";
+import { StaggerContainer, StaggerItem } from "../../components/StaggerContainer";
+import { ScrollParallax } from "../../components/ScrollParallax";
 import { LucideIcon, Award, ShieldCheck, Timer } from "lucide-react";
 
 interface Feature {
@@ -36,35 +38,44 @@ export default function WhyChooseWatcon() {
     return (
         <section className={styles.section}>
             <div className={styles.container}>
-                <div className={styles.header}>
-                    <FadeIn delay={0.1}>
-                        <p className={styles.subTitle}>OUR STRENGTHS</p>
-                        <h2 className={styles.title}>
-                            Why Choose <span>Watcon?</span>
-                        </h2>
-                    </FadeIn>
-                </div>
+                <ScrollParallax distance={30}>
+                    <div className={styles.header}>
+                        <FadeIn delay={0.1}>
+                            <p className={styles.subTitle}>OUR STRENGTHS</p>
+                        </FadeIn>
+                        <FadeIn delay={0.2}>
+                            <h2 className={styles.title}>
+                                Why Choose <span>Watcon?</span>
+                            </h2>
+                        </FadeIn>
+                    </div>
+                </ScrollParallax>
 
-                <div className={styles.grid}>
+                <StaggerContainer className={styles.grid} delay={0.3}>
                     {features.map((feature, index) => {
                         const Icon = feature.icon;
                         return (
-                            <FadeIn key={index} delay={0.2 * index}>
-                                <div className={styles.card}>
-                                    <div className={styles.iconWrapper}>
-                                        <Icon size={20} />
+                            <StaggerItem key={index}>
+                                <ScrollParallax distance={20 + index * 10} direction={index % 2 === 0 ? "up" : "down"}>
+                                    <div className={styles.card}>
+                                        <div className={styles.iconWrapper}>
+                                            <Icon size={20} />
+                                        </div>
+                                        <h3 className={styles.value}>{feature.value}</h3>
+                                        <h4 className={styles.itemTitle}>{feature.title}</h4>
+                                        <p className={styles.description}>{feature.description}</p>
                                     </div>
-                                    <h3 className={styles.value}>{feature.value}</h3>
-                                    <h4 className={styles.itemTitle}>{feature.title}</h4>
-                                    <p className={styles.description}>{feature.description}</p>
-                                </div>
-                            </FadeIn>
+                                </ScrollParallax>
+                            </StaggerItem>
                         );
                     })}
-                </div>
+                </StaggerContainer>
             </div>
 
-            <div className={styles.bgText} style={{ userSelect: 'none' }}>WATCON</div>
+            <FadeIn delay={0.8} direction="none" duration={2}>
+              <div className={styles.bgText} style={{ userSelect: 'none' }}>WATCON</div>
+            </FadeIn>
         </section>
     );
 }
+

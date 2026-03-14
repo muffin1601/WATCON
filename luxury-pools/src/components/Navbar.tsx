@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -40,9 +41,37 @@ export default function Navbar() {
     setIsServicesOpen(false);
   };
 
+  const menuLinks = [
+    { name: "About", href: "/about" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "Clients", href: "/clients" },
+    { name: "Contact Us", href: "/contact" },
+  ];
+
+  const services = [
+    { name: "Swimming Pools", href: "/services/swimming-pools" },
+    { name: "Tiles in Pool", href: "/services/tiles-in-pool" },
+    { name: "Water Bodies", href: "/services/water-bodies" },
+    { name: "Dehumidifier", href: "/services/dehumidifier" },
+    { name: "Koi Ponds", href: "/services/koi-ponds" },
+    { name: "Competition Pool", href: "/services/competition-pool" },
+    { name: "Spa", href: "/services/spa" },
+    { name: "Jacuzzi", href: "/services/jacuzzi" },
+    { name: "Sauna", href: "/services/sauna" },
+    { name: "Steam", href: "/services/steam" },
+    { name: "Cryo Room", href: "/services/cryo-room" },
+    { name: "Outdoor Furniture", href: "/services/outdoor-furniture" },
+    { name: "Outdoor Fireplaces", href: "/services/outdoor-fireplaces" },
+  ];
+
   return (
     <>
-      <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""} ${isSidebarOpen ? styles.navbarOpen : ""}`}>
+      <motion.nav 
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        className={`${styles.navbar} ${scrolled ? styles.scrolled : ""} ${isSidebarOpen ? styles.navbarOpen : ""}`}
+      >
         {/* Logo */}
         <div className={styles.logo}>
           <Link href="/" onClick={closeSidebar}>
@@ -72,81 +101,96 @@ export default function Navbar() {
             <span></span>
           </div>
         </div>
-      </nav>
+      </motion.nav>
 
 
-      <div
-        className={`${styles.sidebarOverlay} ${isSidebarOpen ? styles.open : ""}`}
-        onClick={closeSidebar}
-      />
+      <AnimatePresence>
+        {isSidebarOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className={`${styles.sidebarOverlay} ${styles.open}`}
+              onClick={closeSidebar}
+            />
 
-
-      <div className={`${styles.sidebar} ${isSidebarOpen ? styles.open : ""}`}>
-        <ul className={styles.sidebarNav}>
-          {/* <li>
-            <Link href="/" className={styles.sidebarLink} onClick={closeSidebar}>
-              <span className={styles.linkText}>Home</span>
-            </Link>
-          </li> */}
-
-          <li>
-            <Link href="/about" className={styles.sidebarLink} onClick={closeSidebar}>
-              <span className={styles.linkText}>About</span>
-            </Link>
-          </li>
-
-          <li>
-            <div
-              className={styles.sidebarLink}
-              onClick={() => setIsServicesOpen(!isServicesOpen)}
+            <motion.div 
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              className={`${styles.sidebar} ${styles.open}`}
             >
-              <span className={styles.linkText}>Services</span>
-              <span className={styles.plusMinus}>{isServicesOpen ? "–" : "+"}</span>
-            </div>
+              <ul className={styles.sidebarNav}>
+                <motion.li
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <Link href="/about" className={styles.sidebarLink} onClick={closeSidebar}>
+                    <span className={styles.linkText}>About</span>
+                  </Link>
+                </motion.li>
 
+                <motion.li
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <div
+                    className={styles.sidebarLink}
+                    onClick={() => setIsServicesOpen(!isServicesOpen)}
+                  >
+                    <span className={styles.linkText}>Services</span>
+                    <span className={styles.plusMinus}>{isServicesOpen ? "–" : "+"}</span>
+                  </div>
 
-            <div className={`${styles.servicesDropdown} ${isServicesOpen ? styles.open : ""}`}>
-              <div className={styles.servicesDropdownInner}>
-                <ul className={styles.servicesDropdownList}>
-                  <li><Link href="/services/swimming-pools" className={styles.servicesDropdownLink} onClick={closeSidebar}>Swimming Pools</Link></li>
-                  <li><Link href="/services/tiles-in-pool" className={styles.servicesDropdownLink} onClick={closeSidebar}>Tiles in Pool</Link></li>
-                  <li><Link href="/services/water-bodies" className={styles.servicesDropdownLink} onClick={closeSidebar}>Water Bodies</Link></li>
-                  <li><Link href="/services/dehumidifier" className={styles.servicesDropdownLink} onClick={closeSidebar}>Dehumidifier</Link></li>
-                  <li><Link href="/services/koi-ponds" className={styles.servicesDropdownLink} onClick={closeSidebar}>Koi Ponds</Link></li>
-                  <li><Link href="/services/competition-pool" className={styles.servicesDropdownLink} onClick={closeSidebar}>Competition Pool</Link></li>
-                  <li><Link href="/services/spa" className={styles.servicesDropdownLink} onClick={closeSidebar}>Spa</Link></li>
-                  <li><Link href="/services/jacuzzi" className={styles.servicesDropdownLink} onClick={closeSidebar}>Jacuzzi</Link></li>
-                  <li><Link href="/services/sauna" className={styles.servicesDropdownLink} onClick={closeSidebar}>Sauna</Link></li>
-                  <li><Link href="/services/steam" className={styles.servicesDropdownLink} onClick={closeSidebar}>Steam</Link></li>
-                  <li><Link href="/services/cryo-room" className={styles.servicesDropdownLink} onClick={closeSidebar}>Cryo Room</Link></li>
-                  <li><Link href="/services/outdoor-furniture" className={styles.servicesDropdownLink} onClick={closeSidebar}>Outdoor Furniture</Link></li>
-                  <li><Link href="/services/outdoor-fireplaces" className={styles.servicesDropdownLink} onClick={closeSidebar}>Outdoor Fireplaces</Link></li>
-                </ul>
-              </div>
-            </div>
-          </li>
+                  <AnimatePresence>
+                    {isServicesOpen && (
+                      <motion.div 
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className={`${styles.servicesDropdown} ${styles.open}`}
+                      >
+                        <div className={styles.servicesDropdownInner}>
+                          <ul className={styles.servicesDropdownList}>
+                            {services.map((item, i) => (
+                              <li key={i}>
+                                <Link 
+                                  href={item.href} 
+                                  className={styles.servicesDropdownLink} 
+                                  onClick={closeSidebar}
+                                >
+                                  {item.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.li>
 
-          <li>
-            <Link href="/portfolio" className={styles.sidebarLink} onClick={closeSidebar}>
-              <span className={styles.linkText}>Portfolio</span>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/clients" className={styles.sidebarLink} onClick={closeSidebar}>
-              <span className={styles.linkText}>Clients</span>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/contact" className={styles.sidebarLink} onClick={closeSidebar}>
-              <span className={styles.linkText}>Contact Us</span>
-            </Link>
-          </li>
-        </ul>
-
-
-      </div>
+                {menuLinks.slice(1).map((link, i) => (
+                  <motion.li
+                    key={i}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.4 + i * 0.1 }}
+                  >
+                    <Link href={link.href} className={styles.sidebarLink} onClick={closeSidebar}>
+                      <span className={styles.linkText}>{link.name}</span>
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </>
   );
-}
+}

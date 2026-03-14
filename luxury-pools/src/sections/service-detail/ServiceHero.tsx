@@ -1,5 +1,10 @@
+"use client";
+
 import styles from './ServiceHero.module.css';
 import { FadeIn } from '@/components/FadeIn';
+import { PerspectiveReveal } from '@/components/PerspectiveReveal';
+import { StaggerContainer, StaggerItem } from '@/components/StaggerContainer';
+import { ScrollParallax } from '@/components/ScrollParallax';
 import { ArrowRight } from 'lucide-react';
 
 interface Stat {
@@ -44,8 +49,8 @@ export default function ServiceHero({
             style={{ backgroundImage: image ? `url("${image}")` : 'none' }}
         >
             <div className={styles.overlay}></div>
-            <div className={styles.container}>
-                <FadeIn delay={0.1}>
+            <ScrollParallax distance={40} className={styles.container}>
+                <PerspectiveReveal delay={0.1}>
                     <p className={styles.subTitle}>{subtitle}</p>
                     <h1 className={styles.title}>
                         {title.split(' ').map((word, i) => {
@@ -53,13 +58,16 @@ export default function ServiceHero({
                             return isHighlight ? <span key={i}>{word} </span> : word + ' ';
                         })}
                     </h1>
+                </PerspectiveReveal>
+                
+                <FadeIn delay={0.6} distance={20}>
                     <p className={styles.description}>{description}</p>
                 </FadeIn>
 
                 {(actions.length > 0 || stats.length > 0) && (
                     <div className={styles.heroFooter}>
                         {actions.length > 0 && (
-                            <FadeIn delay={0.3}>
+                            <FadeIn delay={0.8} distance={10}>
                                 <div className={styles.actions}>
                                     {actions.map((action, i) => (
                                         <a
@@ -75,20 +83,22 @@ export default function ServiceHero({
                         )}
 
                         {stats.length > 0 && (
-                            <FadeIn delay={0.5}>
-                                <div className={styles.stats}>
-                                    {stats.map((stat, i) => (
-                                        <div key={i} className={styles.statItem}>
+                            <StaggerContainer className={styles.stats} delay={1}>
+                                {stats.map((stat, i) => (
+                                    <StaggerItem key={i} direction="none">
+                                        <div className={styles.statItem}>
+                                          <FadeIn delay={0} direction="up" distance={20} duration={1}>
                                             <p className={styles.statValue}>{stat.value}</p>
                                             <p className={styles.statLabel}>{stat.label}</p>
+                                          </FadeIn>
                                         </div>
-                                    ))}
-                                </div>
-                            </FadeIn>
+                                    </StaggerItem>
+                                ))}
+                            </StaggerContainer>
                         )}
                     </div>
                 )}
-            </div>
+            </ScrollParallax>
 
             <div className={styles.waveSeparator}>
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -98,3 +108,4 @@ export default function ServiceHero({
         </section >
     );
 }
+

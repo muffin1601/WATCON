@@ -2,6 +2,7 @@
 
 import styles from "./AboutCTA.module.css";
 import { FadeIn } from "@/components/FadeIn";
+import { ScrollParallax } from "@/components/ScrollParallax";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 export default function AboutCTA() {
@@ -9,6 +10,7 @@ export default function AboutCTA() {
     <section className={styles.ctaSection}>
       <div className={styles.container}>
         <FadeIn>
+        <ScrollParallax distance={40}>
           <div className={styles.centerBlock}>
             <p className={styles.subTitle}>LET'S WORK TOGETHER</p>
             <h2 className={styles.title}>
@@ -19,6 +21,7 @@ export default function AboutCTA() {
               Whether you're envisioning a private resort spa or an infinity edge master piece, our team is ready to bring your vision to life
             </p>
           </div>
+        </ScrollParallax>
         </FadeIn>
 
         <FadeIn delay={0.2}>

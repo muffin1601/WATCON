@@ -7,6 +7,7 @@ import Services from "@/sections/Services";
 import FeatureSection from "@/sections/FeatureSection";
 import Footer from "@/components/Footer";
 import ContentSection from "@/sections/ContentSection";
+import { ParallaxText } from "@/components/ParallaxText";
 
 export default function Home() {
   return (

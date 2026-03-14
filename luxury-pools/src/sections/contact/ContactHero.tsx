@@ -2,6 +2,7 @@
 
 import styles from "./ContactHero.module.css";
 import { FadeIn } from "@/components/FadeIn";
+import { ScrollParallax } from "@/components/ScrollParallax";
 import Image from "next/image";
 
 export default function ContactHero() {
@@ -9,7 +10,7 @@ export default function ContactHero() {
     <section className={styles.hero}>
       <Image src="/contact-hero.png" alt="Luxury Pool Contact" fill className={styles.bgImage} priority />
       <div className={styles.overlay}></div>
-      <div className={styles.content}>
+      <ScrollParallax distance={50} className={styles.content}>
         <FadeIn delay={0.2}>
           <p className={styles.subTitle}>GET IN TOUCH</p>
         </FadeIn>
@@ -27,7 +28,7 @@ export default function ContactHero() {
             Reach out to our experts to begin your bespoke outdoor sanctuary journey.
           </p>
         </FadeIn>
-      </div>
+      </ScrollParallax>
     </section>
   );
 }

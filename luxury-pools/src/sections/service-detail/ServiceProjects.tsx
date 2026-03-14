@@ -1,6 +1,10 @@
+"use client";
+
 import Link from 'next/link';
 import styles from './ServiceProjects.module.css';
 import { FadeIn } from '@/components/FadeIn';
+import { StaggerContainer, StaggerItem } from '@/components/StaggerContainer';
+import { ScrollParallax } from '@/components/ScrollParallax';
 import { ArrowRight } from 'lucide-react';
 
 interface Project {
@@ -25,44 +29,41 @@ export default function ServiceProjects({ subtitle, title, description, projects
     return (
         <section className={styles.section} id="projects">
             <div className={styles.container}>
-                <FadeIn>
-                    <p className={styles.subTitle}>{subtitle}</p>
-                    <h2 className={styles.title}>{title}</h2>
-                    {description && <p className={styles.description}>{description}</p>}
-                </FadeIn>
-
-                <div className={styles.grid}>
-                    {projects.map((project, index) => (
-                        <FadeIn key={index} delay={0.1 * index}>
-                            <div className={styles.card}>
-                                {project.badge && (
-                                    <div className={styles.badge}>{project.badge}</div>
-                                )}
-                                <div className={styles.imageWrapper}>
-                                    <div
-                                        className={styles.image}
-                                        style={{ backgroundImage: `url("${project.image}")` }}
-                                    />
-                                </div>
-                                {/* <div className={styles.projectContent}>
-                                    <h3 className={styles.projectTitle}>{project.title}</h3>
-                                    <p className={styles.projectDesc}>{project.description}</p>
-                                </div> */}
-                            </div>
-                        </FadeIn>
-                    ))}
+                <div className={styles.header}>
+                    <FadeIn delay={0.1} direction="up">
+                        <p className={styles.subTitle}>{subtitle}</p>
+                    </FadeIn>
+                    <FadeIn delay={0.2} direction="up">
+                        <h2 className={styles.title}>{title}</h2>
+                    </FadeIn>
+                    {description && (
+                      <FadeIn delay={0.3} direction="up">
+                        <p className={styles.description}>{description}</p>
+                      </FadeIn>
+                    )}
                 </div>
 
-                {/* {cta && (
-                    <FadeIn delay={0.3}>
-                        <div className={styles.ctaWrapper}>
-                            <Link href={cta.href || "#contact"} className={styles.ctaButton}>
-                                {cta.label} <ArrowRight size={18} className="ml-2" />
-                            </Link>
-                        </div>
-                    </FadeIn>
-                )} */}
+                <StaggerContainer className={styles.grid} delay={0.4}>
+                    {projects.map((project, index) => (
+                        <StaggerItem key={index}>
+                            <ScrollParallax distance={30 + index * 10} direction={index % 2 === 0 ? "up" : "down"}>
+                                <div className={styles.card}>
+                                    {project.badge && (
+                                        <div className={styles.badge}>{project.badge}</div>
+                                    )}
+                                    <div className={styles.imageWrapper}>
+                                        <div
+                                            className={styles.image}
+                                            style={{ backgroundImage: `url("${project.image}")` }}
+                                        />
+                                    </div>
+                                </div>
+                            </ScrollParallax>
+                        </StaggerItem>
+                    ))}
+                </StaggerContainer>
             </div>
         </section>
     );
 }
+

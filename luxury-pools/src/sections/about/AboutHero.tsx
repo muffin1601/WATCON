@@ -2,6 +2,7 @@
 
 import styles from "./AboutHero.module.css";
 import { FadeIn } from "@/components/FadeIn";
+import { ScrollParallax } from "@/components/ScrollParallax";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
@@ -10,7 +11,7 @@ export default function AboutHero() {
     <section className={styles.hero}>
       <Image src="https://images.pexels.com/photos/7977003/pexels-photo-7977003.jpeg" alt="Ocean Landscape" fill className={styles.bgImage} priority />
       <div className={styles.overlay}></div>
-      <div className={styles.content}>
+      <ScrollParallax distance={40} className={styles.content}>
         <FadeIn delay={0.2}>
           <p className={styles.subTitle}>AQUATIC EXCELLENCE SINCE 2005</p>
         </FadeIn>
@@ -29,23 +30,23 @@ export default function AboutHero() {
  
         <FadeIn delay={0.8}>
           <div className={styles.buttonGroup}>
-            <div className={styles.scrollDown}>
+            {/* <div className={styles.scrollDown}>
               <span>SCROLL</span>
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1L5 5L9 1" stroke="#aaaaaa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </div>
-            <div className={styles.navRow}>
+            </div> */}
+            {/* <div className={styles.navRow}>
               <a href="#story" className={styles.primaryBtn}>
                 Discover Our Story <ArrowRight size={18} className="ml-2" />
               </a>
               <a href="#services" className={styles.secondaryBtn}>
                 Our Services
               </a>
-            </div>
+            </div> */}
           </div>
         </FadeIn>
-      </div>
+      </ScrollParallax>
     </section>
   );
 }

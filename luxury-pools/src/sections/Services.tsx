@@ -3,7 +3,8 @@
 import styles from "./Services.module.css";
 import { Waves, Bath, Flame } from "lucide-react";
 import { FadeIn } from "../components/FadeIn";
-
+import { StaggerContainer, StaggerItem } from "../components/StaggerContainer";
+import { ScrollParallax } from "../components/ScrollParallax";
 const services = [
   {
     title: "Swimming Pools & Water Bodies",
@@ -40,34 +41,42 @@ export default function Services() {
           <p className={styles.subTitle}>WHAT WE CREATE</p>
         </FadeIn>
 
-        <h2 className={styles.title}>
-          Three Realms of <span>Excellence</span>
-        </h2>
+        <ScrollParallax distance={40}>
+          <FadeIn delay={0.2}>
+            <h2 className={styles.title}>
+              Three Realms of <span>Excellence</span>
+            </h2>
+          </FadeIn>
+        </ScrollParallax>
 
-        <p className={styles.description}>
-          Each project is a dialogue between your vision and our craft — resulting in spaces
-          that become your most prized possession.
-        </p>
+        <FadeIn delay={0.3}>
+          <p className={styles.description}>
+            Each project is a dialogue between your vision and our craft — resulting in spaces
+            that become your most prized possession.
+          </p>
+        </FadeIn>
 
-        <div className={styles.grid}>
+        <StaggerContainer className={styles.grid} delay={0.4}>
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <FadeIn key={index} delay={0.15 * index}>
-                <div className={styles.card}>
-                  <div className={styles.iconWrapper}>
-                    <Icon size={34} className={styles.icon} />
+              <StaggerItem key={index}>
+                <ScrollParallax distance={20 + (index * 15)} direction={index % 2 === 0 ? "up" : "down"}>
+                  <div className={styles.card}>
+                    <div className={styles.iconWrapper}>
+                      <Icon size={34} className={styles.icon} />
+                    </div>
+                    <div className={styles.cardContent}>
+                      <h3>{service.title}</h3>
+                      <p>{service.desc}</p>
+                    </div>
                   </div>
-                  <div className={styles.cardContent}>
-                    <h3>{service.title}</h3>
-                    <p>{service.desc}</p>
-                  </div>
-                </div>
-              </FadeIn>
+                </ScrollParallax>
+              </StaggerItem>
             );
           })}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );
-}
+}

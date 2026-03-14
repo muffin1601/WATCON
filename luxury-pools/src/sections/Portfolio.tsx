@@ -2,6 +2,8 @@
 
 import styles from "./Portfolio.module.css";
 import { FadeIn } from "../components/FadeIn";
+import { StaggerContainer, StaggerItem } from "../components/StaggerContainer";
+import { ScrollParallax } from "../components/ScrollParallax";
 import Link from "next/link";
 
 type Project = {
@@ -24,30 +26,17 @@ const projects: Project[] = [
       "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg",
   },
   {
+    id: 2,
+    title: "Fire Installation – Vasant Vihar",
+    image:
+      "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg",
+  },
+  {
     id: 3,
     title: "Westin Rishikesh – Pool, Waterbody & Spa",
     image:
       "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg",
   },
-  // {
-  //   id: 4,
-  //   title: "Vasant Kunj Bali – Infinity Pool & Outdoor Living",
-  //   image:
-  //     "https://images.pexels.com/photos/271815/pexels-photo-271815.jpeg",
-  // },
-  // {
-  //   id: 5,
-  //   title:
-  //     "Radhe Mohan Drive Farm – Green Tile Pool & Outdoor Design",
-  //   image:
-  //     "https://images.pexels.com/photos/12715508/pexels-photo-12715508.jpeg",
-  // },
-  // {
-  //   id: 6,
-  //   title: "The Green Pool",
-  //   image:
-  //     "https://images.pexels.com/photos/9116592/pexels-photo-9116592.jpeg",
-  // },
 ];
 
 export default function Portfolio() {
@@ -56,55 +45,61 @@ export default function Portfolio() {
       <div className={styles.container}>
         <FadeIn delay={0.1}>
           <p className={styles.subTitle}>ABOUT OUR PROJECTS</p>
-
-          <h2 className={styles.title}>
-            Aquatic <span>Masterpieces</span>
-          </h2>
         </FadeIn>
 
-        <div className={styles.grid}>
-          {projects.map((project, index) => (
-            <FadeIn key={project.id} delay={0.15 * index}>
-              <div className={styles.card}>
-                <div
-                  className={styles.image}
-                  style={{ backgroundImage: `url("${project.image}")` }}
-                />
-                <div className={styles.content}>
-                  <h3>{project.title}</h3>
-                  <a href="#" className={styles.link}>
-                    Learn More
-                    <svg
-                      className={styles.arrow}
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5 12H19"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M13 6L19 12L13 18"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
+        <ScrollParallax distance={40}>
+          <FadeIn delay={0.2}>
+            <h2 className={styles.title}>
+              Aquatic <span>Masterpieces</span>
+            </h2>
+          </FadeIn>
+        </ScrollParallax>
 
-        <FadeIn delay={0.6}>
+        <StaggerContainer className={styles.grid} delay={0.3}>
+          {projects.map((project, index) => (
+            <StaggerItem key={index}>
+              <ScrollParallax distance={30 + (index * 10)} direction={index % 2 === 0 ? "up" : "down"}>
+                <div className={styles.card}>
+                  <div
+                    className={styles.image}
+                    style={{ backgroundImage: `url("${project.image}")` }}
+                  />
+                  <div className={styles.content}>
+                    <h3>{project.title}</h3>
+                    <a href="#" className={styles.link}>
+                      Learn More
+                      <svg
+                        className={styles.arrow}
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 12H19"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M13 6L19 12L13 18"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </ScrollParallax>
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
+
+        <FadeIn delay={0.5}>
           <div className={styles.ctaWrapper}>
             <Link href="/portfolio" className={styles.ctaButton}>
               VIEW FULL PORTFOLIO
@@ -114,4 +109,4 @@ export default function Portfolio() {
       </div>
     </section>
   );
-}
+}

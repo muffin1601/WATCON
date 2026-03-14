@@ -55,7 +55,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    border-radius: 8px; /* Boxier matching image */
+    border-radius: 0; /* Boxier matching image */
     height: 100%;
     min-height: 280px;
 }
@@ -73,7 +73,7 @@
     align-items: center;
     justify-content: center;
     color: #bdb595;
-    border-radius: 12px;
+    border-radius: 0;
     margin-bottom: 25px;
     background: rgba(189, 181, 149, 0.1);
     transition: all 0.5s ease;

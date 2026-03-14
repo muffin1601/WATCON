@@ -14,8 +14,8 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(0,0,0,0.2), transparent 80%),
-              linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 50%, #000 100%);
+  background: radial-gradient(circle at center, rgba(0,0,0,0.1), transparent 80%),
+              linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.6) 100%);
   z-index: 1;
 }
 
@@ -84,52 +84,54 @@
   text-transform: uppercase;
 }
 
-.primaryBtn {
-    padding: 16px 36px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border-radius: 5px; /* Boxier to match image button */
-    transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
-    cursor: pointer;
+.primaryBtn,
+.secondaryBtn {
+    position: relative;
+    padding: 12px 32px;
+    font-size: 15px;
+    font-weight: 700;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #bdb595;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.primaryBtn {
+    background: #fff;
     color: #000;
-    border: 1px solid #bdb595;
-}
-
-.primaryBtn:hover {
-    background: transparent;
-    color: #bdb595;
-}
-
-.navRow {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+    border: 1px solid #fff;
 }
 
 .secondaryBtn {
-    padding: 16px 36px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border-radius: 5px; /* Boxier to match image button */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
-    cursor: pointer;
-    text-decoration: none;
     background: transparent;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.primaryBtn::after,
+.secondaryBtn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #bdb595;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
+
+.primaryBtn:hover::after,
+.secondaryBtn:hover::after {
+    transform: scaleX(1);
+}
+
+.primaryBtn:hover,
 .secondaryBtn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #fff;
+    color: #fff;
+    border-color: #bdb595;
 }
