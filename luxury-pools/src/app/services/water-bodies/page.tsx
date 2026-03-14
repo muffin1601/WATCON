@@ -10,7 +10,7 @@ export default function WaterBodiesPage() {
         subtitle: "Aquatic Artistry",
         title: "Bespoke Water Bodies & Architectural Fountains",
         description: "From tranquil reflecting pools to dramatic architectural fountains, we create water features that define the soul of your landscape. Engineering beauty since 1974.",
-        image: "/services/wb-hero.png",
+        image: "/services/waterbodies (2).jpeg",
 
       }}
       services={{
@@ -51,37 +51,37 @@ export default function WaterBodiesPage() {
           {
             title: "Corporate Grand Fountain",
             description: "Architectural Landmark",
-            image: "/services/wb-hero.png",
+            image: "/services/waterbodies (1).jpeg",
             badge: "Premium"
           },
           {
             title: "Zen Reflecting Pond",
             description: "Tranquil Sanctuary",
-            image: "/services/wb-reflecting.png",
+            image: "/services/waterbodies (3).jpeg",
             badge: "Signature"
           },
           {
             title: "Infinite Cascade Wall",
             description: "Modern Vertical Feature",
-            image: "/services/wb-cascade.png",
+            image: "/services/waterbodies (4).jpeg",
             badge: "Exclusive"
           },
           {
             title: "Estate Entrance Water",
             description: "Grand Entryway",
-            image: "/services/wb-entrance.png",
+            image: "/services/waterbodies (5).jpeg",
             badge: "Popular"
           },
           {
             title: "Interior Atrium Flow",
             description: "Indoor Oasis",
-            image: "/services/wb-zen.png",
+            image: "/services/waterbodies (6).jpeg",
             badge: "Service"
           },
           {
             title: "Biological Luxury Pond",
             description: "Natural Ecosystem",
-            image: "/services/wb-bio.png",
+            image: "/services/waterbodies (7).jpeg",
             badge: "Urban"
           }
         ],

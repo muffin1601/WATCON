@@ -17,9 +17,7 @@ export default function ContactHero() {
         
         <FadeIn delay={0.4}>
           <h1>
-            Let&apos;s <em>Create</em>
-            <br />
-            <span>Something Extraordinary</span>
+            Let&apos;s <em>Create</em> <span>Something Extraordinary</span>
           </h1>
         </FadeIn>
 

@@ -41,10 +41,10 @@ export default function AboutStory() {
                   <h3>2500+</h3>
                   <p>Projects Completed</p>
                 </div>
-                <div className={styles.statItem}>
-                  <h3>13+</h3>
+                {/* <div className={styles.statItem}>
+                  <h3>2000+</h3>
                   <p>Bespoke Services</p>
-                </div>
+                </div> */}
                 <div className={styles.statItem}>
                   <h3>50+ yr</h3>
                   <p>Of Excellence</p>
@@ -58,7 +58,7 @@ export default function AboutStory() {
               <div className={styles.imageCard}>
                 <div className={styles.imageWrapper}>
                   <video autoPlay loop muted playsInline className={styles.video}>
-                    <source src="/home.mp4" type="video/mp4" />
+                    <source src="/about.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div className={styles.imageBadge}>

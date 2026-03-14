@@ -14,7 +14,7 @@
 @media (max-width: 768px) {
   .hero {
     min-height: 50vh;
-    padding: 100px 35px 60px 0px;
+    padding: 100px 20px 60px ;
   }
 }
 
@@ -36,9 +36,16 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 900px;
-  width: 90%;
-  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 20px;
+  }
 }
 
 .subTitle {
@@ -51,12 +58,25 @@
 }
 
 .content h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(1.8rem, 6vw, 4rem);
   font-weight: 600;
   letter-spacing: 2px;
-  white-space: normal;
-  line-height: 1.1;
+  white-space: normal; /* Allow wrap on mobile by default */
+  line-height: 1.2;
   margin-bottom: 25px;
+  word-break: keep-all; /* Avoid breaking words in the middle */
+}
+
+@media (min-width: 1024px) {
+  .content h1 {
+    white-space: nowrap; /* Keep one line on desktop */
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 1.6rem; /* Smaller fixed size for very small phones to prevent overflow */
+  }
 }
 
 .content h1 em {
