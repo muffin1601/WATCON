@@ -254,3 +254,34 @@
     padding: 40px;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 50px;
+  }
+  
+  .mainGrid {
+    gap: 40px;
+  }
+
+  .formCard {
+    padding: 30px 20px;
+  }
+
+  .formHeading,
+  .infoHeading {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactItemBox {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .contactValue {
+    font-size: 13px;
+  }
+}
