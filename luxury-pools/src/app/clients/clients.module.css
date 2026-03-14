@@ -13,12 +13,13 @@
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 400;
   letter-spacing: 0.1em;
   margin-bottom: 24px;
   color: #bdb595;
   text-transform: uppercase;
+  white-space: normal;
 }
 
 .hero p {
@@ -33,7 +34,13 @@
 .content {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 80px 40px 120px;
+  padding: 80px 20px 120px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 60px 20px 80px;
+  }
 }
 
 .categorySection {
@@ -52,9 +59,10 @@
   font-size: 1.8rem;
   font-weight: 300;
   color: #bdb595;
-  white-space: nowrap;
+  white-space: normal;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .line {
@@ -186,15 +194,32 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 120px;
+    padding-top: 140px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
+  .categoryHeader {
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
   .categoryHeader h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   
   .clientGrid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .categorySection {
+    margin-bottom: 80px;
+  }
+
+  .clientCard {
+    height: auto;
+    padding: 30px 20px;
   }
 }
 
@@ -222,6 +247,22 @@
   color: #a1a1aa;
   margin-bottom: 48px;
   letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .pdfCtaSection {
+    padding: 60px 20px;
+    margin: 60px auto;
+  }
+  
+  .pdfCtaSection h3 {
+    font-size: 1.6rem;
+  }
+
+  .pdfCtaSection p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
 }
 
 .pdfButton {
