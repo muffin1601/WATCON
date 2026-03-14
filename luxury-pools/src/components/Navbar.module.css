@@ -11,7 +11,7 @@
   justify-content: space-between;
   padding: 0 11%;
   z-index: 1000;
-  /* Increased to stay above sidebar overlays! */
+
   transition: all 0.4s ease;
   background: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.85),
