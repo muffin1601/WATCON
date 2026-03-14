@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Waves, Droplet, Sun, Flower2, Layers, Anchor } from "lucide-react";
@@ -11,11 +11,7 @@ export default function WaterBodiesPage() {
         title: "Bespoke Water Bodies & Architectural Fountains",
         description: "From tranquil reflecting pools to dramatic architectural fountains, we create water features that define the soul of your landscape. Engineering beauty since 1974.",
         image: "/services/wb-hero.png",
-        stats: [
-          { label: "Water Features", value: "2500+" },
-          { label: "Design Mastery", value: "100%" },
-          { label: "Years Experience", value: "50+" }
-        ]
+
       }}
       services={{
         subtitle: "OUR EXPERTISE",

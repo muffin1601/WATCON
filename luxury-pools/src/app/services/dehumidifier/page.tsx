@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Wind, Droplets, Settings, ShieldCheck, Thermometer, Zap } from "lucide-react";
@@ -11,11 +11,7 @@ export default function DehumidifierPage() {
         title: "Bespoke Dehumidification & Air Quality",
         description: "Protect your luxury indoor pool and spa areas from moisture damage. We design high-performance air handling systems that ensure perfect comfort and structural longevity.",
         image: "/services/dehumidifier.webp",
-        stats: [
-          { label: "Systems Installed", value: "2500+" },
-          { label: "Moisture Control", value: "100%" },
-          { label: "Expert Craft", value: "50+ Yrs" }
-        ],
+
         actions: [
           { label: "Consult Expert", href: "#contact", primary: true },
           { label: "Learn More", href: "#" }

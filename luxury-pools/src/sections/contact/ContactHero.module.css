@@ -29,7 +29,8 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 60%;
+  max-width: 900px;
+  width: 90%;
   padding: 0 20px;
 }
 
@@ -46,7 +47,7 @@
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 600;
   letter-spacing: 2px;
-  white-space: nowrap;
+  white-space: normal;
   line-height: 1.1;
   margin-bottom: 25px;
 }

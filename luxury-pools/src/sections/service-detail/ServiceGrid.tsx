@@ -30,7 +30,9 @@ export default function ServiceGrid({ subtitle, title, services }: ServiceGridPr
                             <p className={styles.subTitle}>{subtitle}</p>
                         </FadeIn>
                         <FadeIn delay={0.2}>
-                            <h2 className={styles.title}>{title}</h2>
+                            <h2 className={styles.title}>
+                                {title.split(' ').filter(word => word.toLowerCase() !== 'bespoke').join(' ')}
+                            </h2>
                         </FadeIn>
                     </div>
                 </ScrollParallax>

@@ -8,7 +8,7 @@ export default function SwimmingPoolsPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "Professional Pool Services",
-        title: "Transform Your Space with a Dream Swimming Pool",
+        title: "Transform Your Space with a <br/> Dream Swimming Pool",
         description: "Professional pool installation, maintenance, and renovation services tailored to your vision. Building dreams since 2004.",
         image: "/services/premium.png",
         stats: [

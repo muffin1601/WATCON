@@ -3,7 +3,7 @@
 import styles from "./AboutStory.module.css";
 import { FadeIn } from "@/components/FadeIn";
 import { ScrollParallax } from "@/components/ScrollParallax";
-import Image from "next/image";
+
 
 export default function AboutStory() {
   return (
@@ -38,15 +38,15 @@ export default function AboutStory() {
             <FadeIn delay={0.6}>
               <div className={styles.statsRow}>
                 <div className={styles.statItem}>
-                  <h3>200+</h3>
+                  <h3>2500+</h3>
                   <p>Projects Completed</p>
                 </div>
                 <div className={styles.statItem}>
-                  <h3>48</h3>
-                  <p>Countries Served</p>
+                  <h3>13+</h3>
+                  <p>Bespoke Services</p>
                 </div>
                 <div className={styles.statItem}>
-                  <h3>20yr</h3>
+                  <h3>50+ yr</h3>
                   <p>Of Excellence</p>
                 </div>
               </div>
@@ -57,7 +57,9 @@ export default function AboutStory() {
             <FadeIn delay={0.4}>
               <div className={styles.imageCard}>
                 <div className={styles.imageWrapper}>
-                  <Image src="https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg" alt="Infinity Pool" fill className={styles.image} />
+                  <video autoPlay loop muted playsInline className={styles.video}>
+                    <source src="/home.mp4" type="video/mp4" />
+                  </video>
                 </div>
                 <div className={styles.imageBadge}>
                   <h4>Signature Series</h4>

@@ -11,11 +11,7 @@ export default function SteamRoomPage() {
         title: "Bespoke Steam Rooms & Turkish Baths",
         description: "Envelop yourself in therapeutic vapor. Our custom steam rooms blend sophisticated mosaic tiling with high-performance steam generation systems.",
         image: "/services/steam.webp",
-        stats: [
-          { label: "Steam Suites", value: "2500+" },
-          { label: "Mosaic Precision", value: "100%" },
-          { label: "Expert Craft", value: "50+ Yrs" }
-        ],
+
         actions: [
           { label: "Request Quote", href: "#contact", primary: true },
           { label: "View Gallery", href: "#projects" }

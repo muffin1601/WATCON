@@ -7,7 +7,8 @@
 }
 
 .container {
-    max-width: 65%;
+    max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
     position: relative;
     z-index: 2;
@@ -73,7 +74,7 @@
     align-items: center;
     justify-content: center;
     color: #bdb595;
-    border-radius: 0;
+    border-radius: 50%;
     margin-bottom: 25px;
     background: rgba(189, 181, 149, 0.1);
     transition: all 0.5s ease;

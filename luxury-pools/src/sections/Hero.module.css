@@ -56,7 +56,8 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 800px;
+  max-width: 1000px;
+  width: 90%;
   padding: 0 20px;
 }
 
@@ -64,7 +65,7 @@
   font-size: clamp(2.3rem, 6vw, 5rem);
   font-weight: 600;
   letter-spacing: 2px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .content h1 em {

@@ -11,11 +11,7 @@ export default function JacuzziPage() {
         title: "Bespoke Jacuzzi & Hot Tub Solutions",
         description: "Immerse yourself in pure relaxation with our custom-engineered jacuzzis, designed to blend luxury with therapeutic benefits.",
         image: "/services/jacuzzi%20(1).webp",
-        stats: [
-          { label: "Jacuzzis Installed", value: "2500+" },
-          { label: "Therapeutic Precision", value: "100%" },
-          { label: "Expert Craft", value: "50+ Yrs" }
-        ],
+
         actions: [
           { label: "Get Free Quote", href: "#contact", primary: true },
           { label: "View Systems", href: "#" }

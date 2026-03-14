@@ -13,7 +13,7 @@ export default function AboutHero() {
       <div className={styles.overlay}></div>
       <ScrollParallax distance={40} className={styles.content}>
         <FadeIn delay={0.2}>
-          <p className={styles.subTitle}>AQUATIC EXCELLENCE SINCE 2005</p>
+          <p className={styles.subTitle}>AQUATIC EXCELLENCE</p>
         </FadeIn>
         
         <FadeIn delay={0.4}>

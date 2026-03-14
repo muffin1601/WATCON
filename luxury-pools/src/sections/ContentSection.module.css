@@ -6,8 +6,15 @@
 }
 
 .container {
-    max-width: 60%;
+    max-width: 1400px;
+    width: 90%;
     margin: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 60%;
+    }
 }
 
 .subTitle {
@@ -119,7 +126,7 @@
 .description {
     font-size: 15px;
     line-height: 1.7;
-    color: #999;
+    color: #ececec;
     margin-bottom: 35px;
     font-weight: 300;
     flex-grow: 1;

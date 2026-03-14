@@ -13,9 +13,11 @@ export default function ContactMap() {
             <h2 className={styles.title}>
               Our <span>Address</span>
             </h2>
-            <p className={styles.address}>
-              343, Mehrauli-Gurgaon Rd, Sultanpur, New Delhi, Delhi 110030, India
-            </p>
+            <a href="https://maps.app.goo.gl/A1TGVLrXHFqGyu3C6" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+              <p className={styles.address}>
+                343, Mehrauli-Gurgaon Rd, Sultanpur, New Delhi, Delhi 110030, India
+              </p>
+            </a>
           </ScrollParallax>
           
           <ScrollParallax distance={20} direction="down" className={styles.mapWrapper}>

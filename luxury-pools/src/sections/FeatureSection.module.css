@@ -43,9 +43,16 @@
 }
 
 .contentContainer {
-    max-width: 60%;
+    max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .contentContainer {
+        width: 60%;
+    }
 }
 
 /* Rest of the typography stays the same */

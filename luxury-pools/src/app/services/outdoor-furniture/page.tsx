@@ -11,11 +11,7 @@ export default function OutdoorFurniturePage() {
         title: "Curated Luxury Outdoor Furniture",
         description: "Transform your terraces and pool decks into sophisticated living spaces. We provide weather-resistant, designer outdoor furniture that blends comfort with high-end aesthetics.",
         image: "/services/outdoorfurniture.webp",
-        stats: [
-          { label: "Designer Projects", value: "2500+" },
-          { label: "Clients Served", value: "1000+" },
-          { label: "Design Mastery", value: "50+ Yrs" }
-        ],
+
         actions: [
           { label: "View Collection", href: "#projects", primary: true },
           { label: "Consult Curator", href: "#contact" }

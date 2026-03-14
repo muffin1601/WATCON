@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Flower2, Droplet, Sun, Waves, Settings, Heart } from "lucide-react";
@@ -11,11 +11,7 @@ export default function KoiPondsPage() {
         title: "Bespoke Koi Ponds & Ecosystems",
         description: "Create a living masterpiece in your garden. Our koi ponds are engineered with advanced life support systems for crystal clear water and healthy aquatic life.",
         image: "/services/koiponds%20(1).webp",
-        stats: [
-          { label: "Ponds Built", value: "2500+" },
-          { label: "Healthy Ecosystems", value: "100%" },
-          { label: "Years Experience", value: "50+" }
-        ],
+
         actions: [
           { label: "Consult an Expert", href: "#contact", primary: true },
           { label: "View Ponds", href: "#projects" }

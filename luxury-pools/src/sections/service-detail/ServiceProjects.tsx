@@ -3,8 +3,6 @@
 import Link from 'next/link';
 import styles from './ServiceProjects.module.css';
 import { FadeIn } from '@/components/FadeIn';
-import { StaggerContainer, StaggerItem } from '@/components/StaggerContainer';
-import { ScrollParallax } from '@/components/ScrollParallax';
 import { ArrowRight } from 'lucide-react';
 
 interface Project {
@@ -43,25 +41,23 @@ export default function ServiceProjects({ subtitle, title, description, projects
                     )}
                 </div>
 
-                <StaggerContainer className={styles.grid} delay={0.4}>
+                <div className={styles.grid}>
                     {projects.map((project, index) => (
-                        <StaggerItem key={index}>
-                            <ScrollParallax distance={30 + index * 10} direction={index % 2 === 0 ? "up" : "down"}>
-                                <div className={styles.card}>
-                                    {project.badge && (
-                                        <div className={styles.badge}>{project.badge}</div>
-                                    )}
-                                    <div className={styles.imageWrapper}>
-                                        <div
-                                            className={styles.image}
-                                            style={{ backgroundImage: `url("${project.image}")` }}
-                                        />
-                                    </div>
+                        <FadeIn key={index} delay={0.4 + index * 0.1} direction="up">
+                            <div className={styles.card}>
+                                {project.badge && (
+                                    <div className={styles.badge}>{project.badge}</div>
+                                )}
+                                <div className={styles.imageWrapper}>
+                                    <div
+                                        className={styles.image}
+                                        style={{ backgroundImage: `url("${project.image}")` }}
+                                    />
                                 </div>
-                            </ScrollParallax>
-                        </StaggerItem>
+                            </div>
+                        </FadeIn>
                     ))}
-                </StaggerContainer>
+                </div>
             </div>
         </section>
     );

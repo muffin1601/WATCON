@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Thermometer, Zap, ShieldCheck, Settings, Heart, Wind } from "lucide-react";
@@ -11,11 +11,7 @@ export default function CryoRoomPage() {
         title: "Bespoke Cryotherapy & Cold Plunge Suites",
         description: "Harness the power of extreme cold for recovery and longevity. Our custom cryo rooms and cold plunges are designed with surgical precision for elite performance.",
         image: "/services/cryoroom.webp",
-        stats: [
-          { label: "Recovery Suites", value: "2500+" },
-          { label: "Sub-Zero Accuracy", value: "100%" },
-          { label: "Expert Craft", value: "50+ Yrs" }
-        ],
+
         actions: [
           { label: "Consult Recovery", href: "#contact", primary: true },
           { label: "View Projects", href: "#projects" }

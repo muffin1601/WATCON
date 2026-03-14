@@ -9,27 +9,30 @@ import { ScrollParallax } from "../components/ScrollParallax";
 interface ContactSectionProps {
   title?: string;
   description?: string;
+  subTitle?: string;
 }
 
 export default function ContactSection({
   title = "Begin Your Journey",
-  description = "Tell us about your vision — our design consultants will reach out within 24 hours to discuss how we can bring it to life."
+  description = "Tell us about your vision — our design consultants will reach out within 24 hours to discuss how we can bring it to life.",
+  subTitle = "PRIVATE CONSULTATION"
 }: ContactSectionProps) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
           <FadeIn delay={0.1}>
-            <p className={styles.subTitle}>PRIVATE CONSULTATION</p>
+            <p className={styles.subTitle}>{subTitle}</p>
           </FadeIn>
           
           <ScrollParallax distance={30}>
             <FadeIn delay={0.2}>
               <h2 className={styles.title}>
-                {title.split(' ').map((word, i) => (
-                  word.toLowerCase() === 'journey' || word.toLowerCase() === 'pool' || word.toLowerCase() === 'dream' ?
+                {title.split(' ').map((word, i) => {
+                  const pureWord = word.toLowerCase().replace(/[.,!?]/g, '');
+                  return pureWord === 'journey' || pureWord === 'pool' || pureWord === 'dream' || pureWord === 'extraordinary' ?
                     <span key={i}>{word} </span> : word + ' '
-                ))}
+                })}
               </h2>
             </FadeIn>
           </ScrollParallax>
@@ -73,6 +76,18 @@ export default function ContactSection({
   
                 <StaggerContainer className={styles.contactList}>
                   <StaggerItem>
+                    <a href="https://maps.app.goo.gl/A1TGVLrXHFqGyu3C6" target="_blank" rel="noopener noreferrer" className={styles.contactItemBox} style={{ textDecoration: 'none' }}>
+                      <div className={styles.iconCircle}>
+                        <MapPin size={18} />
+                      </div>
+                      <div>
+                        <p className={styles.contactLabel}>ADDRESS</p>
+                        <p className={styles.contactValue}>343, Mehrauli-Gurgaon Rd, Sultanpur, New Delhi, Delhi 110030, India</p>
+                      </div>
+                    </a>
+                  </StaggerItem>
+
+                  <StaggerItem>
                     <div className={styles.contactItemBox}>
                       <div className={styles.iconCircle}>
                         <Phone size={18} />
@@ -99,7 +114,7 @@ export default function ContactSection({
                   <StaggerItem>
                     <div className={styles.contactItemBoxHours}>
                       <p className={styles.contactLabel}>WORKING HOURS</p>
-                      <p className={styles.contactValueHours}>Mon - Sat: 10:00 AM - 6:00 PM</p>
+                      <p className={styles.contactValueHours}>Mon - Sat: 11:00 AM - 7:00 PM</p>
                       <p className={styles.contactValueHours}>Sunday: Closed</p>
                     </div>
                   </StaggerItem>

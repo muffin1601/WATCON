@@ -11,11 +11,7 @@ export default function SpaPage() {
         title: "Bespoke Spa & Wellness Environments",
         description: "Experience the pinnacle of restoration with our custom-designed spa solutions, from aromatic steam rooms to detoxifying saunas.",
         image: "/services/spa.webp",
-        stats: [
-          { label: "Spas Designed", value: "2500+" },
-          { label: "Wellness Projects", value: "150+" },
-          { label: "Expert Craft", value: "50+ Yrs" }
-        ],
+
         actions: [
           { label: "Book Consultation", href: "#contact", primary: true },
           { label: "Explore Features", href: "#" }

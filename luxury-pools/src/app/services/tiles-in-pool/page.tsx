@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Layers, Sparkles, Droplets, ShieldCheck, Sun, Settings } from "lucide-react";
@@ -11,11 +11,7 @@ export default function TilesInPoolPage() {
         title: "Exquisite Pool Tiling & Mosaics",
         description: "Transform the base of your pool into a radiant work of art. We specialize in high-end porcelain, glass, and natural stone mosaics that capture light and elevate your aquatic experience.",
         image: "/services/tilespool%20(1).webp",
-        stats: [
-          { label: "Mosaic Projects", value: "2500+" },
-          { label: "Material Quality", value: "SUPREME" },
-          { label: "Expert Craft", value: "50+ Yrs" }
-        ],
+
         actions: [
           { label: "Start Selection", href: "#contact", primary: true },
           { label: "View Portfolio", href: "#projects" }
@@ -26,26 +22,26 @@ export default function TilesInPoolPage() {
         title: "Premium Tiling Solutions",
         items: [
           {
-            title: "Glass Mosaics",
+            title: "Glass Mosaic Tiles",
             description: "Iridescent and translucent glass tiles that create a mesmerizing play of light under water.",
             icon: Sparkles,
             href: "#"
           },
           {
-            title: "Italian Porcelain",
-            description: "Large-format, slip-resistant porcelain tiles for a modern and seamless architectural look.",
+            title: "Large Format Tiles",
+            description: "Expansive, slip-resistant large format tiles for a modern, seamless, and luxurious architectural look.",
             icon: Layers,
             href: "#"
           },
           {
-            title: "Natural Stone Finish",
-            description: "Hand-picked travertine and slate tiles for a natural, organic pool environment.",
+            title: "Porcelain Tiles",
+            description: "High-end, durable porcelain tiles designed to withstand the elements while maintaining supreme elegance.",
             icon: Sun,
             href: "#"
           },
           {
-            title: "Precision Grouting",
-            description: "Advanced epoxy grouting systems that ensure watertight integrity and prevents discoloration.",
+            title: "Designer Tiles",
+            description: "Custom, hand-picked designer tiles arranged to create entirely unique and breathtaking pool aesthetics.",
             icon: ShieldCheck,
             href: "#"
           }

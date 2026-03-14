@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
 import { Flame, Sun, Wind, Sparkles, Settings, ShieldCheck } from "lucide-react";
@@ -11,11 +11,7 @@ export default function OutdoorFireplacesPage() {
         title: "Bespoke Outdoor Fireplaces & Fire Pits",
         description: "Add warmth and soul to your outdoor spaces. Our custom-engineered fireplaces and automated fire pits create the perfect evening ambiance for your terrace or pool deck.",
         image: "/services/outdoorfire.webp",
-        stats: [
-          { label: "Fire Projects", value: "2500+" },
-          { label: "Safety Rating", value: "100%" },
-          { label: "Expert Craft", value: "50+ Yrs" }
-        ],
+
         actions: [
           { label: "Ignite Vision", href: "#contact", primary: true },
           { label: "View Portfolio", href: "#projects" }
