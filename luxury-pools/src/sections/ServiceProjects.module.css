@@ -1,6 +1,6 @@
 .section {
     padding: 100px 20px;
-    background: #000000; /* Dark background */
+    background: #000000;
     color: #fff;
     text-align: center;
 }
@@ -15,7 +15,7 @@
     letter-spacing: 2px;
     font-size: 14px;
     font-weight: 700;
-    color: #bdb595; /* Accent color */
+    color: #bdb595;
     margin-bottom: 15px;
     text-transform: uppercase;
 }

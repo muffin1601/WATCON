@@ -4,7 +4,7 @@ import styles from "./Navbar.module.css";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Home } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
@@ -89,7 +89,8 @@ export default function Navbar() {
 
         <div className={styles.right}>
           <Link href="/" className={styles.btnQuote}>
-            Home
+            <Home size={18} className={styles.homeIcon} />
+            <span className={styles.homeText}>Home</span>
           </Link>
 
           <div
@@ -152,6 +153,7 @@ export default function Navbar() {
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
                         className={`${styles.servicesDropdown} ${styles.open}`}
                       >
                         <div className={styles.servicesDropdownInner}>

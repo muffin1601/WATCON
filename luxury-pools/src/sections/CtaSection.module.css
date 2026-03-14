@@ -2,6 +2,7 @@
   background: #0c0c0c;
   padding: 120px 20px;
   color: #fff;
+  overflow: hidden;
 }
 
 .container {

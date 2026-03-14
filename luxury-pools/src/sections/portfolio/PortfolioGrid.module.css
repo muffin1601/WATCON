@@ -244,4 +244,14 @@
   .itemReverse .textBlock {
     left: 5%;
   }
+
+  .videoWrapper::before {
+    top: 15px;
+    right: -15px;
+  }
+  
+  .itemReverse .videoWrapper::before {
+    left: -15px;
+    right: auto;
+  }
 }
