@@ -1,0 +1,238 @@
+.main {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 160px 20px 80px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.title span {
+  color: #bdb595;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contentSection {
+  padding: 40px 20px 120px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.introText {
+  margin-bottom: 60px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #aaaaaa;
+}
+
+.builderList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.builderCard {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 40px;
+  transition: all 0.4s ease;
+}
+
+.builderCard.featured {
+  border: 1px solid #bdb595;
+  background: rgba(189, 181, 149, 0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.rankBadge {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background: #bdb595;
+  color: #000;
+  padding: 8px 15px;
+  font-weight: 700;
+  transform: translateY(-50%);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cardHeader h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.verifiedIcon {
+  color: #bdb595;
+  width: 24px;
+  height: 24px;
+}
+
+.location, .expertise {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #dddddd;
+}
+
+.description {
+  margin: 25px 0;
+  line-height: 1.8;
+  color: #aaaaaa;
+}
+
+.highlight {
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  background: rgba(189, 181, 149, 0.1);
+  border-left: 3px solid #bdb595;
+  font-size: 0.9rem;
+  color: #bdb595;
+}
+
+.visitBtn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #bdb595;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.visitBtn:hover {
+  background: #fff;
+}
+
+.inactiveLink {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.5;
+}
+
+.seoFooter {
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.seoFooter h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.seoFooter p {
+  line-height: 1.8;
+  color: #aaaaaa;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 140px 20px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 20px 40px;
+  }
+
+  .title {
+    font-size: clamp(1.8rem, 8vw, 2.8rem);
+  }
+
+  .builderCard {
+    padding: 40px 25px;
+  }
+  
+  .cardHeader h2 {
+    font-size: 1.5rem;
+  }
+  
+  .introText {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 100px 15px 30px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .builderCard {
+    padding: 35px 20px;
+  }
+
+  .rankBadge {
+    left: 20px;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .cardHeader h2 {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .visitBtn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+  }
+
+  .seoFooter {
+    margin-top: 50px;
+    padding-top: 40px;
+  }
+
+  .seoFooter h2 {
+    font-size: 1.2rem;
+  }
+
+  .seoFooter p {
+    font-size: 0.9rem;
+  }
+}

@@ -7,10 +7,10 @@ export default function TilesInPoolPage() {
   return (
     <ServiceDetailTemplate
       hero={{
-        subtitle: "The Art of Finish",
-        title: "Exquisite Pool Tiling & Mosaics",
-        description: "Transform the base of your pool into a radiant work of art. We specialize in high-end porcelain, glass, and natural stone mosaics that capture light and elevate your aquatic experience.",
-        image: "/services/tilespool%20(1).webp",
+        subtitle: "Best Tiles for Swimming Pools in India",
+        title: "Exquisite Bisazza Glass Mosaics & <br/> Pool Tiling",
+        description: "Transform your pool into a radiant work of art with Bisazza Glass Mosaic tiles. Watcon International specializes in high-end pool finishes that capture light and elevate your aquatic experience with hospital-grade durability.",
+        image: "/services/tilespool (1).webp",
 
         actions: [
           { label: "Start Selection", href: "#contact", primary: true },

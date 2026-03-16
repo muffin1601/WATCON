@@ -1,0 +1,142 @@
+.main {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 160px 20px 80px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.title span {
+  color: #bdb595;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.faqSection {
+  padding: 40px 20px 120px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faqItem {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 25px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faqItem:hover {
+  border-color: rgba(189, 181, 149, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.faqItem.active {
+  border-color: #bdb595;
+  background: rgba(189, 181, 149, 0.05);
+}
+
+.questionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.questionRow h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.faqItem.active h3 {
+  color: #bdb595;
+}
+
+.answer {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.answer p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #aaaaaa;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 140px 20px 60px;
+  }
+  
+  .title {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .faqItem {
+    padding: 20px;
+  }
+  
+  .questionRow h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 120px 20px 40px;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+  }
+  
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .questionRow h3 {
+    font-size: 1rem;
+  }
+}

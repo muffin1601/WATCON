@@ -4,6 +4,7 @@ import styles from "./ContentSection.module.css";
 import { FadeIn } from "../components/FadeIn";
 import { StaggerContainer, StaggerItem } from "../components/StaggerContainer";
 import { ScrollParallax } from "../components/ScrollParallax";
+import Image from "next/image";
 
 type Expertise = {
     id: number;
@@ -55,9 +56,12 @@ export default function ContentSection() {
                             <ScrollParallax distance={20 + (index * 20)} direction={index % 2 === 0 ? "up" : "down"}>
                                 <div className={styles.card}>
                                     <div className={styles.imageContainer}>
-                                        <div
+                                        <Image
+                                            src={item.image}
+                                            alt={`${item.title} - Watcon International Expertise`}
+                                            fill
                                             className={styles.image}
-                                            style={{ backgroundImage: `url("${item.image}")` }}
+                                            sizes="(max-width: 768px) 100vw, 33vw"
                                         />
                                         <div className={styles.imageOverlay} />
                                     </div>
@@ -74,4 +78,3 @@ export default function ContentSection() {
         </section>
     );
 }
-

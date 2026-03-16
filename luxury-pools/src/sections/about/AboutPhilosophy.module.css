@@ -12,6 +12,12 @@
   margin: auto;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+}
+
 .centerBlock {
   margin-bottom: 70px;
 }
@@ -90,4 +96,41 @@
   line-height: 1.8;
   color: #aaa;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .philosophySection {
+    padding: 80px 20px;
+  }
+
+  .title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .philosophySection {
+    padding: 60px 15px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .subTitle {
+    letter-spacing: 3px;
+    font-size: 11px;
+  }
+
+  .centerBlock {
+    margin-bottom: 40px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }

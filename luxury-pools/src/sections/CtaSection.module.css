@@ -17,7 +17,7 @@
 
 @media (min-width: 1200px) {
   .container {
-    width: 60%;
+    width: 85%;
   }
 }
 
@@ -153,12 +153,37 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+  .cta {
+    padding: 80px 20px;
+  }
+  
   .container {
     grid-template-columns: 1fr;
     gap: 50px;
   }
 
-  .videoContainer {
-    height: auto;
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 60px 15px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+  
+  .actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 14px;
   }
 }

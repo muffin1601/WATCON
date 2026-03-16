@@ -99,8 +99,24 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    min-height: 40vh;
+    padding: 80px 15px 40px;
+  }
+
+  .content h1 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
   .subTitle {
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 0.95rem;
   }
 }

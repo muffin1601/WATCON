@@ -7,37 +7,36 @@ export default function WaterBodiesPage() {
   return (
     <ServiceDetailTemplate
       hero={{
-        subtitle: "Aquatic Artistry",
-        title: "Bespoke Water Bodies & Architectural Fountains",
-        description: "From tranquil reflecting pools to dramatic architectural fountains, we create water features that define the soul of your landscape. Engineering beauty since 1974.",
+        subtitle: "Official Oase Fountain Partner Delhi",
+        title: "India's Best Musical Fountain Maker",
+        description: "Official partners for Oase Fountain Technology. We design the best musical fountains in India, combining synchronized light and sound for public parks, hotels, and luxury commercial spaces.",
         image: "/services/waterbodies (2).jpeg",
-
       }}
       services={{
-        subtitle: "OUR EXPERTISE",
-        title: "Crafting Liquid Masterpieces",
+        subtitle: "AQUATIC SHOW Engineering",
+        title: "Fountains & Water Features",
         items: [
           {
-            title: "Architectural Fountains",
-            description: "Grand, choreographed water displays featuring advanced nozzle technology and artistic lighting.",
+            title: "Musical Fountain India",
+            description: "We are the best musical fountain maker in India, creating synchronized water and light shows for prestige landmarks.",
             icon: Waves,
             href: "#"
           },
           {
-            title: "Reflecting Pools",
-            description: "Minimalist, mirror-like water surfaces that bring serenity and architectural depth to any space.",
+            title: "Oase Fountain Maker Delhi",
+            description: "Authorized Oase fountain maker in Delhi, utilizing globally recognized technology for architectural water features.",
             icon: Layers,
             href: "#"
           },
           {
-            title: "Cascading Waterfalls",
-            description: "Dynamic vertical water features designed for both dramatic impact and soothing acoustics.",
+            title: "Programmable Features",
+            description: "Cutting-edge programmable water features with digital control systems for hotels and public landscapes.",
             icon: Droplet,
             href: "#"
           },
           {
-            title: "Bio-Pools & Ponds",
-            description: "Sustainable, ecologically balanced water bodies that blend seamlessly with the natural environment.",
+            title: "Architectural Landscapes",
+            description: "Design and execution of large-scale resort water bodies and luxury architectural waterfalls across India.",
             icon: Anchor,
             href: "#"
           }

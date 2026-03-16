@@ -1,0 +1,128 @@
+.floatingContainer {
+    position: fixed;
+    left: 30px;
+    bottom: 40px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(189, 181, 149, 0.3);
+    padding: 10px 20px 10px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 
+                0 0 0 1px rgba(189, 181, 149, 0.1);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.floatingContainer:hover {
+    border-color: rgba(189, 181, 149, 0.8);
+    background: rgba(20, 20, 20, 0.95);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 
+                0 0 20px rgba(189, 181, 149, 0.2);
+    transform: translateX(5px);
+}
+
+.iconWrapper {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background: #bdb595;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    flex-shrink: 0;
+}
+
+.labelWrapper {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.labelSub {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(189, 181, 149, 0.8);
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.labelMain {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #bdb595;
+    opacity: 0.6;
+    z-index: -1;
+    animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    70% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .floatingContainer {
+        left: 20px;
+        bottom: 30px;
+        padding: 8px 16px 8px 8px;
+    }
+    
+    .iconWrapper {
+        width: 38px;
+        height: 38px;
+        margin-right: 10px;
+    }
+    
+    .labelMain {
+        font-size: 12px;
+    }
+    
+    .labelSub {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .labelWrapper {
+        display: none;
+    }
+    
+    .floatingContainer {
+        padding: 8px;
+        border-radius: 50%;
+    }
+    
+    .iconWrapper {
+        margin-right: 0;
+    }
+}

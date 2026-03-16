@@ -6,18 +6,23 @@ import { ScrollParallax } from "@/components/ScrollParallax";
 
 const projects = [
   {
-    title: "Shalini Passi Home Projects",
-    desc: "A stunning residential masterpiece reflecting elegance and luxury.",
+    title: "Project: The Oberoi Gurgaon",
+    desc: "The master craftsmanship behind the world-class swimming pools and iconic water features at The Oberoi group, setting the standard for global hospitality.",
+    videoSrc: "https://youtu.be/QeWSYLcVsbk?si=5RsFemHCJ6Dqu0Br",
+  },
+  {
+    title: "DLF Golf Course & Residential",
+    desc: "Waterbody and pool design at DLF Golf Course, DLF Beverly Park, and The Hibiscus. Watcon is the preferred choice for DLF’s premium developments.",
     videoSrc: "https://youtu.be/6xPgpNAJgkM?si=Fr-4HLdRTA0d_Utc",
   },
   {
-    title: "Fire Installation Project at Vasant Vihar",
-    desc: "Mesmerizing outdoor fire feature elevating the luxury ambiance.",
+    title: "National Industrial Landmarks",
+    desc: "Builders of India’s competition pools at Siri Fort Stadium, SP Mukherji Stadium, and Yamuna Sports Complex for the Asian and Commonwealth Games.",
     videoSrc: "https://youtu.be/hfTxxyLMALQ?si=uZVHHbZG9TEsP8NK",
   },
   {
-    title: "Westin Rishikesh",
-    desc: "Project of swimming pool, plunge pool waterbody, and Spa at Westin Rishikesh.",
+    title: "Westin Rishikesh Wellness",
+    desc: "Executing the signature infinity swimming pool, recovery plunge pools, and luxury spa hydrotherapy systems at Westin Rishikesh.",
     videoSrc: "https://youtu.be/gSjsW5gSf6w?si=-YbU4S16TYvw4YIt",
   },
   {
@@ -34,11 +39,6 @@ const projects = [
     title: "The Green Pool",
     desc: "A perfect blend of nature and aquatic luxury.",
     videoSrc: "https://youtu.be/h-Z0R4HpQ9I?si=K2kW0CSZi0hjvTES",
-  },
-  {
-    title: "Oberois Gurgaon",
-    desc: "High-end commercial installation featuring opulent design and pristine execution.",
-    videoSrc: "https://youtu.be/QeWSYLcVsbk?si=5RsFemHCJ6Dqu0Br",
   },
   {
     title: "Laminum",

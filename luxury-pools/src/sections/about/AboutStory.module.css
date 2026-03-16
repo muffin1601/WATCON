@@ -11,6 +11,12 @@
   margin: auto;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+}
+
 .subTitle {
   letter-spacing: 4px;
   font-size: 14px;
@@ -28,6 +34,10 @@
 }
 
 @media (max-width: 900px) {
+  .storySection {
+    padding: 80px 20px;
+  }
+  
   .grid {
     grid-template-columns: 1fr;
     gap: 60px;
@@ -57,6 +67,28 @@
   max-width: 700px;
 }
 
+.expertiseList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 30px 0;
+}
+
+.expertiseList li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #aaaaaa;
+  font-weight: 300;
+}
+
+.expertiseList li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #bdb595;
+}
+
 .statsRow {
   display: flex;
   gap: 40px;
@@ -68,9 +100,58 @@
 }
 
 @media (max-width: 600px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .imageCard {
+    height: 350px;
+  }
+  
   .statsRow {
-    gap: 30px;
-    justify-content: center;
+    gap: 20px;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+
+  .statItem h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .storySection {
+    padding: 60px 15px;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+  }
+  
+  .subTitle {
+    letter-spacing: 3px;
+    font-size: 11px;
+  }
+
+  .text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .expertiseList li {
+    font-size: 0.9rem;
+  }
+
+  .imageCard {
+    height: 300px;
+  }
+  
+  .imageBadge {
+    padding: 10px 15px;
+    left: 10px;
+    bottom: 10px;
   }
 }
 

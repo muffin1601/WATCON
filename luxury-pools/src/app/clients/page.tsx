@@ -17,34 +17,94 @@ const clientData = [
         clients: [
             { name: "Mr Shiv Nadar", entity: "HCL", logo: "/clients/hcl.png" },
             { name: "Mr Arjun Juneja", entity: "Mankind Pharma", logo: "/clients/mankind.webp" },
+            { name: "Mr Rajiv Juneja", entity: "Mankind Pharma", logo: "/clients/mankind.webp" },
+            { name: "Mr Sheetal Arora", entity: "Mankind Pharma", logo: "/clients/mankind.webp" },
             { name: "Mr KP Singh", entity: "DLF", logo: "/clients/dlf.jpg" },
+            { name: "Mr Pankaj Bansal", entity: "M3M", logo: "/clients/m3m-logo-1.png" },
+            { name: "Mr Rutash Goel", entity: "Omaxe", logo: "/clients/emaar.jpg" }, 
+            { name: "Mr Khalid Massod", entity: "Shalimaar Group Lucknow", logo: "/clients/shalimar-logo-og-img.png" },
+            { name: "Mr Ravi Jaipuria", entity: "Varun Beverages", logo: "/clients/1e65dbc089e721dbb7f49b7042a98d51.jpg" },
+            { name: "Mr Sanjeev Aggarwal", entity: "Moon Beverages", logo: "/clients/logo_e3fe3c22-37c0-40c7-ab2c-dd4012a16bce.jpg" },
+            { name: "Mr Goenka", entity: "Sanjiv Goenka Group", logo: "/clients/aditya-birla.png" },
+            { name: "Mr Ponty Chaddha", entity: "Wave Group", logo: "/clients/images.png" },
+            { name: "Mr Burman", entity: "Dabur", logo: "/clients/Dabur_Logo.svg.png" },
+            { name: "Mr Minda", entity: "UNO Minda", logo: "/clients/images (1).png" },
+            { name: "Mr Uppal", entity: "Richa Exports", logo: "/clients/images.jpg" },
+            { name: "Mr Pankaj Munjal", entity: "Hero Cycles", logo: "/clients/97d6b2e43ea0d33d4615393b4e6ac9d43d8c3f4aa024ee199fc64cb3231ea2ab.webp" },
+            { name: "Mr Sunil Munjal", entity: "Hero Motor", logo: "/clients/Hero_MotoCorp-Logo.wine.png" },
+            { name: "Mr Sameer Munjal", entity: "Satyam Auto", logo: "/clients/1622542056.png" },
             { name: "Mr LN Mittal", entity: "Arcelor Mittal", logo: "/clients/arcelormittal.svg" },
             { name: "Mr Rajan Mittal", entity: "Bharti Airtel", logo: "/clients/airtel.png" },
-            { name: "Mr Kumar Manglam Birla", entity: "Aditya Birla Group", logo: "/clients/aditya-birla.png" }
+            { name: "Mr Vikrampati Singhania", entity: "JK", logo: "/clients/JK-finner-logo.png" },
+            { name: "Mr Shrivats Singhania", entity: "JK", logo: "/clients/JK-finner-logo.png" },
+            { name: "Mr Yashpati Singhania", entity: "JK", logo: "/clients/JK-finner-logo.png" },
+            { name: "Mr Raghavpati Singhania", entity: "JK", logo: "/clients/JK-finner-logo.png" },
+            { name: "Mr Kumar Manglam Birla", entity: "Aditya Birla Group", logo: "/clients/aditya-birla.png" },
+            { name: "Mr Aggarwal", entity: "Hira Group", logo: "/clients/images (2).png" },
+            // { name: "Mr Sailesh Arora", entity: "Mankind Pharma", logo: "/clients/mankind.webp" },
+            // { name: "Mr Mukul Rohatgi", entity: "Senior Advocate", logo: "" },
+            // { name: "Mr Kapil Sibal", entity: "Senior Advocate", logo: "" },
+            { name: "Mr Singh", entity: "Max Estate", logo: "/clients/images (3).png" },
+            { name: "Mr Bhartiya", entity: "Hindustan Times", logo: "/clients/images (4).png" },
+            { name: "Mr Jain", entity: "Pan Bahar", logo: "/clients/images (5).png" },
+            { name: "Mr Roshan", entity: "Shikhar Gutkha", logo: "/clients/the_shikhar_group_logo.jpg" },
+            { name: "Mr Arora", entity: "Dilbagh", logo: "/clients/01-500x500.webp" },
+            { name: "Mr Chaurasiya", entity: "Kamla Pasand", logo: "/clients/images (1).jpg" },
+            { name: "Rajdarbar Reality", entity: "Rajdarbar Reality", logo: "/clients/logo.png" },
+            // { name: "Mr Anurag Gupta", entity: "Rashmi Gutkha", logo: "" },
+            // { name: "Tilak Raj Sharma", entity: "Kanpur", logo: "" },
+            { name: "Mr Moin Qureshi", entity: "Great Value Foods", logo: "/clients/images (2).jpg" },
+            // { name: "Mr Kahndelwal", entity: "Kattha Industry", logo: "" },
+            // { name: "Mr Garg", entity: "Tobacco Industry", logo: "" },
+            { name: "Mr Kurele", entity: "Jaquar Group", logo: "/clients/Official_Jaquar_Group_Logo.png" },
+            { name: "Mr Mehra", entity: "Jaquar Group", logo: "/clients/Official_Jaquar_Group_Logo.png" },
+            // { name: "Mr Sirsa", entity: "Politician", logo: "" },
+            // { name: "Mr Navjot Singh Siddhu", entity: "Politician", logo: "" }
         ]
     },
     {
         category: "Hotels Projects",
         icon: <Building2 size={24} />,
         clients: [
-            { name: "The Oberoi Group", entity: "Delhi / Gurgaon", logo: "/clients/oberoi.jpg" },
-            { name: "The Taj Group", entity: "Delhi / Chandigarh", logo: "/clients/taj.png" },
-            { name: "Grand Hyatt", entity: "Delhi", logo: "/clients/grand-hyatt.png" },
-            { name: "The Westin Group", entity: "Gurgaon / Sohna", logo: "/clients/westin.webp" },
-            { name: "The Sheraton Group", entity: "ITC Maurya", logo: "/clients/sheraton.png" },
-            { name: "Le Meridien", entity: "New Delhi", logo: "/clients/le-meridien.png" }
+            { name: "The Oberoi", entity: "New Delhi", logo: "/clients/oberoi.jpg" },
+            { name: "The Oberoi", entity: "Chandigarh", logo: "/clients/oberoi.jpg" },
+            { name: "The Oberoi", entity: "Gurgaon", logo: "/clients/oberoi.jpg" },
+            { name: "The Oberoi", entity: "Bandhavgarh, MP", logo: "/clients/oberoi.jpg" },
+            { name: "Mr Vikram Oberoi", entity: "Private Residence", logo: "/clients/oberoi.jpg" },
+            { name: "The Taj", entity: "Delhi", logo: "/clients/taj.png" },
+            { name: "The Taj Vivanta", entity: "Srinagar", logo: "/clients/taj.png" },
+            { name: "The Taj", entity: "Chandigarh", logo: "/clients/taj.png" },
+            { name: "The Radisson", entity: "Delhi (Mahipalpur)", logo: "/clients/images (6).png" },
+            { name: "The Radisson", entity: "Noida", logo: "/clients/images (6).png" },
+            { name: "The Radisson", entity: "Shimla", logo: "/clients/images (6).png" },
+            { name: "Westin Hotel", entity: "Gurgaon", logo: "/clients/westin.webp" },
+            { name: "Westin Hotel", entity: "Rishikesh", logo: "/clients/westin.webp" },
+            { name: "Westin Hotel", entity: "Sohna", logo: "/clients/westin.webp" },
+            { name: "ITC Maurya", entity: "Sheraton New Delhi", logo: "/clients/sheraton.png" },
+            { name: "Ananda (IHHR)", entity: "Rishikesh", logo: "/clients/images (7).png" },
+            { name: "Shangri-la Hotel", entity: "Eros Group, Delhi", logo: "/clients/images (8).png" },
+            { name: "Hyatt- Samhi Hotel", entity: "Delhi", logo: "/clients/grand-hyatt.png" },
+            { name: "Hyatt Place", entity: "Kathmandu, Nepal", logo: "/clients/images (3).jpg" },
+            { name: "Le Meridien", entity: "Thimphu, Bhutan", logo: "/clients/le-meridien.png" },
+            // { name: "Shekhar Resorts", entity: "Agra", logo: "" }
         ]
     },
     {
         category: "School / Institutional",
         icon: <School size={24} />,
         clients: [
-            { name: "Shiv Nadar School", entity: "Faridabad / Noida", logo: "/clients/shiv-nadar-school.png" },
-            { name: "British School", "entity": "Chankyapuri, Delhi", logo: "/clients/british-school.png" },
-            { name: "Shiv Nadar University", "entity": "Dadri, Noida", logo: "/clients/shiv-nadar-univ.png" },
-            { name: "Step By Step School", "entity": "Noida", logo: "/clients/step-by-step.png" },
-            { name: "Ambience School", "entity": "New Delhi", logo: "/clients/ambience.jpg" },
-            { name: "Embassy Projects", "entity": "New Delhi", logo: "/clients/us-embassy.avif" }
+            { name: "Shiv Nadar School", entity: "Faridabad", logo: "/clients/shiv-nadar-school.png" },
+            { name: "Shiv Nadar School", entity: "Noida", logo: "/clients/shiv-nadar-school.png" },
+            { name: "Shiv Nadar University", entity: "Dadri", logo: "/clients/shiv-nadar-univ.png" },
+            { name: "British School", entity: "Chankyapuri, Delhi", logo: "/clients/british-school.png" },
+            { name: "St. Paul George School", entity: "New Delhi", logo: "/clients/pggs-logos.jpg" },
+            { name: "Step By Step School", entity: "Noida", logo: "/clients/step-by-step.png" },
+            { name: "Ambience School", entity: "New Delhi", logo: "/clients/ambience.jpg" },
+            { name: "Sagar Shiksha Santhan", entity: "Tijara, Rajasthan", logo: "/clients/images (4).jpg" },
+            // { name: "Brazilian High Commission", entity: "New Delhi", logo: "" },
+            // { name: "New Zealand High Commission", entity: "New Delhi", logo: "" },
+            { name: "American Embassy", entity: "Kathmandu", logo: "/clients/us-embassy.avif" },
+            { name: "American Embassy", entity: "New Delhi", logo: "/clients/us-embassy.avif" }
         ]
     },
     {
@@ -54,19 +114,38 @@ const clientData = [
             { name: "Sirifort Sports Complex", entity: "New Delhi", logo: "/clients/sirifort.jpg" },
             { name: "Yamuna Sports Complex", entity: "New Delhi", logo: "" },
             { name: "Games Village", entity: "New Delhi", logo: "" },
-            { name: "S.P. Mukerji Complex", entity: "New Delhi", logo: "" },
+            { name: "S.P. Mukerji Pool", entity: "New Delhi", logo: "" }
         ]
     },
     {
         category: "Commercial",
         icon: <Briefcase size={24} />,
         clients: [
-            { name: "DLF Magnolias", entity: "DLF Group, Gurgaon", logo: "/clients/dlf.jpg" },
-            { name: "DLF Aralias", entity: "DLF Group, Gurgaon", logo: "/clients/dlf.jpg" },
-            { name: "Larsen & Toubro", entity: "Construction", logo: "/clients/l-and-t.png" },
-            { name: "Emaar Palm Terace", entity: "Emaar MGF, Gurgaon", logo: "/clients/emaar.jpg" },
+            { name: "DLF Magnolias", entity: "Gurgaon", logo: "/clients/dlf.jpg" },
+            { name: "DLF Aralias", entity: "Gurgaon", logo: "/clients/dlf.jpg" },
+            { name: "DLF Golf Course", entity: "Gurgaon", logo: "/clients/dlf.jpg" },
+            { name: "DLF Pavillion", entity: "Gurgaon", logo: "/clients/dlf.jpg" },
+            { name: "DLF Mall Of India", entity: "Noida", logo: "/clients/dlf.jpg" },
+            { name: "DLF Garden City", entity: "Chennai", logo: "/clients/dlf.jpg" },
+            { name: "DLF Purseni Club", entity: "Lucknow", logo: "/clients/dlf.jpg" },
+            { name: "DLF Vibhutikhand", entity: "Lucknow", logo: "/clients/dlf.jpg" },
+            { name: "Larsen & Turbo", entity: "DLF Mall Of India", logo: "/clients/l-and-t.png" },
+            { name: "L&T Projects", entity: "Karnataka / Lucknow", logo: "/clients/l-and-t.png" },
+            { name: "Emaar Palm Terace", entity: "Gurgaon", logo: "/clients/emaar.jpg" },
+            { name: "Emaar Palm Enclave", entity: "Gurgaon", logo: "/clients/emaar.jpg" },
+            { name: "Emaar Gurgaon Green", entity: "Gurgaon", logo: "/clients/emaar.jpg" },
+            { name: "Emaar Imperial Garden", entity: "Gurgaon", logo: "/clients/emaar.jpg" },
+            { name: "Emaar Palm Drive", entity: "Gurgaon", logo: "/clients/emaar.jpg" },
+            { name: "Emaar Palm House", entity: "Gurgaon", logo: "/clients/emaar.jpg" },
+            { name: "Ireo Skyone", entity: "Gurgaon", logo: "/clients/images (9).png" },
+            { name: "Ireo Club House", entity: "Ludhiana", logo: "/clients/images (9).png" },
+            { name: "Ireo The Corridor", entity: "Gurgaon", logo: "/clients/images (9).png" },
+            { name: "Ford Foundation", entity: "New Delhi", logo: "/clients/ford.webp" },
             { name: "Adobe Campus", entity: "Noida", logo: "/clients/adobe.jpg" },
-            { name: "Ford Foundation", entity: "New Delhi", logo: "/clients/ford.webp" }
+            { name: "Sangam Theatre", entity: "New Delhi", logo: "/clients/sangam-cinemas-logo.jpg" },
+            { name: "India Bulls Enigma", entity: "Gurgaon", logo: "/clients/indiabulls-enigma-township-logo.png" },
+            { name: "Villa Balle Goa", entity: "Goa", logo: "/clients/images (10).png" },
+            { name: "Hero Steel Ltd", entity: "New Delhi", logo: "/clients/Hero_MotoCorp-Logo.wine.png" }
         ]
     }
 ];
@@ -159,7 +238,7 @@ export default function ClientsPage() {
                                                 </div>
                                             ) : (
                                                 <div className={styles.logoPlaceholder}>
-                                                    {client.entity.split(' ').filter(word => word.length > 0).map(word => word[0].toUpperCase()).join('')}
+                                                    {client.entity.split(' ').filter(word => word.length > 0).map(word => word[0].toUpperCase()).join('').substring(0, 3)}
                                                 </div>
                                             )}
                                         </div>

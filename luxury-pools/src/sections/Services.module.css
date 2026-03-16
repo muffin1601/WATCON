@@ -76,7 +76,7 @@
 
 @media (min-width: 1200px) {
   .container {
-    width: 60%;
+    width: 85%;
   }
 }
 
@@ -198,5 +198,47 @@
   .card {
     height: auto;
     padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 80px 20px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .description {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 60px 15px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+
+  .iconWrapper {
+    margin-bottom: 30px;
+  }
+
+  .cardContent h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
   }
 }

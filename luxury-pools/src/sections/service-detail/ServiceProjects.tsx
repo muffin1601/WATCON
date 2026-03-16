@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from './ServiceProjects.module.css';
 import { FadeIn } from '@/components/FadeIn';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 interface Project {
     title: string;
@@ -49,10 +50,17 @@ export default function ServiceProjects({ subtitle, title, description, projects
                                     <div className={styles.badge}>{project.badge}</div>
                                 )}
                                 <div className={styles.imageWrapper}>
-                                    <div
+                                    <Image
+                                        src={project.image}
+                                        alt={`${project.title} - Watcon International Project`}
+                                        fill
                                         className={styles.image}
-                                        style={{ backgroundImage: `url("${project.image}")` }}
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                     />
+                                    {/* <div className={styles.projectContent}>
+                                        <h3 className={styles.projectTitle}>{project.title}</h3>
+                                        <p className={styles.projectDesc}>{project.description}</p>
+                                    </div> */}
                                 </div>
                             </div>
                         </FadeIn>
@@ -62,4 +70,3 @@ export default function ServiceProjects({ subtitle, title, description, projects
         </section>
     );
 }
-

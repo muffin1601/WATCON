@@ -46,8 +46,8 @@
 
 /* The video block takes up a significant portion, but not all */
 .videoBlock {
-  width: 75%;
-  max-width: 1000px;
+  width: 80%;
+  max-width: 1200px;
   position: relative;
   z-index: 1;
 }
@@ -142,8 +142,8 @@
 .textBlock {
   position: absolute;
   right: 0;
-  width: 40%;
-  max-width: 600px;
+  width: 45%;
+  max-width: 650px;
   background: rgba(10, 10, 10, 0.85);
   /* Deep dark glass */
   backdrop-filter: blur(20px);
@@ -216,9 +216,13 @@
 }
 
 @media (max-width: 900px) {
+  .showcaseSection {
+    padding: 80px 20px;
+  }
+
   .item {
     flex-direction: column;
-    margin-bottom: 140px;
+    margin-bottom: 120px;
   }
 
   .itemReverse {
@@ -227,22 +231,22 @@
 
   .videoBlock {
     width: 100%;
-    margin-bottom: -50px;
-    /* Pull text block up to overlap */
+    margin-bottom: -40px;
   }
 
   .textBlock {
     position: relative;
-    width: 90%;
+    width: 95%;
     max-width: 100%;
     right: auto;
-    left: 5%;
+    left: 2.5%;
     transform: none;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 40px 25px;
   }
 
   .itemReverse .textBlock {
-    left: 5%;
+    left: 2.5%;
   }
 
   .videoWrapper::before {
@@ -253,5 +257,34 @@
   .itemReverse .videoWrapper::before {
     left: -15px;
     right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcaseSection {
+    padding: 60px 15px;
+  }
+
+  .item {
+    margin-bottom: 80px;
+  }
+
+  .textBlock {
+    padding: 30px 20px;
+    width: 100%;
+    left: 0;
+  }
+
+  .itemReverse .textBlock {
+    left: 0;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }

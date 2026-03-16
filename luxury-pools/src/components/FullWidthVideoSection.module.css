@@ -71,3 +71,24 @@
         font-size: 16px;
     }
 }
+
+@media (max-width: 480px) {
+    .section {
+        height: 40vh;
+        padding: 40px 15px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .subTitle {
+        letter-spacing: 3px;
+        font-size: 11px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}

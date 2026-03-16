@@ -77,3 +77,28 @@
   pointer-events: none;
   /* Let clicks pass through to iframe */
 }
+
+@media (max-width: 480px) {
+  .mapSection {
+    padding: 0 15px 60px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .address {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .mapWrapper {
+    height: 300px;
+  }
+}

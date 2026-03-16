@@ -7,42 +7,42 @@ export default function SpaPage() {
   return (
     <ServiceDetailTemplate
       hero={{
-        subtitle: "Sanctuary of Wellness",
-        title: "Bespoke Spa & Wellness Environments",
-        description: "Experience the pinnacle of restoration with our custom-designed spa solutions, from aromatic steam rooms to detoxifying saunas.",
+        subtitle: "India's Best Hydrotherapy Builder",
+        title: "Bespoke Hydrotherapy & Wellness Environments",
+        description: "Watcon International provides professional-grade Cold Plunge Pools, Cryo Rooms, and Hydrotherapy systems for recovery centers and luxury homes across India since 1972.",
         image: "/services/spa.webp",
 
         actions: [
           { label: "Book Consultation", href: "#contact", primary: true },
-          { label: "Explore Features", href: "#" }
+          { label: "Explore Recovery Systems", href: "#" }
         ]
       }}
       services={{
-        subtitle: "OUR EXPERTISE",
-        title: "Comprehensive Spa Solutions",
+        subtitle: "OUR WELLNESS EXPERTISE",
+        title: "Hydrotherapy Pool Builder India",
         items: [
           {
-            title: "Steam & Sauna",
-            description: "Custom-built thermal rooms designed for detoxification and mental clarity.",
-            icon: Wind,
+            title: "Hydrotherapy & Vitality",
+            description: "Custom-built Underwater Exercising Pools and Hydrotherapy systems for medical recovery and elite fitness.",
+            icon: Heart,
             href: "#"
           },
           {
-            title: "Vitality Pools",
-            description: "Temperature-controlled aquatic environments with advanced filtration.",
+            title: "Cold Plunge Pools",
+            description: "Where to buy a cold plunge pool in India? We design and manufacture custom ice bath systems for professional recovery.",
             icon: Droplet,
             href: "#"
           },
           {
-            title: "Cryotherapy Rooms",
-            description: "State-of-the-art cold therapy installations for recovery and rejuvenation.",
+            title: "Professional Cryo Rooms",
+            description: "Bespoke Cryo Rooms and thermal recovery suites for wellness resorts and luxury residences.",
             icon: Thermometer,
             href: "#"
           },
           {
-            title: "Wellness Consulting",
-            description: "Expert guidance on designing human-centric wellness spaces.",
-            icon: UserCheck,
+            title: "Sauna & Steam Setup",
+            description: "Commercial sauna and steam room setup for hospitality and high-end wellness franchises.",
+            icon: Wind,
             href: "#"
           }
         ]

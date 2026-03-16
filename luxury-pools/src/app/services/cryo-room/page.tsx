@@ -7,9 +7,9 @@ export default function CryoRoomPage() {
   return (
     <ServiceDetailTemplate
       hero={{
-        subtitle: "Advanced Recovery",
-        title: "Bespoke Cryotherapy & Cold Plunge Suites",
-        description: "Harness the power of extreme cold for recovery and longevity. Our custom cryo rooms and cold plunges are designed with surgical precision for elite performance.",
+        subtitle: "Best Cold Plunge Pool Manufacturer India",
+        title: "Bespoke Cryotherapy Rooms & <br/> Ice Bath Systems",
+        description: "Watcon International builds professional cold plunge pools and cryotherapy rooms used by athletes, wellness centres and luxury spas. Harness the power of extreme cold for recovery and longevity.",
         image: "/services/cryoroom.webp",
 
         actions: [
@@ -18,30 +18,30 @@ export default function CryoRoomPage() {
         ]
       }}
       services={{
-        subtitle: "THERMAL SHOCK TECH",
-        title: "Cold Therapy Solutions",
+        subtitle: "THERMAL RECOVERY",
+        title: "Cold Plunge Pool India",
         items: [
           {
-            title: "Whole Body Cryo",
-            description: "Advanced nitrogen or electric systems for extreme sub-zero metabolic boosting.",
+            title: "Professional Cold Plunges",
+            description: "Temperature-controlled ice bath pools with advanced ozone filtration, used by physiotherapy centres and elite athletes.",
             icon: Thermometer,
             href: "#"
           },
           {
-            title: "Cold Plunge Systems",
-            description: "Temperature-controlled immersion pools with ozone filtration and Chiller tech.",
+            title: "Cryotherapy Rooms",
+            description: "Custom-built Cryo Rooms and cryotherapy installations for wellness resorts and luxury health clubs.",
             icon: Wind,
             href: "#"
           },
           {
-            title: "Elite Recovery Tech",
-            description: "Customized lighting and bio-metric integration for optimal recovery sessions.",
+            title: "Contrast Therapy Pools",
+            description: "Dual-temperature systems for high-performance contrast therapy and metabolic boosting.",
             icon: Zap,
             href: "#"
           },
           {
-            title: "Commercial Grading",
-            description: "Robust, heavy-duty cooling systems designed for high-traffic wellness centers.",
+            title: "Professional Recovery Hubs",
+            description: "Complete recovery suite design including salt rooms, cold plunges, and rehabilitation zones.",
             icon: Settings,
             href: "#"
           }

@@ -37,14 +37,8 @@
   padding: 80px 20px 120px;
 }
 
-@media (max-width: 768px) {
-  .content {
-    padding: 60px 20px 80px;
-  }
-}
-
 .categorySection {
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 
 .categoryHeader {
@@ -73,15 +67,15 @@
 
 .clientGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
 }
 
 .clientCard {
   background: rgba(15, 15, 15, 0.5);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(189, 181, 149, 0.1);
-  padding: 48px 32px;
+  padding: 24px 15px;
   border-radius: 0;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   display: flex;
@@ -89,21 +83,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 220px;
+  height: 180px;
   position: relative;
   overflow: hidden;
-}
-
-.clientCard::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at top right, rgba(189, 181, 149, 0.05), transparent);
-  opacity: 0;
-  transition: opacity 0.5s ease;
 }
 
 .clientCard:hover {
@@ -111,10 +93,6 @@
   transform: translateY(-8px);
   background: rgba(20, 20, 20, 0.8);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-}
-
-.clientCard:hover::after {
-  opacity: 1;
 }
 
 .clientName {
@@ -148,7 +126,7 @@
 }
 
 .logoWrapper {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -157,51 +135,49 @@
 }
 
 .logoContainer {
-  width: 100%;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background: white;
   border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
   overflow: hidden;
 }
 
-.clientLogo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: all 0.4s ease;
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .clientGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-.clientCard:hover .logoContainer {
-  transform: scale(1.05);
-  box-shadow: 0 15px 30px rgba(189, 181, 149, 0.2);
-}
-
-.clientCard:hover .clientLogo {
-  transform: scale(1.05);
-}
-
-.clientCard:hover .logoPlaceholder {
-  color: #bdb595;
-  border-color: #bdb595;
-  background: rgba(189, 181, 149, 0.05);
+@media (max-width: 1024px) {
+  .clientGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 140px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 140px 20px 60px;
+  }
+  
+  .hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.8rem);
+  }
+
+  .content {
+    padding: 40px 15px 80px;
   }
   
   .categoryHeader {
     gap: 15px;
     margin-bottom: 40px;
+    margin-top: 40px;
   }
 
   .categoryHeader h2 {
@@ -209,8 +185,8 @@
   }
   
   .clientGrid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .categorySection {
@@ -219,7 +195,30 @@
 
   .clientCard {
     height: auto;
-    padding: 30px 20px;
+    padding: 40px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 120px;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .categoryHeader h2 {
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+  }
+
+  .clientName {
+    font-size: 1rem;
   }
 }
 
@@ -234,7 +233,7 @@
 }
 
 .pdfCtaSection h3 {
-  font-size: 2.2rem;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
   font-weight: 200;
   color: #bdb595;
   margin-bottom: 24px;
@@ -255,10 +254,6 @@
     margin: 60px auto;
   }
   
-  .pdfCtaSection h3 {
-    font-size: 1.6rem;
-  }
-
   .pdfCtaSection p {
     font-size: 1rem;
     margin-bottom: 30px;
@@ -279,9 +274,8 @@
   text-decoration: none;
   overflow: hidden;
   z-index: 1;
-  transition: color 0.25s ease, border-color 0.25s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
-  border-radius: 0;
 }
 
 .pdfButton::after {
@@ -303,14 +297,4 @@
   background: transparent;
   color: #fff;
   border-color: #bdb595;
-  transform: none;
-  box-shadow: none;
-}
-
-.pdfButton svg {
-  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.pdfButton:hover svg {
-  transform: translateY(2px);
 }

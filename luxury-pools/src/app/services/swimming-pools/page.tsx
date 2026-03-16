@@ -7,14 +7,14 @@ export default function SwimmingPoolsPage() {
   return (
     <ServiceDetailTemplate
       hero={{
-        subtitle: "Professional Pool Services",
-        title: "Transform Your Space with a <br/> Dream Swimming Pool",
-        description: "Professional pool installation, maintenance, and renovation services tailored to your vision. Building dreams since 2004.",
-        image: "/services/premium.png",
+        subtitle: "Luxury Swimming Pool Builder in Delhi & India",
+        title: "India's #1 Specialist in <br/> Luxury Pool Construction",
+        description: "Watcon International designs and builds luxury swimming pools in Delhi and across India, including resort pools, infinity pools, rooftop pools and villa pools. We specialize in high-end pool filtration, overflow systems, and infinity edge designs.",
+        image: "/services/swimmingpools (1).png",
         stats: [
-          { label: "Pools Built", value: "2500+" },
-          { label: "Satisfaction Rate", value: "98%" },
-          { label: "Years Experience", value: "50+" }
+          { label: "Olympic Projects", value: "Asian Games" },
+          { label: "Elite Clients", value: "The Oberoi" },
+          { label: "Experience", value: "50+ Years" }
         ],
         actions: [
           { label: "Get Free Quote", href: "#contact", primary: true },
@@ -22,30 +22,30 @@ export default function SwimmingPoolsPage() {
         ]
       }}
       services={{
-        subtitle: "WHAT WE OFFER",
-        title: "Our Swimming Pool Services",
+        subtitle: "PREMIUM POOL SOLUTIONS",
+        title: "Best Swimming Pool Maker in India",
         items: [
           {
-            title: "Pool Installation",
-            description: "Custom designed pools built to your exact specifications, from shape to accessories.",
+            title: "Luxury Residential Pools",
+            description: "Bespoke luxury residential pools Delhi NCR and rooftop infinity pools designed for the most exclusive residences.",
             icon: Waves,
             href: "#"
           },
           {
-            title: "Pool Maintenance",
-            description: "Expert cleaning, chemical balancing, and equipment checks to keep your pool pristine.",
+            title: "Olympic Size Pool Builders",
+            description: "The #1 choice for Olympic size pool builders in India, delivering international-standard competition facilities.",
             icon: Droplet,
             href: "#"
           },
           {
-            title: "Pool Renovation",
-            description: "Update your existing pool with modern additions, energy-efficient equipment, and new tiling or finishes.",
+            title: "Resort Pool Design",
+            description: "High-end resort pool filtration, overflow systems, and infinity edge designs for 5-star hotel developments.",
             icon: Wind,
             href: "#"
           },
           {
-            title: "Pool Cleaning",
-            description: "Thorough cleaning of pool surfaces, filters, and skimmers for a hygienic and sparkling pool environment.",
+            title: "Best Swimming Pool Maker",
+            description: "Recognized as the best swimming pool maker in India with over 2500+ successful aquatic engineering projects.",
             icon: Droplet,
             href: "#"
           }
@@ -57,39 +57,39 @@ export default function SwimmingPoolsPage() {
         description: "Explore our portfolio of stunning swimming pool installations.",
         items: [
           {
-            title: "Project 1",
-            description: "Residential Pool",
-            image: "/services/premium.png",
+            title: "The Oberoi Collection",
+            description: "Signature luxury hospitality project with advanced overflow systems.",
+            image: "/services/swimmingpools (1).png",
             badge: "Premium"
           },
           {
-            title: "Project 2",
-            description: "Luxury Pool",
-            image: "/services/signature.png",
+            title: "DLF Signature Estate",
+            description: "Bespoke residential infinity pool for a premium Delhi NCR estate.",
+            image: "/services/swimmingpools (2).png",
             badge: "Signature"
           },
           {
-            title: "Project 3",
-            description: "Indoor Pool",
-            image: "/services/exclusive.png",
+            title: "Olympic Training Facility",
+            description: "Full-scale athletic competition pool built to international standards.",
+            image: "/services/swimmingpools (3).png",
+            badge: "Olympic"
+          },
+          {
+            title: "Hillside Vista Pool",
+            description: "Engineering masterpiece featuring a cantilevered infinity edge.",
+            image: "/services/swimmingpools (4).png",
             badge: "Exclusive"
           },
           {
-            title: "Project 4",
-            description: "Family Pool",
-            image: "/services/popular.png",
-            badge: "Popular"
+            title: "Zen Wellness Resort",
+            description: "integrated hydrotherapy and relaxation pool for a 5-star spa.",
+            image: "/services/swimmingpools (5).jpeg",
+            badge: "Wellness"
           },
           {
-            title: "Project 5",
-            description: "Outdoor Pool",
-            image: "/services/service.png",
-            badge: "Service"
-          },
-          {
-            title: "Project 6",
-            description: "Modern Pool",
-            image: "/services/urban.png",
+            title: "Modern Minimalist Oasis",
+            description: "Sleek geometric design with glass-tile finish and mood lighting.",
+            image: "/services/swimmingpools (6).png",
             badge: "Urban"
           }
         ],

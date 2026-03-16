@@ -24,7 +24,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     z-index: 10;
     position: relative;
@@ -62,11 +62,10 @@
 .description {
     font-size: clamp(1rem, 1.5vw, 1.25rem);
     color: #e0e0e0;
-    max-width: 750px;
+    max-width: 850px;
     margin: 0 auto 50px;
     line-height: 1.6;
     font-weight: 400;
-    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
 }
 
 .heroFooter {
@@ -183,9 +182,69 @@
     fill: #000;
 }
 
+@media (max-width: 1024px) {
+    .hero {
+        padding: 120px 20px 140px;
+    }
+    
+    .stats {
+        gap: 40px;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero {
+        padding: 100px 15px 120px;
+    }
+
+    .title {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+    }
+
+    .description {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+    .heroFooter {
+        gap: 40px;
+    }
+
     .stats {
         flex-direction: column;
         gap: 30px;
+    }
+    
+    .statValue {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 15px 100px;
+    }
+    
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .subTitle {
+        letter-spacing: 3px;
+        font-size: 11px;
+    }
+
+    .actions {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .primaryBtn, .secondaryBtn {
+        width: 100%;
+    }
+    
+    .waveSeparator svg {
+        height: 60px;
     }
 }

@@ -22,7 +22,7 @@
 
 @media (min-width: 1400px) {
   .navbar {
-    padding: 0 11%;
+    padding: 0 5%;
   }
 }
 
@@ -160,7 +160,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 15px;
-  max-width: 75%;
+  max-width: 90%;
 }
 
 .sidebarNav>li {
@@ -401,11 +401,35 @@
   align-items: center;
 }
 
-@media (min-width: 769px) {
-  .btnQuote {
-    padding: 8px 26px;
-    font-size: 15px;
-    margin-right: 40px;
+@media (max-width: 768px) {
+  .navbar {
+    height: 70px;
+    padding: 0 4%;
+  }
+
+  .scrolled {
+    height: 65px;
+  }
+
+  .sidebar {
+    padding: 80px 20px;
+    max-width: 100%;
+  }
+
+  .sidebarNav {
+    max-width: 100%;
+  }
+
+  .sidebarLink {
+    font-size: 22px;
+  }
+
+  .servicesDropdown {
+    padding-left: 20px;
+  }
+
+  .plusMinus {
+    font-size: 30px;
   }
 }
 
@@ -413,9 +437,21 @@
   .homeText {
     display: none;
   }
+  
   .btnQuote {
-    padding: 10px;
-    margin-right: 15px;
+    padding: 8px 12px;
+    margin-right: 12px;
+    font-size: 13px;
+  }
+
+  .logoImg {
+    width: 120px;
+  }
+
+  .hamburger {
+    width: 28px;
+    height: 18px;
+    margin-left: 10px;
   }
 }
 
