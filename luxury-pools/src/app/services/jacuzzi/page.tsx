@@ -8,7 +8,7 @@ export default function JacuzziPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "Luxury Hydrotherapy",
-        title: "Bespoke Jacuzzi & Hot Tub Solutions",
+        title: "Bespoke <span>Jacuzzi</span> & Hot Tub Solutions",
         description: "Immerse yourself in pure relaxation with our custom-engineered jacuzzis, designed to blend luxury with therapeutic benefits.",
         image: "/services/jacuzzi%20(1).webp",
 

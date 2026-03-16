@@ -7,15 +7,10 @@ export default function SwimmingPoolsPage() {
   return (
     <ServiceDetailTemplate
       hero={{
-        subtitle: "Luxury Swimming Pool Builder in Delhi & India",
-        title: "India's #1 Specialist in <br/> Luxury Pool Construction",
-        description: "Watcon International designs and builds luxury swimming pools in Delhi and across India, including resort pools, infinity pools, rooftop pools and villa pools. We specialize in high-end pool filtration, overflow systems, and infinity edge designs.",
+        subtitle: "The Art of Aquatic Living",
+        title: "Bespoke Luxury <br/> <span>Swimming Pool</span> Construction",
+        description: "Where master engineering meets architectural artistry. We design and build India's most iconic aquatic environments, from the legendary pools of The Oberoi to private infinity sanctuaries for the world's most discerning homeowners.",
         image: "/services/swimmingpools (1).png",
-        stats: [
-          { label: "Olympic Projects", value: "Asian Games" },
-          { label: "Elite Clients", value: "The Oberoi" },
-          { label: "Experience", value: "50+ Years" }
-        ],
         actions: [
           { label: "Get Free Quote", href: "#contact", primary: true },
           { label: "View Our Work", href: "#projects" }

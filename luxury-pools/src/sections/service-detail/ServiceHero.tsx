@@ -52,15 +52,10 @@ export default function ServiceHero({
             <ScrollParallax distance={40} className={styles.container}>
                 <PerspectiveReveal delay={0.1}>
                     <p className={styles.subTitle}>{subtitle}</p>
-                    <h1 className={styles.title}>
-                        {title.split(' ').filter(word => word.toLowerCase() !== 'bespoke').map((word, i) => {
-                            const isHighlight = highlightWords.some(h => word.toLowerCase().includes(h));
-                            if (word.includes('<br')) {
-                                return <br key={i} />;
-                            }
-                            return isHighlight ? <span key={i}>{word} </span> : word + ' ';
-                        })}
-                    </h1>
+                    <h1 
+                        className={styles.title}
+                        dangerouslySetInnerHTML={{ __html: title }}
+                    />
                 </PerspectiveReveal>
                 
                 <FadeIn delay={0.6} distance={20}>

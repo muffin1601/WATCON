@@ -7,9 +7,9 @@ export default function SpaPage() {
   return (
     <ServiceDetailTemplate
       hero={{
-        subtitle: "India's Best Hydrotherapy Builder",
-        title: "Bespoke Hydrotherapy & Wellness Environments",
-        description: "Watcon International provides professional-grade Cold Plunge Pools, Cryo Rooms, and Hydrotherapy systems for recovery centers and luxury homes across India since 1972.",
+        subtitle: "Luxury Wellness Environments",
+        title: "Bespoke Hydrotherapy & <br/> Healing Sanctuaries",
+        description: "Innovative wellness engineering for recovery and relaxation. We design professional-grade cold plunge pools, cryo rooms, and hydrotherapy suites for Asia's finest luxury resorts and private wellness estates.",
         image: "/services/spa.webp",
 
         actions: [
