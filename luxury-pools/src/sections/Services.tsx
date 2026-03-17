@@ -5,26 +5,31 @@ import { Waves, Bath, Flame } from "lucide-react";
 import { FadeIn } from "../components/FadeIn";
 import { StaggerContainer, StaggerItem } from "../components/StaggerContainer";
 import { ScrollParallax } from "../components/ScrollParallax";
+import Link from "next/link";
 const services = [
   {
     title: "Swimming Pools & Water Bodies",
     desc:
       "Custom swimming pools, competition pools, koi ponds, tiles, and engineered water bodies designed for beauty and performance.",
     icon: Waves,
+    href: "/services/swimming-pools"
   },
   {
     title: "Spa, Jacuzzi & Wellness",
     desc:
       "Luxury spa solutions including jacuzzis, saunas, steam rooms, cryo rooms, and advanced dehumidification systems.",
     icon: Bath,
+    href: "/services/spa"
   },
   {
     title: "Outdoor Living Solutions",
     desc:
       "Premium outdoor furniture, fire pits, fireplaces, and lifestyle elements that elevate open-air living spaces.",
     icon: Flame,
+    href: "/services/outdoor-furniture"
   },
 ];
+
 
 export default function Services() {
   return (
@@ -62,7 +67,7 @@ export default function Services() {
             return (
               <StaggerItem key={index}>
                 <ScrollParallax distance={20 + (index * 15)} direction={index % 2 === 0 ? "up" : "down"}>
-                  <div className={styles.card}>
+                  <Link href={service.href} className={styles.card}>
                     <div className={styles.iconWrapper}>
                       <Icon size={34} className={styles.icon} />
                     </div>
@@ -70,7 +75,12 @@ export default function Services() {
                       <h3>{service.title}</h3>
                       <p>{service.desc}</p>
                     </div>
-                  </div>
+                    <div className={styles.cardFooter}>
+                      <span>Explore Category</span>
+                      <Waves size={16} />
+                    </div>
+                  </Link>
+
                 </ScrollParallax>
               </StaggerItem>
             );

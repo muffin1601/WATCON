@@ -3,14 +3,17 @@
 import styles from './ServiceGrid.module.css';
 import { FadeIn } from '@/components/FadeIn';
 import { StaggerContainer, StaggerItem } from '@/components/StaggerContainer';
-import { LucideIcon, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import LucideIcon from '@/components/LucideIcon';
+
 import { ScrollParallax } from '@/components/ScrollParallax';
 import Link from 'next/link';
 
 interface ServiceItem {
     title: string;
     description: string;
-    icon: LucideIcon;
+    icon: string;
+
     href: string;
 }
 
@@ -45,8 +48,9 @@ export default function ServiceGrid({ subtitle, title, services }: ServiceGridPr
                                 <ScrollParallax distance={20 + index * 10} direction={index % 2 === 0 ? "up" : "down"}>
                                     <div className={styles.card}>
                                         <div className={styles.iconWrapper}>
-                                            <Icon size={32} strokeWidth={1.5} className={styles.icon} />
+                                            <LucideIcon name={service.icon} size={32} strokeWidth={1.5} className={styles.icon} />
                                         </div>
+
                                         <h3 className={styles.itemTitle}>{service.title}</h3>
                                         <p className={styles.itemDesc}>{service.description}</p>
                                     </div>

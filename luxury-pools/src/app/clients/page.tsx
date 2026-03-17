@@ -1,14 +1,38 @@
-"use client";
-
-import React from 'react';
-import Image from 'next/image';
-import { motion, Variants } from 'framer-motion';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ScrollParallax } from "@/components/ScrollParallax";
 import ContactSection from "@/sections/ContactSection";
 import styles from './clients.module.css';
-import { Users, Building2, School, Trophy, Briefcase, FileText } from 'lucide-react';
+import CtaSection from "@/sections/CtaSection";
+import ServiceNavigation from "@/sections/service-detail/ServiceNavigation";
+import ClientsContent from "../../components/ClientsContent";
+
+import type { Metadata } from "next";
+import { Users, Building2, School, Trophy, Briefcase } from 'lucide-react';
+
+import Image from "next/image";
+
+export const metadata: Metadata = {
+
+  title: "Distinguished Clients | Watcon International Pool Builders",
+  description: "Explore the prestigious portfolio of Watcon International. We have served elite clients like the Oberoi Group, DLF, and prominent private residences across India for over 50 years.",
+  alternates: {
+    canonical: "https://watcon.co.in/clients",
+  },
+  keywords: [
+    "watcon international clients",
+    "luxury pool company partners india",
+    "oberoi pool builder india",
+    "dlf pool project contractor",
+    "hcl founder pool builder",
+    "mankind pharma pool project",
+    "hero cycles pool builder"
+  ],
+  openGraph: {
+    title: "Our Distinguished Clients | Watcon International Legacy",
+    description: "A testament to 50+ years of aquatic excellence. Trusted by India's biggest brands and elite residences.",
+    images: ["/clients/oberoi.jpg"],
+  }
+};
 
 const clientData = [
     {
@@ -41,9 +65,6 @@ const clientData = [
             { name: "Mr Raghavpati Singhania", entity: "JK", logo: "/clients/JK-finner-logo.png" },
             { name: "Mr Kumar Manglam Birla", entity: "Aditya Birla Group", logo: "/clients/aditya-birla.png" },
             { name: "Mr Aggarwal", entity: "Hira Group", logo: "/clients/images (2).png" },
-            // { name: "Mr Sailesh Arora", entity: "Mankind Pharma", logo: "/clients/mankind.webp" },
-            // { name: "Mr Mukul Rohatgi", entity: "Senior Advocate", logo: "" },
-            // { name: "Mr Kapil Sibal", entity: "Senior Advocate", logo: "" },
             { name: "Mr Singh", entity: "Max Estate", logo: "/clients/images (3).png" },
             { name: "Mr Bhartiya", entity: "Hindustan Times", logo: "/clients/images (4).png" },
             { name: "Mr Jain", entity: "Pan Bahar", logo: "/clients/images (5).png" },
@@ -51,15 +72,9 @@ const clientData = [
             { name: "Mr Arora", entity: "Dilbagh", logo: "/clients/01-500x500.webp" },
             { name: "Mr Chaurasiya", entity: "Kamla Pasand", logo: "/clients/images (1).jpg" },
             { name: "Rajdarbar Reality", entity: "Rajdarbar Reality", logo: "/clients/logo.png" },
-            // { name: "Mr Anurag Gupta", entity: "Rashmi Gutkha", logo: "" },
-            // { name: "Tilak Raj Sharma", entity: "Kanpur", logo: "" },
             { name: "Mr Moin Qureshi", entity: "Great Value Foods", logo: "/clients/images (2).jpg" },
-            // { name: "Mr Kahndelwal", entity: "Kattha Industry", logo: "" },
-            // { name: "Mr Garg", entity: "Tobacco Industry", logo: "" },
             { name: "Mr Kurele", entity: "Jaquar Group", logo: "/clients/Official_Jaquar_Group_Logo.png" },
             { name: "Mr Mehra", entity: "Jaquar Group", logo: "/clients/Official_Jaquar_Group_Logo.png" },
-            // { name: "Mr Sirsa", entity: "Politician", logo: "" },
-            // { name: "Mr Navjot Singh Siddhu", entity: "Politician", logo: "" }
         ]
     },
     {
@@ -86,7 +101,6 @@ const clientData = [
             { name: "Hyatt- Samhi Hotel", entity: "Delhi", logo: "/clients/grand-hyatt.png" },
             { name: "Hyatt Place", entity: "Kathmandu, Nepal", logo: "/clients/images (3).jpg" },
             { name: "Le Meridien", entity: "Thimphu, Bhutan", logo: "/clients/le-meridien.png" },
-            // { name: "Shekhar Resorts", entity: "Agra", logo: "" }
         ]
     },
     {
@@ -101,8 +115,6 @@ const clientData = [
             { name: "Step By Step School", entity: "Noida", logo: "/clients/step-by-step.png" },
             { name: "Ambience School", entity: "New Delhi", logo: "/clients/ambience.jpg" },
             { name: "Sagar Shiksha Santhan", entity: "Tijara, Rajasthan", logo: "/clients/images (4).jpg" },
-            // { name: "Brazilian High Commission", entity: "New Delhi", logo: "" },
-            // { name: "New Zealand High Commission", entity: "New Delhi", logo: "" },
             { name: "American Embassy", entity: "Kathmandu", logo: "/clients/us-embassy.avif" },
             { name: "American Embassy", entity: "New Delhi", logo: "/clients/us-embassy.avif" }
         ]
@@ -150,133 +162,36 @@ const clientData = [
     }
 ];
 
-const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.1
-        }
-    }
-};
-
-const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.6,
-            ease: "easeOut"
-        }
-    }
-};
-
 export default function ClientsPage() {
     return (
         <div className={styles.clientsPage}>
             <Navbar />
             
             <section className={styles.hero}>
-                <ScrollParallax distance={40}>
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <h1>Our Distinguished Clients</h1>
-                        <p>
-                            Partnering with visionaries and industry leaders to create aquatic 
-                            masterpieces that define luxury and excellence across the globe.
-                        </p>
-                    </motion.div>
-                </ScrollParallax>
+                <Image src="/6.png" alt="Luxury Hospitality Projects" fill className={styles.bgImage} priority />
+                <div className={styles.heroOverlay}></div>
+                <div className={styles.heroContent}>
+                    <h1>Distinguished <span>Clients</span></h1>
+                    <p>
+                        Partnering with visionaries and industry leaders to create aquatic 
+                        masterpieces that define luxury and excellence across the globe.
+                    </p>
+                </div>
             </section>
 
+
             <main className={styles.content}>
-                {clientData.map((section, sectionIdx) => (
-                    <section key={sectionIdx} className={styles.categorySection}>
-                        <ScrollParallax distance={20} direction="up">
-                            <motion.div 
-                                className={styles.categoryHeader}
-                                initial={{ opacity: 0, x: -20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.6 }}
-                            >
-                                <span style={{ color: '#bdb595' }}>{section.icon}</span>
-                                <h2>{section.category}</h2>
-                                <div className={styles.line}></div>
-                            </motion.div>
-                        </ScrollParallax>
-
-                        <motion.div 
-                            className={styles.clientGrid}
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true, margin: "-100px" }}
-                        >
-                            {section.clients.map((client, clientIdx) => (
-                                <motion.div 
-                                    key={clientIdx} 
-                                    className={styles.clientCard}
-                                    variants={itemVariants}
-                                >
-                                    <ScrollParallax distance={15 + (clientIdx % 3) * 10} direction={clientIdx % 2 === 0 ? "up" : "down"}>
-                                        <div className={styles.logoWrapper}>
-                                            {client.logo ? (
-                                                <div className={styles.logoContainer}>
-                                                    <Image 
-                                                        src={client.logo} 
-                                                        alt={`${client.name} logo`}
-                                                        width={80}
-                                                        height={80}
-                                                        className={styles.clientLogo}
-                                                        unoptimized
-                                                    />
-                                                </div>
-                                            ) : (
-                                                <div className={styles.logoPlaceholder}>
-                                                    {client.entity.split(' ').filter(word => word.length > 0).map(word => word[0].toUpperCase()).join('').substring(0, 3)}
-                                                </div>
-                                            )}
-                                        </div>
-                                        <div className={styles.clientName}>{client.name}</div>
-                                        <div className={styles.clientSub}>{client.entity}</div>
-                                    </ScrollParallax>
-                                </motion.div>
-                            ))}
-                        </motion.div>
-                    </section>
-                ))}
-
-                <motion.section 
-                    className={styles.pdfCtaSection}
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <h3>Explore Our Full Legacy</h3>
-                    <p>
-                        We have partnered with hundreds of distinguished clients over the decades. 
-                        View our comprehensive portfolio to see our complete list of projects.
-                    </p>
-                    <a 
-                        href="/clients-list.pdf" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className={styles.pdfButton}
-                    >
-                        <FileText size={20} />
-                        View More
-                    </a>
-                </motion.section>
+                <ClientsContent clientData={clientData} />
             </main>
 
+            <CtaSection />
+            <ServiceNavigation />
+
             <ContactSection />
+
             <Footer />
+
         </div>
     );
 }
+

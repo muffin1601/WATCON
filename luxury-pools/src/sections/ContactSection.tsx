@@ -3,8 +3,9 @@
 import styles from "./ContactSection.module.css";
 import { FadeIn } from "../components/FadeIn";
 import { StaggerContainer, StaggerItem } from "../components/StaggerContainer";
-import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowRight, Loader2, CheckCircle2 } from "lucide-react";
 import { ScrollParallax } from "../components/ScrollParallax";
+import { useState } from "react";
 
 interface ContactSectionProps {
   title?: string;
@@ -17,8 +18,55 @@ export default function ContactSection({
   description = "Tell us about your vision — our design consultants will reach out within 24 hours to discuss how we can bring it to life.",
   subTitle = "PRIVATE CONSULTATION"
 }: ContactSectionProps) {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("submitting");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          pageSource: typeof window !== "undefined" ? window.location.pathname : "Unknown"
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+        setErrorMessage(data.error || "Failed to send enquiry. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission Error:", error);
+      setStatus("error");
+      setErrorMessage("An unexpected error occurred. Please try again later.");
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="contact">
+
       <div className={styles.container}>
         <div className={styles.header}>
           <FadeIn delay={0.1}>
@@ -30,10 +78,12 @@ export default function ContactSection({
               <h2 className={styles.title}>
                 {title.split(' ').map((word, i) => {
                   const pureWord = word.toLowerCase().replace(/[.,!?]/g, '');
-                  return pureWord === 'journey' || pureWord === 'pool' || pureWord === 'dream' || pureWord === 'extraordinary' ?
-                    <span key={i}>{word} </span> : word + ' '
+                  const highlights = ['journey', 'pool', 'dream', 'extraordinary', 'project', 'vision', 'consultation'];
+                  return highlights.includes(pureWord) ?
+                    <span key={i} className={styles.accent}>{word} </span> : word + ' '
                 })}
               </h2>
+
             </FadeIn>
           </ScrollParallax>
 
@@ -48,21 +98,87 @@ export default function ContactSection({
             <FadeIn delay={0.4} scale={0.95}>
               <div className={styles.formCard}>
                 <h3 className={styles.formHeading}>Send an Enquiry</h3>
-                <form className={styles.form}>
-                  <div className={styles.inputGroup}>
-                    <label>Your Name</label>
-                    <input type="text" placeholder="Your Name" />
+                
+                {status === "success" ? (
+                  <div className={styles.successState}>
+                    <CheckCircle2 size={48} color="#22c55e" />
+                    <h4>Enquiry Sent Successfully</h4>
+                    <p>Thank you for reaching out. We have sent a confirmation email to {formData.email} and our team will contact you shortly.</p>
+                    <button onClick={() => setStatus("idle")} className={styles.submitButton}>
+                      Send Another Enquiry
+                    </button>
                   </div>
-  
-                  <div className={styles.inputGroup}>
-                    <label>Email Address</label>
-                    <input type="email" placeholder="mail@example.com" />
-                  </div>
-  
-                  <button type="submit" className={styles.submitButton}>
-                    Send Enquiry <ArrowRight size={18} className="ml-2" />
-                  </button>
-                </form>
+                ) : (
+                  <form className={styles.form} onSubmit={handleSubmit}>
+                    <div className={styles.inputGroup}>
+                      <label htmlFor="name">Your Name</label>
+                      <input 
+                        id="name"
+                        name="name"
+                        type="text" 
+                        placeholder="Your Name" 
+                        required 
+                        value={formData.name}
+                        onChange={handleChange}
+                        disabled={status === "submitting"}
+                      />
+                    </div>
+    
+                    <div className={styles.inputGroup}>
+                      <label htmlFor="email">Email Address</label>
+                      <input 
+                        id="email"
+                        name="email"
+                        type="email" 
+                        placeholder="mail@example.com" 
+                        required 
+                        value={formData.email}
+                        onChange={handleChange}
+                        disabled={status === "submitting"}
+                      />
+                    </div>
+
+                    <div className={styles.inputGroup}>
+                      <label htmlFor="message">Message (Optional)</label>
+                      <textarea 
+                        id="message"
+                        name="message"
+                        placeholder="Tell us about your project..."
+                        rows={4}
+                        value={formData.message}
+                        onChange={handleChange}
+                        disabled={status === "submitting"}
+                        style={{
+                          width: '100%',
+                          padding: '1rem',
+                          backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                          border: '1px solid rgba(255, 255, 255, 0.1)',
+                          color: '#fff',
+                          fontFamily: 'inherit',
+                          fontSize: '0.9rem',
+                          outline: 'none',
+                          transition: 'border-color 0.3s ease'
+                        }}
+                      />
+                    </div>
+
+                    {status === "error" && (
+                      <p className={styles.errorText}>{errorMessage}</p>
+                    )}
+    
+                    <button 
+                      type="submit" 
+                      className={styles.submitButton}
+                      disabled={status === "submitting"}
+                    >
+                      {status === "submitting" ? (
+                        <>Sending... <Loader2 size={18} className={styles.spinner} /></>
+                      ) : (
+                        <>Send Enquiry <ArrowRight size={18} className="ml-2" /></>
+                      )}
+                    </button>
+                  </form>
+                )}
               </div>
             </FadeIn>
           </ScrollParallax>
@@ -127,4 +243,5 @@ export default function ContactSection({
     </section>
   );
 }
+
 

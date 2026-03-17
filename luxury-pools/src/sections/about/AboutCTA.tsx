@@ -42,9 +42,10 @@ export default function AboutCTA() {
         </FadeIn>
 
         <FadeIn delay={0.4}>
-          <a href="#contact" className={styles.ctaBtn}>
+          <a href="/contact" className={styles.ctaBtn}>
             Start Your Project <ArrowRight size={18} className="ml-2" />
           </a>
+
         </FadeIn>
       </div>
     </section>

@@ -26,18 +26,13 @@ const projects: Project[] = [
       "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg",
   },
   {
-    id: 2,
-    title: "Fire Installation – Vasant Vihar",
-    image:
-      "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg",
-  },
-  {
     id: 3,
     title: "Westin Rishikesh – Pool, Waterbody & Spa",
     image:
       "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg",
   },
 ];
+
 
 export default function Portfolio() {
   return (
@@ -66,7 +61,8 @@ export default function Portfolio() {
                   />
                   <div className={styles.content}>
                     <h3>{project.title}</h3>
-                    <a href="#" className={styles.link}>
+                    <Link href="/portfolio" className={styles.link}>
+
                       Learn More
                       <svg
                         className={styles.arrow}
@@ -91,7 +87,8 @@ export default function Portfolio() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </a>
+                    </Link>
+
                   </div>
                 </div>
               </ScrollParallax>

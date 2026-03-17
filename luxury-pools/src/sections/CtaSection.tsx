@@ -5,7 +5,27 @@ import { FadeIn } from "../components/FadeIn";
 import { ScrollParallax } from "../components/ScrollParallax";
 import Link from "next/link";
 
-export default function CtaSection() {
+interface CtaSectionProps {
+  subTitle?: string;
+  title?: string;
+  titleAccent?: string;
+  text?: string;
+  primaryLabel?: string;
+  primaryHref?: string;
+  secondaryLabel?: string;
+  secondaryHref?: string;
+}
+
+export default function CtaSection({
+  subTitle = "WATCON - ELEVATING OUTDOOR SPACES",
+  title = "High-End ",
+  titleAccent = "Landscaping and Water Solutions",
+  text = "Watcon specializes in providing premium landscaping products and solutions, including swimming pools, water features, and spa/sauna/steam room installations. We cater to discerning clients seeking to transform their outdoor living spaces into stunning, functional retreats.",
+  primaryLabel = "Discover Our Services",
+  primaryHref = "/services/swimming-pools",
+  secondaryLabel = "Start Your Project",
+  secondaryHref = "/contact"
+}: CtaSectionProps) {
   return (
     <section className={styles.cta}>
       <div className={styles.container}>
@@ -28,18 +48,27 @@ export default function CtaSection() {
         {/* Right Content */}
         <ScrollParallax distance={40} direction="down" className={styles.content}>
           <FadeIn delay={0.4} direction="left" distance={50}>
-            <p className={styles.subTitle}>WATCON - ELEVATING OUTDOOR SPACES</p>
+            <p className={styles.subTitle}>{subTitle}</p>
   
             <h2 className={styles.title}>
-              High-End <span>Landscaping and Water Solutions</span>
+              {title}<span>{titleAccent}</span>
             </h2>
   
-            <p className={styles.text}>
-              Watcon specializes in providing premium landscaping products and solutions, including swimming pools, water features, and spa/sauna/steam room installations. We cater to discerning clients seeking to transform their outdoor living spaces into stunning, functional retreats.
-            </p>
+            <p className={styles.text}>{text}</p>
+            <div className={styles.actions}>
+              <Link href={primaryHref} className={styles.primaryBtn}>
+                {primaryLabel}
+              </Link>
+              <Link href={secondaryHref} className={styles.secondaryBtn}>
+                {secondaryLabel}
+              </Link>
+            </div>
           </FadeIn>
         </ScrollParallax>
+
+
       </div>
     </section>
   );
-}
+}
+

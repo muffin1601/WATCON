@@ -1,7 +1,29 @@
-"use client";
-
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
-import { Wind, Droplets, Settings, ShieldCheck, Thermometer, Zap } from "lucide-react";
+// import { Wind, Droplets, Settings, Thermometer } from "lucide-react";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Indoor Pool Dehumidification Systems India | Climate Control Experts",
+  description: "Watcon International provides high-performance dehumidification and air handling systems for indoor swimming pools and luxury spas in India. Protect your property from moisture damage and ensure hospital-grade air quality.",
+  alternates: {
+    canonical: "https://watcon.co.in/services/dehumidifier",
+  },
+  keywords: [
+    "indoor pool dehumidification india",
+    "swimming pool air handling units delhi",
+    "pool room climate control system",
+    "moisture control for indoor pools",
+    "commercial dehumidifier for spa india",
+    "swimming pool ventilation experts delhi",
+    "humidity control for swimming pools"
+  ],
+  openGraph: {
+    title: "Dehumidification & Climate Control | Watcon International",
+    description: "High-performance air handling systems ensure perfect comfort and structural longevity for indoor pool environments.",
+    images: ["/services/dehumidifier.webp"],
+  }
+};
 
 export default function DehumidifierPage() {
   return (
@@ -9,48 +31,48 @@ export default function DehumidifierPage() {
       hero={{
         subtitle: "Precision Climate Control",
         title: "Dehumidification & Air Quality",
-        description: "Protect your luxury indoor pool and spa areas from moisture damage. We design high-performance air handling systems that ensure perfect comfort and structural longevity.",
+        description: "Protect your luxury indoor pool and spa areas from moisture damage. We design high-performance air handling systems that ensure perfect comfort and structural longevity for India's most exclusive residences and aquatic centers.",
         image: "/services/dehumidifier.webp",
-
         actions: [
-          { label: "Consult Expert", href: "#contact", primary: true },
-          { label: "Learn More", href: "#" }
+          { label: "Consult Expert", href: "/contact", primary: true },
+          { label: "View Our Work", href: "#projects" }
         ]
+
       }}
       services={{
         subtitle: "AIR MASTERY",
         title: "Advanced HVAC Solutions",
         items: [
           {
-            title: "Moisture Extraction",
-            description: "High-capacity systems designed to control humidity levels in demanding indoor pool environments.",
-            icon: Droplets,
-            href: "#"
+            title: "Indoor Pools",
+            description: "High-capacity humidity control for indoor swimming pools, protecting your luxury interior from moisture damage.",
+            icon: "Droplets",
+            href: "/services/swimming-pools"
           },
           {
-            title: "Thermal Comfort",
-            description: "Integrated heating and cooling that maintains a perfect air-to-water temperature balance.",
-            icon: Thermometer,
-            href: "#"
+            title: "Wellness Spas",
+            description: "Specialized air handling for commercial spa environments, ensuring comfort in high-vapor steam and sauna suites.",
+            icon: "Wind",
+            href: "/services/spa"
           },
           {
-            title: "Air Purification",
-            description: "Advanced filtration that removes chlorine odors and ensures hospital-grade air quality.",
-            icon: Wind,
-            href: "#"
+            title: "Performance Arenas",
+            description: "Commercial-grade climate solutions for Olympic-sized competition pools and large-scale sports institutions.",
+            icon: "Waves",
+            href: "/services/competition-pool"
           },
           {
-            title: "Smart Monitoring",
-            description: "24/7 automated climate monitoring with remote control and energy-saving modes.",
-            icon: Settings,
-            href: "#"
+            title: "Thermal Control",
+            description: "Precision temperature management for dedicated recovery zones including cryo rooms and private whirlpools.",
+            icon: "Thermometer",
+            href: "/services/cryo-room"
           }
         ]
       }}
       projects={{
         subtitle: "ENGINEERING PROJECTS",
         title: "Climate Control Installations",
-        description: "Engineered for performance, our dehumidification systems maintain perfect air quality in the most demanding environments.",
+        description: "Engineered for performance, our dehumidification systems maintain perfect air quality in the most demanding aquatic environments.",
         items: [
           {
             title: "Project 1",
@@ -121,9 +143,29 @@ export default function DehumidifierPage() {
         ]
       }}
       contact={{
-        title: "Master Your Environment",
-        description: "Consult with our air quality experts to design a system for your high-humidity space."
+        title: "Master Your Indoor Atmosphere",
+        description: "Consult with our air quality experts to design a custom climate control system for your luxury property. Get a professional quote today."
       }}
+      faqs={[
+        {
+          question: "Why is indoor pool dehumidification important in India?",
+          answer: "Indoor pool dehumidification is critical in India's climate to prevent high humidity from causing mold, structural corrosion, and unhealthy air quality. A dedicated system protects your luxury investment and ensures bather comfort."
+        },
+        {
+          question: "Who are the experts in swimming pool ventilation in Delhi?",
+          answer: "Watcon International is recognized as the leading swimming pool ventilation expert in Delhi. We design and install specialized air handling units (AHUs) tailored specifically for the high moisture loads of indoor aquatic environments."
+        },
+        {
+          question: "What is a pool room climate control system?",
+          answer: "A pool room climate control system is an integrated HVAC solution that manages air temperature, water temperature, and humidity levels simultaneously to create a stable, comfortable environment and protect the building's integrity."
+        },
+        {
+          question: "Do you provide commercial dehumidifiers for spas in India?",
+          answer: "Yes, we supply and install high-capacity commercial dehumidifiers for spas and wellness centers across India, ensuring that high-vapor environments remain comfortable and moisture-free."
+        }
+      ]}
     />
+
   );
 }
+

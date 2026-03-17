@@ -1,7 +1,28 @@
-"use client";
-
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
-import { Sparkles, Wind, Droplet, Heart, Thermometer, UserCheck } from "lucide-react";
+// import { Sparkles, Wind, Droplet, Heart, Thermometer } from "lucide-react";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Luxury Spa & Hydrotherapy Pool Construction India | Watcon",
+  description: "Premier builders of vitality pools, hydrotherapy suites, and modern wellness retreats in India. Watcon provides professional spa engineering for 5-star hospitality and high-end residences.",
+  alternates: {
+    canonical: "https://watcon.co.in/services/spa",
+  },
+  keywords: [
+    "hydrotherapy pool builder india",
+    "luxury spa construction delhi",
+    "vitality pool installation",
+    "cold plunge pool manufacturer india",
+    "wellness sanctuary designer",
+    "commercial spa setup india"
+  ],
+  openGraph: {
+    title: "Hydrotherapy & Healing Sanctuaries | Watcon International",
+    description: "Innovative wellness engineering for recovery and relaxation since 1972.",
+    images: ["/services/spa.webp"],
+  }
+};
 
 export default function SpaPage() {
   return (
@@ -10,40 +31,40 @@ export default function SpaPage() {
         subtitle: "Luxury Wellness Environments",
         title: "Hydrotherapy & <br/> Healing Sanctuaries",
         description: "Innovative wellness engineering for recovery and relaxation. We design professional-grade cold plunge pools, cryo rooms, and hydrotherapy suites for Asia's finest luxury resorts and private wellness estates.",
-        image: "/services/spa.webp",
-
+        image: "/services/spa%20(1).webp",
         actions: [
-          { label: "Book Consultation", href: "#contact", primary: true },
-          { label: "Explore Recovery Systems", href: "#" }
+          { label: "Book Consultation", href: "/contact", primary: true },
+          { label: "View Portfolio", href: "#projects" }
         ]
+
       }}
       services={{
-        subtitle: "OUR WELLNESS EXPERTISE",
-        title: "Hydrotherapy Pool Builder India",
+        subtitle: "LUXURY WELLNESS",
+        title: "Hydrotherapy & Spa Solutions",
         items: [
           {
-            title: "Hydrotherapy & Vitality",
-            description: "Custom-built Underwater Exercising Pools and Hydrotherapy systems for medical recovery and elite fitness.",
-            icon: Heart,
-            href: "#"
+            title: "Holistic Saunas",
+            description: "Custom-built timber cabins using premium Canadian cedar and smart heating technology.",
+            icon: "Thermometer",
+            href: "/services/sauna"
           },
           {
-            title: "Cold Plunge Pools",
-            description: "Where to buy a cold plunge pool in India? We design and manufacture custom ice bath systems for professional recovery.",
-            icon: Droplet,
-            href: "#"
+            title: "Steam Suites",
+            description: "Authentic Turkish Hammam designs with automated aromatherapy and high-performance vapor.",
+            icon: "Wind",
+            href: "/services/steam"
           },
           {
-            title: "Professional Cryo Rooms",
-            description: "Bespoke Cryo Rooms and thermal recovery suites for wellness resorts and luxury residences.",
-            icon: Thermometer,
-            href: "#"
+            title: "Private Jacuzzis",
+            description: "Bespoke hydrotherapy tubs with specialized jet alignment for ultimate relaxation.",
+            icon: "Bath",
+            href: "/services/jacuzzi"
           },
           {
-            title: "Sauna & Steam Setup",
-            description: "Commercial sauna and steam room setup for hospitality and high-end wellness franchises.",
-            icon: Wind,
-            href: "#"
+            title: "Cryo Recovery",
+            description: "Advanced cryotherapy rooms and cold plunge pools for professional muscular recovery.",
+            icon: "Zap",
+            href: "/services/cryo-room"
           }
         ]
       }}
@@ -124,6 +145,26 @@ export default function SpaPage() {
         title: "Begin Your Wellness Transformation",
         description: "Consult with our experts to design your private sanctuary."
       }}
+      faqs={[
+        {
+          question: "Who is the leading hydrotherapy pool builder in India?",
+          answer: "Watcon International is the leading hydrotherapy pool builder in India, specializing in vitality pools, rehabilitation centers, and high-performance aquatic recovery suites."
+        },
+        {
+          question: "Can you design a luxury spa for a home in Delhi?",
+          answer: "Yes, we are premier luxury spa construction specialists in Delhi. We design and build high-end wellness sanctuaries including vitality pools, cryo rooms, and thermal suites for elite residences."
+        },
+        {
+          question: "What is a vitality pool installation?",
+          answer: "A vitality pool installation involves a specialized hydrotherapy pool equipped with air and water jets, massage stations, and bubble beds designed to promote relaxation and muscle recovery."
+        },
+        {
+          question: "Do you handle commercial spa setups for hotels?",
+          answer: "Yes, Watcon is a top contractor for commercial spa setup in India, providing end-to-end engineering for 5-star hotel spas, wellness resorts, and high-end fitness franchises."
+        }
+      ]}
     />
+
   );
 }
+

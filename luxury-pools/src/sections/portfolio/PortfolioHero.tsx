@@ -9,7 +9,8 @@ import Image from "next/image";
 export default function PortfolioHero() {
   return (
     <section className={styles.hero}>
-      <Image src="/portfolio-hero.png" alt="Luxury Pool Portfolio" fill className={styles.bgImage} priority />
+      <Image src="/oberai.png" alt="Luxury Pool Portfolio" fill className={styles.bgImage} priority />
+
       <div className={styles.overlay}></div>
       <ScrollParallax distance={40} className={styles.content}>
         <FadeIn delay={0.2}>

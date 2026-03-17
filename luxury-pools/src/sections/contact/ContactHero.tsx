@@ -8,7 +8,8 @@ import Image from "next/image";
 export default function ContactHero() {
   return (
     <section className={styles.hero}>
-      <Image src="/contact-hero.png" alt="Luxury Pool Contact" fill className={styles.bgImage} priority />
+      <Image src="/7.png" alt="Luxury Pool Contact" fill className={styles.bgImage} priority />
+
       <div className={styles.overlay}></div>
       <ScrollParallax distance={50} className={styles.content}>
         <FadeIn delay={0.2}>

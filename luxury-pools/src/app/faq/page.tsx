@@ -1,19 +1,38 @@
-"use client";
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ContactSection from "@/sections/ContactSection";
+import CtaSection from "@/sections/CtaSection";
+import ServiceNavigation from "@/sections/service-detail/ServiceNavigation";
 import { FadeIn } from "@/components/FadeIn";
+
+
 import { PerspectiveReveal } from "@/components/PerspectiveReveal";
 import styles from "./FAQ.module.css";
-import { useState } from "react";
-import { Plus, Minus } from "lucide-react";
+import FAQAccordion from "@/components/FAQAccordion";
+import type { Metadata } from "next";
 
-interface FAQItem {
-  question: string;
-  answer: string;
-}
+export const metadata: Metadata = {
+  title: "Frequently Asked Questions | Watcon International Pool Builders",
+  description: "Get expert answers to common questions about luxury swimming pool construction, musical fountains, cold plunge pools, and aquatic engineering in India.",
+  alternates: {
+    canonical: "https://watcon.co.in/faq",
+  },
+  keywords: [
+    "swimming pool builder delhi faq",
+    "cost of building a pool in india",
+    "best swimming pool maker india",
+    "cold plunge pool manufacturer india",
+    "musical fountain maintenance india",
+    "luxury aquatic design questions"
+  ],
+  openGraph: {
+    title: "Expert Aquatic Engineering FAQ | Watcon International",
+    description: "Your guide to luxury pool construction, fountain design, and wellness installations.",
+    images: ["/faq-hero.jpg"],
+  }
+};
 
-const faqs: FAQItem[] = [
+const faqs = [
   {
     question: "Who is the best swimming pool builder in Delhi?",
     answer: "Watcon International is one of the leading swimming pool design and construction companies in Delhi, with a legacy of building iconic pools for The Oberoi and elite residential projects."
@@ -57,8 +76,6 @@ const faqs: FAQItem[] = [
 ];
 
 export default function FAQPage() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
   return (
     <>
       <Navbar />
@@ -71,37 +88,30 @@ export default function FAQPage() {
           </PerspectiveReveal>
           <FadeIn delay={0.2}>
             <p className={styles.subtitle}>
-              Expert answers to common queries about luxury pools, hydrotherapy, and water architecture.
+              Expert answers from India&apos;s leading aquatic engineering firm on luxury pools, hydrotherapy, and water architecture.
             </p>
           </FadeIn>
         </section>
 
         <section className={styles.faqSection}>
           <div className={styles.container}>
-            <div className={styles.faqList}>
-              {faqs.map((faq, index) => (
-                <FadeIn key={index} delay={0.1 * index}>
-                  <div 
-                    className={`${styles.faqItem} ${openIndex === index ? styles.active : ""}`}
-                    onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  >
-                    <div className={styles.questionRow}>
-                      <h3>{faq.question}</h3>
-                      {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
-                    </div>
-                    {openIndex === index && (
-                      <div className={styles.answer}>
-                        <p>{faq.answer}</p>
-                      </div>
-                    )}
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
+            <FAQAccordion faqs={faqs} />
           </div>
         </section>
+
+        <CtaSection />
+        <ServiceNavigation />
+
+        <ContactSection 
+          subTitle="HAVE MORE QUESTIONS?"
+
+          title="Lets discuss your vision in detail"
+          description="Our expert engineers are available for technical consultations across India. Reach out for clear advice on your upcoming aquatic project."
+        />
       </main>
+
       <Footer />
     </>
   );
 }
+

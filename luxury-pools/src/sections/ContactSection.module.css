@@ -33,8 +33,10 @@
   letter-spacing: -1px;
 }
 
-.title span {
+.title span,
+.accent {
   color: #bdb595;
+  /* font-style: italic; */
 }
 
 .description {
@@ -334,4 +336,40 @@
     width: 100%;
     padding: 15px;
   }
+}
+
+.successState {
+  text-align: center;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.successState h4 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.successState p {
+  color: #c4c4c4;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.errorText {
+  color: #ef4444;
+  font-size: 13px;
+  margin-top: -10px;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     "resort pool builder india"
   ],
   authors: [{ name: "Watcon International" }],
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
     type: "website",
@@ -63,6 +62,11 @@ export const metadata: Metadata = {
     description: "Experts in luxury swimming pools and waterbody engineering in India.",
     images: ["/og-image.png"],
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

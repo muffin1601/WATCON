@@ -1,7 +1,29 @@
-"use client";
-
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
-import { Timer, Ruler, Waves, Settings, ShieldCheck, Zap } from "lucide-react";
+// import { Timer, Ruler, Waves, Settings } from "lucide-react";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Olympic Size Pool Builders India | FINA Standard Competition Pools",
+  description: "Watcon International is India's #1 contractor for Olympic-standard competition pools. We build FINA-compliant aquatic centers with advanced anti-wave technology and precision timing systems for institutions and sports academies.",
+  alternates: {
+    canonical: "https://watcon.co.in/services/competition-pool",
+  },
+  keywords: [
+    "olympic size pool builders india",
+    "fina standard pool construction",
+    "competition swimming pool makers india",
+    "high performance aquatic centers delhi",
+    "swimming pool timing system installation",
+    "anti-wave pool gutter systems",
+    "athletic training pool builders"
+  ],
+  openGraph: {
+    title: "High-Performance Competition Pools | Watcon International",
+    description: "Engineered for speed and precision. Olympic-standard pools with advanced overflow and anti-wave technology.",
+    images: ["/services/competitionpools%20(1).webp"],
+  }
+};
 
 export default function CompetitionPoolPage() {
   return (
@@ -9,13 +31,13 @@ export default function CompetitionPoolPage() {
       hero={{
         subtitle: "Olympic Standards",
         title: "High-Performance Competition Pools",
-        description: "Engineered for speed and precision. We design and build Olympic-standard pools with advanced overflow systems and FINA-compliant dimensions.",
+        description: "Engineered for speed and precision. We design and build Olympic-standard pools with advanced overflow systems and FINA-compliant dimensions for India's leading sports institutions and private academies.",
         image: "/services/competitionpools%20(1).webp",
-
         actions: [
-          { label: "Consult Engineers", href: "#contact", primary: true },
-          { label: "View Arenas", href: "#projects" }
+          { label: "Request Spec", href: "/contact", primary: true },
+          { label: "View Our Work", href: "#projects" }
         ]
+
       }}
       services={{
         subtitle: "PERFORMANCE ENGINEERING",
@@ -23,34 +45,38 @@ export default function CompetitionPoolPage() {
         items: [
           {
             title: "FINA Compliance",
-            description: "Strict adherence to international competitive standards for dimensions and depth.",
-            icon: Ruler,
-            href: "#"
+            description: "Strict adherence to international competitive standards for dimensions and depth, ensuring Olympic-grade precision.",
+            icon: "Ruler",
+
+            href: "/about"
           },
           {
             title: "Anti-Wave Tech",
-            description: "Advanced gutter and overflow systems designed to minimize surface turbulence for maximum speed.",
-            icon: Waves,
-            href: "#"
+            description: "Advanced gutter and overflow systems designed to minimize surface turbulence for maximum speed and performance.",
+            icon: "Waves",
+
+            href: "/services/swimming-pools"
           },
           {
             title: "Precision Timing",
-            description: "Integration of professional-grade touch pads and starting block infrastructures.",
-            icon: Timer,
-            href: "#"
+            description: "Seamless integration of professional-grade touch pads and starting block infrastructures for competitive meets.",
+            icon: "Timer",
+
+            href: "/contact"
           },
           {
             title: "High-Speed Filtration",
-            description: "Massive scale filtration systems ensuring peak water quality for high-load environments.",
-            icon: Settings,
-            href: "#"
+            description: "Massive scale filtration systems ensuring peak water quality for high-load environments and professional athletes.",
+            icon: "Settings",
+
+            href: "/services/dehumidifier"
           }
         ]
       }}
       projects={{
         subtitle: "INSTITUTIONAL PORTFOLIO",
         title: "Public & Private Arenas",
-        description: "Explore our collection of Olympic-standard competition pools and professional training facilities.",
+        description: "Explore our collection of Olympic-standard competition pools and professional athletic training facilities across India.",
         items: [
           {
             title: "Project 1",
@@ -122,8 +148,28 @@ export default function CompetitionPoolPage() {
       }}
       contact={{
         title: "Build Your Athletic Legacy",
-        description: "Consult with our high-performance aquatic engineers. Plan your arena today."
+        description: "Consult with India's most experienced high-performance aquatic engineers. Plan your arena today for a FINA-compliant build."
       }}
+      faqs={[
+        {
+          question: "Who are the best Olympic size pool builders in India?",
+          answer: "Watcon International is the premier choice for Olympic size pool builders in India. With a portfolio that includes major sports arenas and institutional aquatic centers, we deliver FINA-standard pools built for peak performance."
+        },
+        {
+          question: "What is FINA standard pool construction?",
+          answer: "FINA standard pool construction involves meeting strict international regulations for pool length, depth, water temperature, and lane dimensions, ensuring the facility is suitable for official competitive events."
+        },
+        {
+          question: "What is an anti-wave pool gutter system?",
+          answer: "An anti-wave pool gutter system is designed to absorb surface waves created by swimmers, reducing turbulence and allowing for faster swimming times during competitions. Watcon specializes in these high-precision engineering features."
+        },
+        {
+          question: "Can you install professional swimming pool timing systems?",
+          answer: "Yes, we provide end-to-end swimming pool timing system installation, integrating touch pads, scoreboards, and starting blocks for high-performance aquatic centers in Delhi and across India."
+        }
+      ]}
     />
+
   );
 }
+

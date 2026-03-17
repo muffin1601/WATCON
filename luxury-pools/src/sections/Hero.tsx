@@ -37,14 +37,15 @@ export default function Hero() {
             The experts behind The Oberoi’s iconic pools and DLF’s premium waterbodies.
             From the 1982 Asian Games to the 2010 Commonwealth Games, Watcon is India’s #1 choice for Olympic-standard aquatic infrastructure.
           </p>
-          {/* <div className={styles.ctaContainer}>
+          <div className={styles.ctaContainer}>
             <Link href="/services/swimming-pools" className={styles.primaryBtn}>
               Our Services
             </Link>
             <Link href="/portfolio" className={styles.secondaryBtn}>
               View Projects
             </Link>
-          </div> */}
+          </div>
+
         </FadeIn>
       </ScrollParallax>
     </section>

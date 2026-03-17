@@ -66,6 +66,17 @@ export default function ServiceProjects({ subtitle, title, description, projects
                         </FadeIn>
                     ))}
                 </div>
+
+                {cta && (
+                  <div className={styles.ctaWrapper}>
+                    <FadeIn delay={0.8}>
+                      <Link href={cta.href || "/contact"} className={styles.ctaButton}>
+                        {cta.label} <ArrowRight size={20} className="ml-2" />
+                      </Link>
+
+                    </FadeIn>
+                  </div>
+                )}
             </div>
         </section>
     );

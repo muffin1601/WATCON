@@ -18,21 +18,22 @@ const expertiseData: Expertise[] = [
         id: 1,
         title: "Unparalleled Craftsmanship",
         description: "Decades of mastery in building intricate, high-end pools and water features with uncompromising precision and premium materials.",
-        image: "https://images.pexels.com/photos/3068519/pexels-photo-3068519.jpeg",
+        image: "/4.png",
     },
     {
         id: 2,
         title: "Innovative Engineering",
         description: "Integrating state-of-the-art filtration, climate control, and smart automation for a seamless and effortless luxury experience.",
-        image: "https://images.pexels.com/photos/1662549/pexels-photo-1662549.jpeg",
+        image: "/5.png",
     },
     {
         id: 3,
         title: "Bespoke Design",
         description: "Every aquatic space we create is a unique masterpiece, meticulously tailored to harmonize with its architectural surroundings.",
-        image: "https://images.pexels.com/photos/14917453/pexels-photo-14917453.jpeg",
+        image: "/7.png",
     },
 ];
+
 
 export default function ContentSection() {
     return (

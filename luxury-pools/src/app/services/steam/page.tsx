@@ -1,7 +1,28 @@
-"use client";
-
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
-import { Cloud, Droplets, Sparkles, Settings, Bath, Wind } from "lucide-react";
+// import { Cloud, Droplets, Bath } from "lucide-react";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Custom Steam Room & Turkish Hammam Builders India | Watcon",
+  description: "Design your private sanctuary with Watcon's custom steam rooms and traditional Turkish hammams. We combine high-performance steam generation with exquisite mosaic artistry for luxury homes and resorts.",
+  alternates: {
+    canonical: "https://watcon.co.in/services/steam",
+  },
+  keywords: [
+    "steam room builder india",
+    "turkish hammam construction india",
+    "custom steam room maker delhi",
+    "luxury wellness spa builders",
+    "commercial steam room setup india",
+    "hammam design and installation"
+  ],
+  openGraph: {
+    title: "Steam Rooms & Turkish Baths | Watcon International",
+    description: "Atmospheric rejuvenation and vapor mastery since 1972.",
+    images: ["/services/steam.webp"],
+  }
+};
 
 export default function SteamRoomPage() {
   return (
@@ -11,39 +32,39 @@ export default function SteamRoomPage() {
         title: "Steam Rooms & Turkish Baths",
         description: "Envelop yourself in therapeutic vapor. Our custom steam rooms blend sophisticated mosaic tiling with high-performance steam generation systems.",
         image: "/services/steam.webp",
-
         actions: [
-          { label: "Request Quote", href: "#contact", primary: true },
-          { label: "View Gallery", href: "#projects" }
+          { label: "Request Quote", href: "/contact", primary: true },
+          { label: "View Our Work", href: "#projects" }
         ]
+
       }}
       services={{
         subtitle: "VAPOR MASTERY",
         title: "Steam & Hammam Solutions",
         items: [
           {
-            title: "Traditional Hammam",
-            description: "Authentic Turkish bath designs with heated marble seating and high-volume steam.",
-            icon: Bath,
-            href: "#"
+            title: "Holistic Saunas",
+            description: "Custom-built timber cabins using premium Canadian cedar, the perfect thermal counterpart to your private steam suite.",
+            icon: "Thermometer",
+            href: "/services/sauna"
           },
           {
-            title: "Aromatherapy Systems",
-            description: "Automated essence injection systems for a truly sensory and olfactory experience.",
-            icon: Cloud,
-            href: "#"
+            title: "Expert Tiling",
+            description: "Intricate mosaic and large-format porcelain tiling designed specifically for high-vapor spa environments.",
+            icon: "Layers",
+            href: "/services/tiles-in-pool"
           },
           {
-            title: "Advanced Tiling",
-            description: "Intricate mosaic and large-format porcelain tiling designed for wet environments.",
-            icon: Settings,
-            href: "#"
+            title: "Vitality Spas",
+            description: "Custom-designed hydrotherapy vitality pools that integrate seamlessly within your residence's wellness level.",
+            icon: "Heart",
+            href: "/services/spa"
           },
           {
-            title: "Smart Steam Gen",
-            description: "Self-cleaning steam generators with precise humidity and temperature control.",
-            icon: Droplets,
-            href: "#"
+            title: "Climate Control",
+            description: "Precision air handling and dehumidification systems that protect your luxury home from moisture and vapor.",
+            icon: "Wind",
+            href: "/services/dehumidifier"
           }
         ]
       }}
@@ -124,6 +145,26 @@ export default function SteamRoomPage() {
         title: "Create Your Private Sanctuary",
         description: "Design a bespoke steam room tailored to your wellness needs. Get in touch."
       }}
+      faqs={[
+        {
+          question: "Who is the best steam room builder in India?",
+          answer: "Watcon International is recognized as the best steam room builder in India, with specialized skills in advanced vapor engineering and high-end mosaic tiling."
+        },
+        {
+          question: "Can you build a private Turkish Hammam in India?",
+          answer: "Yes, we specialize in authentic Turkish Hammam construction in India, combining traditional marble artistry with modern heating and steam systems for luxury properties."
+        },
+        {
+          question: "Do you provide custom steam room maker services in Delhi?",
+          answer: "Yes, we are a leading custom steam room maker in Delhi, offering personalized designs that include aromatherapy integration and specialized seating for private villas."
+        },
+        {
+          question: "What is involved in a commercial steam room setup?",
+          answer: "A commercial steam room setup involves high-capacity steam generators, automated self-cleaning systems, and moisture-resistant structural engineering to handle high-traffic hospitality environments."
+        }
+      ]}
     />
+
   );
 }
+

@@ -17,6 +17,7 @@ export default function Footer() {
               width={180}
               height={60}
               className={styles.footerLogo}
+              style={{ height: 'auto' }}
             />
             <p className={styles.tagline}>
               India’s Leading Swimming Pool, Hydrotherapy & Waterbody Engineering Company. Building excellence since 1972.
@@ -44,7 +45,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/about">About Watcon</Link></li>
               <li><Link href="/portfolio">Our Projects</Link></li>
-              <li><Link href="/blog/benefits-of-hydrotherapy-pools">Wellness Blog</Link></li>
+              <li><Link href="/blog/spiritual-water-therapy-himalayas">Wellness Blog</Link></li>
               <li><Link href="/faq">FAQ</Link></li>
               <li><Link href="/top-swimming-pool-builders-india">Top Builders India</Link></li>
             </ul>

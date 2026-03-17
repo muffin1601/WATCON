@@ -11,99 +11,43 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    title: "Best Swimming Pool Builders in Delhi: A Comprehensive Guide",
-    excerpt: "Discover the top swimming pool construction companies in Delhi and what sets premium builders like Watcon apart.",
+    title: "An Oasis in the Heart of the City: The Magic of Trident Gurgaon",
+    excerpt: "Discover how the Trident Gurgaon uses expansive water bodies and Rajasthani architecture to create a sanctuary of peace in a corporate hub.",
     content: `
-      <p>Building a luxury swimming pool is an investment in both lifestyle and property value. In a city like Delhi, where extreme temperatures and high demand for luxury living meet, choosing the right builder is critical. Watcon International has been at the forefront of this industry for over five decades.</p>
-      <h2>What to Look for in a Luxury Pool Builder</h2>
-      <p>When searching for the best swimming pool makers, you shouldn't just look at the price. Engineering precision, filtration technology, and architectural integration are what define a truly world-class pool.</p>
-      <ul>
-        <li><strong>Legacy and Expertise:</strong> Experience in building Olympic-size pools and high-end hospitality projects.</li>
-        <li><strong>Technological Innovation:</strong> Smart filtration, automated temperature control, and sustainable water management.</li>
-        <li><strong>Design Versatility:</strong> Ability to create infinity edges, glass-walled pools, and complex water features.</li>
-      </ul>
-      <p>Watcon International's portfolio, including projects for The Oberoi and DLF, stands as a testament to our commitment to aquatic excellence.</p>
+      <p>If you are looking for a sanctuary away from the hustle and bustle of Gurgaon’s corporate towers, the Trident Gurgaon is the ultimate retreat. The moment you step into the courtyard, you are greeted by an expansive water body that seems to mirror the sky.</p>
+      <p>The architecture is a stunning blend of Rajasthani tradition and modern minimalism. As the sun sets, the fire torches around the swimming pool light up, casting a golden glow over the tranquil blue water. It’s not just a hotel; it’s a visual masterpiece that offers peace and luxury in every corner.</p>
+    `,
+    date: "March 17, 2026",
+    category: "Architecture",
+    image: "/blog/blog1.png",
+    slug: "magic-of-trident-gurgaon",
+    author: "Hospitality Curator"
+  },
+  {
+    title: "Skyline Splendor: Redefining the Urban Pool Experience",
+    excerpt: "Explore the stunning rooftop infinity pool at Crowne Plaza Rohini, where tropical sanctuary meets city silhouette.",
+    content: `
+      <p>Rising above the busy streets of North Delhi, the rooftop pool at Crowne Plaza Rohini is a masterclass in urban escapism. The infinity-edge feel, combined with rows of majestic palm trees, transports guests from a bustling metropolis to a tropical sanctuary in seconds.</p>
+      <p>It’s the perfect spot for those who seek a quiet morning swim or a sunset cocktail while watching the city silhouette fade into the horizon. This rooftop marvel proves that even in the densest urban environments, a well-engineered water body can provide absolute serenity.</p>
     `,
     date: "March 15, 2026",
-    category: "Guides",
-    image: "/blog/delhi-builders.png",
-    slug: "best-swimming-pool-builders-delhi",
-    author: "Watcon Engineering Team"
+    category: "Urban Design",
+    image: "/blog/blog2.png",
+    slug: "urban-pool-experience-crowne-plaza",
+    author: "Design Lead"
   },
   {
-    title: "Luxury Resort Pool Design Trends in India for 2026",
-    excerpt: "From infinity edges to bio-filtered lagoons, explore the latest trends in luxury hospitality water features.",
+    title: "Healing in the Clouds: The Spiritual Water Therapy of Six Senses Himalayas",
+    excerpt: "Dive into the meditative world of Watsu therapy and Himalayan aquatic healing at the world-renowned Six Senses.",
     content: `
-      <p>Resort design in India is undergoing a massive transformation. The pool is no longer just a place to swim—it's the centerpiece of the guest experience. In 2026, we are seeing a shift towards 'atmospheric aquatics'.</p>
-      <h2>Top Trends to Watch</h2>
-      <ol>
-        <li><strong>Infinity Horizons:</strong> Seamlessly blending the pool with natural landscapes or city skylines.</li>
-        <li><strong>Bio-Filtered Lagoons:</strong> Moving away from chemical-heavy systems to natural, ecologically balanced water bodies.</li>
-        <li><strong>Integrated Fire & Water:</strong> Combining submerged fire pits with illuminated water cascades for a dramatic sensory experience.</li>
-      </ol>
-      <p>At Watcon, we specialize in bringing these global trends to the Indian hospitality market, ensuring every resort pool tells a unique story.</p>
+      <p>High in the serene peaks of the Himalayas, wellness takes on a deeper meaning. This isn't just a swimming pool; it is a sacred space for rejuvenation. The experience captures the essence of Watsu therapy and aquatic healing, where the warmth of the water meets the meditative vibrations of Tibetan singing bowls.</p>
+      <p>In this sanctuary, every dip is designed to align your mind, body, and spirit against the backdrop of the world’s most majestic mountains. It represents the pinnacle of spiritual water therapy integrated into architectural excellence.</p>
     `,
-    date: "March 10, 2026",
-    category: "Trends",
-    image: "/blog/resort-trends.png",
-    slug: "luxury-resort-pool-design-trends-india",
-    author: "Design Consultant"
-  },
-  {
-    title: "The Health Benefits of Hydrotherapy Pools",
-    excerpt: "Why aquatic therapy is becoming a must-have feature for wellness retreats and luxury residential spas.",
-    content: `
-      <p>Hydrotherapy is the use of water for pain relief and treatment. Today, luxury homes and wellness centers in India are increasingly installing dedicated hydrotherapy pools equipped with underwater treadmills and resistance jets.</p>
-      <h2>Why Invest in Hydrotherapy?</h2>
-      <p>Beyond relaxation, hydrotherapy offers scientifically proven benefits for recovery and longevity. The buoyancy of water reduces stress on joints, while variable resistance allows for low-impact cardiovascular training.</p>
-      <p>Watcon's hydrotherapy suites are designed with medical-grade precision, providing the perfect balance of therapeutic function and luxury aesthetic.</p>
-    `,
-    date: "March 5, 2026",
+    date: "March 12, 2026",
     category: "Wellness",
-    image: "/blog/hydrotherapy-benefits.png",
-    slug: "benefits-of-hydrotherapy-pools",
-    author: "Health & Wellness Expert"
-  },
-  {
-    title: "Why Cold Plunge Pools are the New Gold Standard for Wellness",
-    excerpt: "Exploring the rise of cryotherapy and cold immersion in the Indian luxury wellness market.",
-    content: `
-      <p>From pro athletes to high-performing executives, cold plunge therapy is sweeping across India. Exposure to sub-zero water temperatures has been shown to reduce inflammation, boost dopamine, and accelerate muscle recovery.</p>
-      <h2>Engineering the Perfect Cold Plunge</h2>
-      <p>A true cold plunge requires sophisticated chilling technology that can maintain a consistent temperature between 3°C and 5°C. Watcon manufactures custom ice bath systems that combine industrial cooling power with sleek architectural design.</p>
-    `,
-    date: "February 28, 2026",
-    category: "Wellness",
-    image: "/blog/cold-plunge-wellness.png",
-    slug: "cold-plunge-pools-wellness-resorts",
-    author: "Technical Team"
-  },
-  {
-    title: "The Future of Musical Fountains in Luxury Hospitality",
-    excerpt: "How synchronized light, sound, and water are redefining public spaces in India's top hotels.",
-    content: `
-      <p>Musical fountains are no longer just for public parks. India's top luxury hotels are now using Oase technology to create choreographed water shows that dazzle guests during evening soirées.</p>
-      <h2>Authorized Oase Technology</h2>
-      <p>As authorized partners, Watcon integrates German-engineered nozzle systems with advanced LED lighting and soundscapes to create immersive aquatic performances that boost property value and guest engagement.</p>
-    `,
-    date: "February 20, 2026",
-    category: "Technology",
-    image: "/blog/musical-fountains.png",
-    slug: "musical-fountains-luxury-hotels",
-    author: "Fountain Specialist"
-  },
-  {
-    title: "Choosing the Best Tiles for Your Luxury Swimming Pool",
-    excerpt: "Exploring why Bisazza glass mosaics are the preferred choice for elite pool builders in India.",
-    content: `
-      <p>The finish of your pool is its aesthetic signature. While porcelain and stone are popular, Bisazza glass mosaics remain the ultimate symbol of luxury in the aquatic world.</p>
-      <h2>Why Bisazza?</h2>
-      <p>Glass mosaics provide an iridescent quality that stone cannot match. The way light refracts through the tiles creates a depth and shimmer that makes the water look alive. Additionally, their durability and resistance to chemicals make them an ideal long-term investment for the Indian climate.</p>
-    `,
-    date: "February 15, 2026",
-    category: "Design",
-    image: "/blog/pool-tiles.png",
-    slug: "best-tiles-swimming-pool-india",
-    author: "Interior Specialist"
+    image: "/blog/blog3.jpeg",
+    slug: "spiritual-water-therapy-himalayas",
+    author: "Wellness Expert"
   }
 ];
+

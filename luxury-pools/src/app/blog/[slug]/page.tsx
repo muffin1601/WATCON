@@ -1,6 +1,3 @@
-"use client";
-
-import { useParams } from "next/navigation";
 import { blogPosts } from "@/data/blogPosts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,19 +6,42 @@ import styles from "./BlogPost.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Calendar, User, Tag } from "lucide-react";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 
-export default function BlogPostPage() {
-  const params = useParams();
-  const slug = params.slug as string;
+interface BlogPostPageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
+
+  if (!post) return { title: "Post Not Found | Watcon International" };
+
+  return {
+    title: `${post.title} | Watcon Insights`,
+    description: post.excerpt,
+    alternates: {
+      canonical: `https://watcon.co.in/blog/${slug}`,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.date,
+      authors: [post.author],
+      images: [post.image],
+    },
+  };
+}
+
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params;
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
-    return (
-      <div className={styles.notFound}>
-        <h1>Post Not Found</h1>
-        <Link href="/blog">Back to Blog</Link>
-      </div>
-    );
+    notFound();
   }
 
   return (
@@ -69,7 +89,6 @@ export default function BlogPostPage() {
             <footer className={styles.footer}>
               <div className={styles.shareTitle}>Share this article</div>
               <div className={styles.socialLinks}>
-                {/* Simplified social icons for aesthetic */}
                 <div className={styles.socialCircle}>In</div>
                 <div className={styles.socialCircle}>Fb</div>
                 <div className={styles.socialCircle}>Tw</div>
@@ -82,3 +101,4 @@ export default function BlogPostPage() {
     </>
   );
 }
+

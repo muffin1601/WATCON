@@ -1,7 +1,29 @@
-"use client";
-
 import ServiceDetailTemplate from "@/sections/service-detail/ServiceDetailTemplate";
-import { Wind, Thermometer, Sparkles, Settings, Timer, ShieldCheck } from "lucide-react";
+// import { Wind, Thermometer, Sparkles, Settings } from "lucide-react";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bespoke Sauna Builders India | Custom Cedar & Infrared Saunas",
+  description: "Watcon International is India's premier sauna construction company. We build authentic Finnish saunas, modern infrared suites, and custom Canadian cedar cabins for luxury homes and 5-star hotels in Delhi, Mumbai, and beyond.",
+  alternates: {
+    canonical: "https://watcon.co.in/services/sauna",
+  },
+  keywords: [
+    "sauna builder india",
+    "custom sauna delhi",
+    "infrared sauna installation india",
+    "canadian cedar sauna builder",
+    "traditional finnish sauna india",
+    "commercial sauna room setup",
+    "luxury wellness spa builders"
+  ],
+  openGraph: {
+    title: "Sauna & Thermal Therapy Solutions | Watcon International",
+    description: "Experience the timeless ritual of sauna therapy with our custom-built timber cabins and smart heating technology.",
+    images: ["/services/sauna.webp"],
+  }
+};
 
 export default function SaunaPage() {
   return (
@@ -9,48 +31,48 @@ export default function SaunaPage() {
       hero={{
         subtitle: "Traditional Detoxification",
         title: "Sauna & Heat Therapy",
-        description: "Experience the timeless ritual of sauna therapy. Our custom-built timber saunas use premium Canadian cedar and smart heating technology for a perfect detox.",
+        description: "Experience the timeless ritual of sauna therapy. Our custom-built timber saunas use premium Canadian cedar and smart heating technology for a perfect detox, crafted with 50+ years of aquatic and thermal expertise.",
         image: "/services/sauna.webp",
-
         actions: [
-          { label: "Get Free Quote", href: "#contact", primary: true },
-          { label: "View Designs", href: "#projects" }
+          { label: "Get Free Quote", href: "/contact", primary: true },
+          { label: "View Our Work", href: "#projects" }
         ]
+
       }}
       services={{
         subtitle: "THERMAL MASTERY",
         title: "Traditional & Modern Saunas",
         items: [
           {
-            title: "Traditional Finnish",
-            description: "Authentic wood-lined saunas with lava stone heaters for high-heat detoxification.",
-            icon: Wind,
-            href: "#"
+            title: "Steam Suites",
+            description: "Authentic Turkish Hammam designs with automated aromatherapy, the perfect complement to your luxury sauna room.",
+            icon: "Wind",
+            href: "/services/steam"
           },
           {
-            title: "Infrared Technology",
-            description: "Modern infrared heaters that penetrate deep into muscles at a lower ambient temperature.",
-            icon: Thermometer,
-            href: "#"
+            title: "Cryo Recovery",
+            description: "Advanced cryotherapy rooms and cold plunge pools for a complete hot-and-cold thermal recovery circuit.",
+            icon: "Zap",
+            href: "/services/cryo-room"
           },
           {
-            title: "Custom Timber Work",
-            description: "Hand-picked Canadian Cedar and Hemlock wood for superior durability and aroma.",
-            icon: Settings,
-            href: "#"
+            title: "Luxury Spas",
+            description: "Custom-designed vitality pools and hydrotherapy systems that integrate seamlessly with your thermal suite.",
+            icon: "Heart",
+            href: "/services/spa"
           },
           {
-            title: "Smart Controls",
-            description: "Programmable sessions with integrated lighting and audio systems.",
-            icon: Sparkles,
-            href: "#"
+            title: "Private Jacuzzis",
+            description: "Bespoke hydrotherapy tubs with specialized jet alignment, designed for elite residential wellness sanctuaries.",
+            icon: "Bath",
+            href: "/services/jacuzzi"
           }
         ]
       }}
       projects={{
         subtitle: "RECENT INSTALLATIONS",
         title: "Iconic Sauna Projects",
-        description: "Crafted with precision and premium timber, explore our collection of traditional and modern saunas.",
+        description: "Crafted with precision and premium timber, explore our collection of traditional and modern luxury saunas.",
         items: [
           {
             title: "Project 1",
@@ -122,8 +144,28 @@ export default function SaunaPage() {
       }}
       contact={{
         title: "Design Your Thermal Retreat",
-        description: "Incorporate a bespoke sauna into your wellness routine. Contact us for a quote."
+        description: "Incorporate a bespoke sauna into your wellness routine. Contact us for a free quote on custom sauna installations in India."
       }}
+      faqs={[
+        {
+          question: "Who is the best sauna builder in India?",
+          answer: "Watcon International is the leading sauna builder in India, with over 50 years of experience in thermal wellness engineering and high-end timber construction."
+        },
+        {
+          question: "Can I get a custom sauna built in Delhi?",
+          answer: "Yes, we are experts in custom sauna design and installation in Delhi. We build bespoke sauna cabins that fit perfectly into your home wellness room or outdoor terrace."
+        },
+        {
+          question: "What is the difference between a traditional Finnish sauna and infrared?",
+          answer: "A traditional Finnish sauna uses a heater with lava stones to create high ambient heat and steam, while an infrared sauna uses specialized heaters to warm the body directly at a lower, more gentle temperature."
+        },
+        {
+          question: "Why do you use Canadian Cedar for saunas?",
+          answer: "As a premier Canadian cedar sauna builder, we use this wood because it is naturally resistant to decay, does not warp under high heat, and releases a beautiful therapeutic aroma."
+        }
+      ]}
     />
+
   );
 }
+

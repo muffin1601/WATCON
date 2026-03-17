@@ -9,7 +9,8 @@ import Image from "next/image";
 export default function AboutHero() {
   return (
     <section className={styles.hero}>
-      <Image src="https://images.pexels.com/photos/7977003/pexels-photo-7977003.jpeg" alt="Ocean Landscape" fill className={styles.bgImage} priority />
+      <Image src="/5.png" alt="Luxury Pool Architecture" fill className={styles.bgImage} priority />
+
       <div className={styles.overlay}></div>
       <ScrollParallax distance={40} className={styles.content}>
         <FadeIn delay={0.2}>

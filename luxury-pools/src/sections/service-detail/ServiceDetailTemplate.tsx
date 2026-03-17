@@ -9,14 +9,22 @@ import WhyChooseWatcon from "./WhyChooseWatcon";
 
 import ServiceTestimonials from "./ServiceTestimonials";
 import ContactSection from "@/sections/ContactSection";
+import FAQAccordion from "@/components/FAQAccordion";
+import { FadeIn } from "@/components/FadeIn";
+import ServiceNavigation from "./ServiceNavigation";
+import styles from "@/app/faq/FAQ.module.css";
+
+
 import CtaSection from "@/sections/CtaSection";
 import ContentSection from "@/sections/ContentSection";
-import { LucideIcon } from "lucide-react";
+// import { LucideIcon } from "lucide-react";
+
 
 interface ServiceItem {
     title: string;
     description: string;
-    icon: LucideIcon;
+    icon: string;
+
     href: string;
 }
 
@@ -30,7 +38,8 @@ interface Project {
 interface FeatureItem {
     title: string;
     description: string;
-    icon: LucideIcon;
+    icon: string;
+
     value: string;
 }
 
@@ -47,7 +56,13 @@ interface Stat {
     value: string;
 }
 
+interface FAQItem {
+    question: string;
+    answer: string;
+}
+
 interface Action {
+
     label: string;
     href: string;
     primary?: boolean;
@@ -86,15 +101,19 @@ interface ServiceDetailTemplateProps {
         title: string;
         description: string;
     };
+    faqs?: FAQItem[];
 }
+
 
 export default function ServiceDetailTemplate({
     hero,
     services,
     projects,
     testimonials,
-    contact
+    contact,
+    faqs
 }: ServiceDetailTemplateProps) {
+
     return (
         <>
             <Navbar />
@@ -105,7 +124,9 @@ export default function ServiceDetailTemplate({
                     description={hero.description}
                     image={hero.image}
                     stats={hero.stats}
+                    actions={hero.actions}
                 />
+
 
                 <ServiceGrid
                     subtitle={services.subtitle}
@@ -131,10 +152,25 @@ export default function ServiceDetailTemplate({
                     testimonials={testimonials.items}
                 /> */}
 
-                {/* <CtaSection /> */}
-                {/* <ContentSection /> */}
+                {faqs && faqs.length > 0 && (
+                    <section className={styles.faqSection} style={{ backgroundColor: '#0c0c0c', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+                        <div className={styles.container}>
+                            <div className={styles.hero} style={{ padding: '0 0 60px 0', maxWidth: '100%' }}>
+                                <FadeIn>
+                                    <p style={{ color: '#bdb595', letterSpacing: '0.2em', textTransform: 'uppercase', fontSize: '0.8rem', marginBottom: '15px' }}>Common Questions</p>
+                                    <h2 className={styles.title} style={{ margin: 0 }}>Frequently Asked <span>Questions</span></h2>
+                                </FadeIn>
+                            </div>
+                            <FAQAccordion faqs={faqs} />
+                        </div>
+                    </section>
+                )}
+
+                <ServiceNavigation />
+                <CtaSection />
 
                 <ContactSection
+
                     title={contact.title}
                     description={contact.description}
                 />
