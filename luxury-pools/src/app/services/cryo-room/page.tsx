@@ -8,7 +8,7 @@ export default function CryoRoomPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "Best Cold Plunge Pool Manufacturer India",
-        title: "Bespoke Cryotherapy Rooms & <br/> Ice Bath Systems",
+        title: "Cryotherapy Rooms & <br/> Ice Bath Systems",
         description: "Watcon International builds professional cold plunge pools and cryotherapy rooms used by athletes, wellness centres and luxury spas. Harness the power of extreme cold for recovery and longevity.",
         image: "/services/cryoroom.webp",
 

@@ -8,7 +8,7 @@ export default function SwimmingPoolsPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "The Art of Aquatic Living",
-        title: "Bespoke Luxury <br/> <span>Swimming Pool</span> Construction",
+        title: "Luxury <br/> <span>Swimming Pool</span> Construction",
         description: "Where master engineering meets architectural artistry. We design and build India's most iconic aquatic environments, from the legendary pools of The Oberoi to private infinity sanctuaries for the world's most discerning homeowners.",
         image: "/services/swimmingpools (1).png",
         actions: [

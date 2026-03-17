@@ -8,7 +8,7 @@ export default function KoiPondsPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "Ecosystems of Serenity",
-        title: "Bespoke Koi Ponds & Ecosystems",
+        title: "Koi Ponds & Ecosystems",
         description: "Create a living masterpiece in your garden. Our koi ponds are engineered with advanced life support systems for crystal clear water and healthy aquatic life.",
         image: "/services/koiponds%20(1).webp",
 

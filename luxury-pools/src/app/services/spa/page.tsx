@@ -8,7 +8,7 @@ export default function SpaPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "Luxury Wellness Environments",
-        title: "Bespoke Hydrotherapy & <br/> Healing Sanctuaries",
+        title: "Hydrotherapy & <br/> Healing Sanctuaries",
         description: "Innovative wellness engineering for recovery and relaxation. We design professional-grade cold plunge pools, cryo rooms, and hydrotherapy suites for Asia's finest luxury resorts and private wellness estates.",
         image: "/services/spa.webp",
 

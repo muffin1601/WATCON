@@ -8,7 +8,7 @@ export default function SaunaPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "Traditional Detoxification",
-        title: "Bespoke Sauna & Heat Therapy",
+        title: "Sauna & Heat Therapy",
         description: "Experience the timeless ritual of sauna therapy. Our custom-built timber saunas use premium Canadian cedar and smart heating technology for a perfect detox.",
         image: "/services/sauna.webp",
 

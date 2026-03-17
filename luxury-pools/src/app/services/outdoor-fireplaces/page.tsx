@@ -8,7 +8,7 @@ export default function OutdoorFireplacesPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "The Element of Fire",
-        title: "Bespoke Outdoor Fireplaces & Fire Pits",
+        title: "Outdoor Fireplaces & Fire Pits",
         description: "Add warmth and soul to your outdoor spaces. Our custom-engineered fireplaces and automated fire pits create the perfect evening ambiance for your terrace or pool deck.",
         image: "/services/outdoorfire.webp",
 

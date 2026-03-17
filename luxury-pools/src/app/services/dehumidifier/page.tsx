@@ -8,7 +8,7 @@ export default function DehumidifierPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "Precision Climate Control",
-        title: "Bespoke Dehumidification & Air Quality",
+        title: "Dehumidification & Air Quality",
         description: "Protect your luxury indoor pool and spa areas from moisture damage. We design high-performance air handling systems that ensure perfect comfort and structural longevity.",
         image: "/services/dehumidifier.webp",
 

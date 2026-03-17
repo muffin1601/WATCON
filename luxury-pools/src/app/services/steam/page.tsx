@@ -8,7 +8,7 @@ export default function SteamRoomPage() {
     <ServiceDetailTemplate
       hero={{
         subtitle: "Atmospheric Rejuvenation",
-        title: "Bespoke Steam Rooms & Turkish Baths",
+        title: "Steam Rooms & Turkish Baths",
         description: "Envelop yourself in therapeutic vapor. Our custom steam rooms blend sophisticated mosaic tiling with high-performance steam generation systems.",
         image: "/services/steam.webp",
 
