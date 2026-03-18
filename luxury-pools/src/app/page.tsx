@@ -3,6 +3,7 @@ import FullWidthVideoSection from "@/components/FullWidthVideoSection";
 import ContactSection from "@/sections/ContactSection";
 import CtaSection from "@/sections/CtaSection";
 import Hero from "@/sections/Hero";
+import TrustMarquee from "@/sections/TrustMarquee";
 import Services from "@/sections/Services";
 import FeatureSection from "@/sections/FeatureSection";
 import Footer from "@/components/Footer";
@@ -38,6 +39,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+      <TrustMarquee />
       <Services />
       <CtaSection />
       <ContentSection />

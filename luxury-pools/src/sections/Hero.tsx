@@ -25,17 +25,13 @@ export default function Hero() {
       <ScrollParallax distance={40} className={styles.content}>
         <PerspectiveReveal delay={0.2}>
           <h1 className={styles.mainTitle}>
-            India’s Leading <em>Swimming Pool</em> <br /> & Waterbody <span>Builders</span>
+            India’s Leading <em>Swimming Pool</em>, Hydrotherapy & <br /> <span>Waterbody Engineering Company</span>
           </h1>
         </PerspectiveReveal>
 
         <FadeIn delay={0.6} distance={20}>
           <p className={styles.subheadline}>
-            Experts in Luxury Pools, Hydrotherapy, and Musical Fountains since 1972.
-          </p>
-          <p className={styles.trustText}>
-            The experts behind The Oberoi’s iconic pools and DLF’s premium waterbodies.
-            From the 1982 Asian Games to the 2010 Commonwealth Games, Watcon is India’s #1 choice for Olympic-standard aquatic infrastructure.
+            Luxury swimming pools, resort water bodies, hydrotherapy systems, musical fountains, cold plunge pools, and immersive wellness water experiences designed and built across India.
           </p>
           <div className={styles.ctaContainer}>
             <Link href="/services/swimming-pools" className={styles.primaryBtn}>

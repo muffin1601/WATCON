@@ -56,13 +56,13 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 1400px;
+  max-width: 1570px;
   width: 90%;
   padding: 0 20px;
 }
 
 .content h1, .mainTitle {
-  font-size: clamp(2.3rem, 6vw, 5rem);
+  font-size: clamp(2rem, 4.7vw, 3.9rem);
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 1.1;
@@ -83,8 +83,9 @@
 .subheadline {
   font-size: 1.4rem !important;
   font-weight: 500 !important;
-  color: #bdb595;
-  margin-bottom: 1rem;
+  color: #ffffff;
+  margin: 0 auto 1rem auto;
+  max-width: 1270px;
   line-height: 1.4;
 }
 
@@ -142,37 +143,66 @@
   }
 
   .mainTitle {
-    font-size: clamp(1.8rem, 8vw, 2.8rem);
-    margin-bottom: 1.5rem;
+    font-size: clamp(1.6rem, 7vw, 2.4rem);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .mainTitle br {
+    display: none;
   }
 
   .subheadline {
-    font-size: 1.1rem !important;
-    margin-bottom: 0.8rem;
+    font-size: 1rem !important;
+    margin-bottom: 0.6rem;
   }
 
   .trustText {
-    font-size: 0.9rem !important;
-    margin-bottom: 2rem !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 1.5rem !important;
     padding: 0 10px;
+    line-height: 1.5;
   }
 
   .ctaContainer {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
   
   .primaryBtn, .secondaryBtn {
     width: 100%;
-    max-width: 280px;
+    max-width: 260px;
     padding: 12px 20px;
-    font-size: 13px;
+    font-size: 12px;
+    letter-spacing: 1px;
   }
 }
 
 @media (max-width: 480px) {
   .mainTitle {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .mainTitle span {
+    margin-left: 5px;
+  }
+
+  .subheadline {
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .trustText {
+    font-size: 0.8rem !important;
+    margin-bottom: 1.2rem !important;
+    line-height: 1.4;
+  }
+
+  .primaryBtn, .secondaryBtn {
+    padding: 10px 15px;
+    font-size: 11px;
+    max-width: 220px;
   }
 }
-
+

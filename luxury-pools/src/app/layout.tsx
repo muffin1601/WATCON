@@ -62,6 +62,10 @@ export const metadata: Metadata = {
     description: "Experts in luxury swimming pools and waterbody engineering in India.",
     images: ["/og-image.png"],
   },
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export const viewport = {

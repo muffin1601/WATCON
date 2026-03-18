@@ -27,7 +27,11 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
           >
             <div className={styles.questionRow}>
               <h3>{faq.question}</h3>
-              {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
+              {openIndex === index ? (
+                <Minus size={22} className={styles.icon} />
+              ) : (
+                <Plus size={22} className={styles.icon} />
+              )}
             </div>
             {openIndex === index && (
               <div className={styles.answer}>

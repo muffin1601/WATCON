@@ -71,6 +71,16 @@
   gap: 20px;
 }
 
+.icon {
+  color: #bdb595;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+.active .icon {
+  transform: rotate(180deg);
+}
+
 .questionRow h3 {
   font-size: 1.2rem;
   font-weight: 500;
