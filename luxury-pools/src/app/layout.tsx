@@ -22,8 +22,11 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://watcon.co.in"),
-  title: "Watcon International | India’s Leading Swimming Pool & Waterbody Builders",
-  description: "Watcon International is India’s premium waterbody engineering company since 1972. Experts in luxury swimming pools, hydrotherapy, and musical fountains across India.",
+  title: "Watcon International | India's Leading Swimming Pool & Waterbody Builders",
+  description: "Watcon International is India's premium waterbody engineering company since 1972. Experts in luxury swimming pools, hydrotherapy, and musical fountains across India.",
+  alternates: {
+    canonical: "https://watcon.co.in",
+  },
   keywords: [
     "swimming pool builder delhi",
     "swimming pool builder india",
@@ -45,7 +48,7 @@ export const metadata: Metadata = {
     locale: "en_IE",
     url: "https://watcon.co.in/",
     siteName: "Watcon International",
-    title: "Watcon International | India’s Leading Swimming Pool & Waterbody Builders",
+    title: "Watcon International | India's Leading Swimming Pool & Waterbody Builders",
     description: "Experts in luxury swimming pools, hydrotherapy, and musical fountains across India since 1972.",
     images: [
       {

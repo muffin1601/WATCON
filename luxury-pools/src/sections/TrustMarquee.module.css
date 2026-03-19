@@ -1,13 +1,10 @@
 .marqueeSection {
-  padding: 45px 0;
+  padding: 40px 0;
   background-color: #030303;
   border-top: 1px solid rgba(189, 181, 149, 0.08);
   border-bottom: 1px solid rgba(189, 181, 149, 0.08);
   overflow: hidden;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
 }
 
 /* Fades text as it reaches the edges for a "see-through" premium look */
@@ -40,11 +37,11 @@
 }
 
 .marqueeTrackLeft {
-  animation: scrollLeft 75s linear infinite;
+  animation: scrollLeft 90s linear infinite;
 }
 
 .marqueeTrackRight {
-  animation: scrollRight 65s linear infinite;
+  animation: scrollRight 80s linear infinite;
 }
 
 .marqueeContent {
@@ -53,12 +50,13 @@
 }
 
 .marqueeItem {
-  color: #e5e5e5;
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 0.8px;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
   white-space: nowrap;
-  padding: 0 40px;
+  padding: 0 50px;
   display: flex;
   align-items: center;
   transition: all 0.4s ease;
@@ -107,8 +105,8 @@
 
 @media (max-width: 991px) {
   .marqueeItem {
-    font-size: 0.9rem;
-    padding: 0 30px;
+    font-size: 1.05rem;
+    padding: 0 35px;
   }
 }
 
@@ -119,7 +117,7 @@
   }
   
   .marqueeItem {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .highlight {
@@ -141,8 +139,8 @@
   }
   
   .marqueeItem {
-    font-size: 0.8rem;
-    padding: 0 20px;
+    font-size: 0.95rem;
+    padding: 0 25px;
   }
 
   .highlight {

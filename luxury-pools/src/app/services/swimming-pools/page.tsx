@@ -30,7 +30,7 @@ export default function SwimmingPoolsPage() {
         subtitle: "The Art of Aquatic Living",
         title: "Luxury <br/> <span>Swimming Pool</span> Construction",
         description: "Where master engineering meets architectural artistry. We design and build India's most iconic aquatic environments, from the legendary pools of The Oberoi to private infinity sanctuaries for the world's most discerning homeowners.",
-        image: "/services/swimmingpools (1).png",
+        image: "/swimmingpool.webp",
         stats: [
           { label: "Pools Built", value: "2500+" },
           { label: "Expert Engineers", value: "45+" },

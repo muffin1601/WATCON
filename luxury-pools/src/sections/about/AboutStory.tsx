@@ -57,7 +57,7 @@ export default function AboutStory() {
               <div className={styles.imageCard}>
                 <div className={styles.imageWrapper}>
                   <video autoPlay loop muted playsInline className={styles.video}>
-                    <source src="/about.mp4" type="video/mp4" />
+                    <source src="/about1.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div className={styles.imageBadge}>

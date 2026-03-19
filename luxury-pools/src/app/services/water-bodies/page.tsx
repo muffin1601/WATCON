@@ -32,7 +32,7 @@ export default function WaterBodiesPage() {
         subtitle: "Official Oase Fountain Partner Delhi",
         title: "India's Best Musical Fountain Maker",
         description: "Official partners for Oase Fountain Technology. We design the best musical fountains in India, combining synchronized light and sound for public parks, hotels, and luxury commercial spaces across the nation.",
-        image: "/services/waterbodies (2).jpeg",
+        image: "/services/waterbodies (2).png",
         actions: [
           { label: "Consult Oase Expert", href: "/contact", primary: true },
           { label: "View Our Work", href: "#projects" }
@@ -77,37 +77,37 @@ export default function WaterBodiesPage() {
           {
             title: "Corporate Grand Fountain",
             description: "Architectural Landmark",
-            image: "/services/waterbodies (1).jpeg",
+            image: "/services/waterbodies (1).png",
             badge: "Premium"
           },
           {
             title: "Zen Reflecting Pond",
             description: "Tranquil Sanctuary",
-            image: "/services/waterbodies (3).jpeg",
+            image: "/services/waterbodies (3).png",
             badge: "Signature"
           },
           {
             title: "Infinite Cascade Wall",
             description: "Modern Vertical Feature",
-            image: "/services/waterbodies (4).jpeg",
+            image: "/services/waterbodies (4).png",
             badge: "Exclusive"
           },
           {
             title: "Estate Entrance Water",
             description: "Grand Entryway",
-            image: "/services/waterbodies (5).jpeg",
+            image: "/services/waterbodies (5).png",
             badge: "Popular"
           },
           {
             title: "Interior Atrium Flow",
             description: "Indoor Oasis",
-            image: "/services/waterbodies (6).jpeg",
+            image: "/services/waterbodies (6).png",
             badge: "Service"
           },
           {
             title: "Biological Luxury Pond",
             description: "Natural Ecosystem",
-            image: "/services/waterbodies (7).jpeg",
+            image: "/services/waterbodies (2).png",
             badge: "Urban"
           }
         ],
