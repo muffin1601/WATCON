@@ -11,13 +11,13 @@ const projects = [
     videoSrc: "https://youtu.be/QeWSYLcVsbk?si=5RsFemHCJ6Dqu0Br",
   },
   {
-    title: "DLF Golf Course & Residential",
-    desc: "Waterbody and pool design at DLF Golf Course, DLF Beverly Park, and The Hibiscus. Watcon is the preferred choice for DLF’s premium developments.",
+    title: "Shalini Passi Home Projects",
+    desc: "A bespoke private aquatic environment crafted for celebrated art patron and interior visionary Shalini Passi — blending sculptural pool design with curated outdoor living spaces that reflect her signature aesthetic.",
     videoSrc: "https://youtu.be/6xPgpNAJgkM?si=Fr-4HLdRTA0d_Utc",
   },
   {
     title: "National Industrial Landmarks",
-    desc: "Builders of India’s competition pools at Siri Fort Stadium, SP Mukherji Stadium, and Yamuna Sports Complex for the Asian and Commonwealth Games.",
+    desc: "Builders of India's competition pools at Siri Fort Stadium, SP Mukherji Stadium, and Yamuna Sports Complex for the Asian and Commonwealth Games.",
     videoSrc: "https://youtu.be/hfTxxyLMALQ?si=uZVHHbZG9TEsP8NK",
   },
   {
@@ -26,33 +26,33 @@ const projects = [
     videoSrc: "https://youtu.be/gSjsW5gSf6w?si=-YbU4S16TYvw4YIt",
   },
   {
-    title: "Vasant Kunj Bali",
-    desc: "Fire Place outdoor, Pool Video, outdoor sitting, outdoor lights, light blue tiles pool. Infinity edge.",
+    title: "Vasant Kunj Private Residence",
+    desc: "A stunning private estate featuring a light-blue infinity-edge pool, integrated outdoor fireplace, ambient outdoor lighting, and bespoke al fresco seating — a complete luxury outdoor living environment by Watcon.",
     videoSrc: "https://youtu.be/CdNgxeOyLIE?si=4FFG6GzFmybmCzaK",
   },
   {
     title: "Radhe Mohan Drive Farm",
-    desc: "Green tile pool, SS water spout, Outdoor Furniture, Copper tiles, Outdoor lights, outdoor swings.",
+    desc: "A countryside estate pool finished in handpicked green tiles with stainless steel water spouts, copper accent tiling, outdoor furniture, and integrated evening lighting — a serene retreat designed to harmonise with the natural landscape.",
     videoSrc: "https://youtu.be/0c4TPRKKrCg?si=oroxvid7YOWk5kb9",
   },
   {
     title: "The Green Pool",
-    desc: "A perfect blend of nature and aquatic luxury.",
+    desc: "A nature-immersive pool design where lush landscaping meets precision aquatic engineering — a tranquil private oasis where the boundaries between pool and garden dissolve entirely.",
     videoSrc: "https://youtu.be/h-Z0R4HpQ9I?si=K2kW0CSZi0hjvTES",
   },
   {
     title: "Laminum",
-    desc: "Exquisite architectural surfaces meeting seamless aquatic design.",
+    desc: "A showcase of Watcon's architectural finishing capability — where large-format surface materials and seamless pool geometry create an environment of understated, museum-quality elegance.",
     videoSrc: "https://youtu.be/0Im_7UAXXAo?si=kZ41IHcj1-okHJXJ",
   },
   {
     title: "Watcon Waterfall",
-    desc: "A majestic flowing waterfall transforming the landscape.",
+    desc: "A dramatic custom waterfall water feature transforming a private landscape into a resort-grade sanctuary — engineered for structural longevity and calibrated for the precise acoustics of falling water.",
     videoSrc: "https://youtu.be/a1j3jZmbq8I?si=kaLy9R8oDDJZt0Dl",
   },
   {
-    title: "Mood Lighting and Fireplace",
-    desc: "In a pool by Watcon, merging the elemental forces of fire and water.",
+    title: "Mood Lighting & Fireplace",
+    desc: "A masterclass in elemental contrast — Watcon's poolside fire feature installation where automated gas fireplaces and precision underwater chromotherapy lighting combine to create an extraordinary evening atmosphere.",
     videoSrc: "https://youtu.be/2qTle3LXktY?si=ya3bVx_H6o0zoptN",
   }
 ];
