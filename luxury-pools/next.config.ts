@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // output: 'export',
   reactCompiler: true,
   images: {
     remotePatterns: [
@@ -21,15 +20,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // ── www → non-www canonical redirect (fixes duplicate-without-canonical for ALL pages) ──
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.watcon.co.in' }],
-        destination: 'https://watcon.co.in/:path*',
-        permanent: true,
-      },
-
-      // ── Dead blog slugs Google cached (non-www) → /blog ──
+      // Dead blog slugs Google crawled → redirect to /blog
       {
         source: '/blog/musical-fountains-luxury-hotels',
         destination: '/blog',
@@ -40,22 +31,7 @@ const nextConfig: NextConfig = {
         destination: '/blog',
         permanent: true,
       },
-
-      // ── Same dead slugs on www (single-hop: skips the www→non-www step) ──
-      {
-        source: '/blog/musical-fountains-luxury-hotels',
-        has: [{ type: 'host', value: 'www.watcon.co.in' }],
-        destination: 'https://watcon.co.in/blog',
-        permanent: true,
-      },
-      {
-        source: '/blog/cold-plunge-pools-wellness-resorts',
-        has: [{ type: 'host', value: 'www.watcon.co.in' }],
-        destination: 'https://watcon.co.in/blog',
-        permanent: true,
-      },
-
-      // ── Dead non-service URLs Google has crawled ──
+      // Dead page URLs Google crawled → redirect to correct pages
       {
         source: '/jacuzzi',
         destination: '/services/jacuzzi',
@@ -71,4 +47,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
