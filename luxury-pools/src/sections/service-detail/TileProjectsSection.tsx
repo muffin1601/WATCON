@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 import { FadeIn } from "@/components/FadeIn";
 import styles from "./TileProjectsSection.module.css";
 
@@ -12,6 +12,7 @@ const categories = [
     id: "glass-mosaic",
     label: "Glass Mosaic",
     description: "Iridescent Bisazza-quality glass tiles that capture light and create a luminous underwater shimmer.",
+    catalogue: "/services/mossiac tiles/Glass Mosaic Tiles.pdf",
     images: [
       { src: "/services/mossiac tiles/glass mosic tiles 1.png", alt: "Glass Mosaic Pool Tile 1" },
       { src: "/services/mossiac tiles/glass mosic tiles 2.png", alt: "Glass Mosaic Pool Tile 2" },
@@ -25,6 +26,7 @@ const categories = [
     id: "designer",
     label: "Designer Tiles",
     description: "Curated designer collections featuring hand-crafted patterns and artistic finishes for a statement pool.",
+    catalogue: "/services/designer tiles/Designer Tiles.pdf",
     images: [
       { src: "/services/designer tiles/designer tiles 1.png", alt: "Designer Pool Tile 1" },
       { src: "/services/designer tiles/designer tiles 2.png", alt: "Designer Pool Tile 2" },
@@ -38,6 +40,7 @@ const categories = [
     id: "porcelain",
     label: "Porcelain Tiles",
     description: "Premium large-format porcelain slabs with ultra-low porosity — timeless, durable, and engineered for aquatic environments.",
+    catalogue: "/services/porccian tiles/porccian tiles.pdf",
     images: [
       { src: "/services/porccian tiles/porccian tiles 1.png", alt: "Porcelain Pool Tile 1" },
       { src: "/services/porccian tiles/porccian tiles 2.png", alt: "Porcelain Pool Tile 2" },
@@ -51,6 +54,7 @@ const categories = [
     id: "deck",
     label: "Deck Tiles",
     description: "Anti-slip, weather-resistant large-format tiles for pool surrounds, decks, and wet areas.",
+    catalogue: "/services/deck tiles/deck tiles.pdf",
     images: [
       { src: "/services/deck tiles/large format tiles 1.png", alt: "Deck Tile 1" },
       { src: "/services/deck tiles/large format tiles 2.png", alt: "Deck Tile 2" },
@@ -100,9 +104,21 @@ export default function TileProjectsSection() {
           </div>
         </FadeIn>
 
-        {/* Category Description */}
+        {/* Category Description + Catalogue Link */}
         <FadeIn delay={0.4} direction="up">
-          <p className={styles.catDesc}>{current.description}</p>
+          <div className={styles.catMeta}>
+            <p className={styles.catDesc}>{current.description}</p>
+            <a
+              href={current.catalogue}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.catalogueBtn}
+              aria-label={`View ${current.label} catalogue PDF`}
+            >
+              <FileText size={16} className={styles.catalogueIcon} />
+              View Catalogue
+            </a>
+          </div>
         </FadeIn>
 
         {/* Image Grid */}

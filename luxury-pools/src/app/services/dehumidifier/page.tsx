@@ -32,7 +32,7 @@ export default function DehumidifierPage() {
         subtitle: "Precision Climate Control",
         title: "Dehumidification & Air Quality",
         description: "Protect your luxury indoor pool and spa areas from moisture damage. We design high-performance air handling systems that ensure perfect comfort and structural longevity for India's most exclusive residences and aquatic centers.",
-        image: "/services/dehumidifier.webp",
+        image: "/services/dehumidifier%20(1).webp",
         actions: [
           { label: "Consult Expert", href: "/contact", primary: true },
           { label: "View Our Work", href: "#projects" }

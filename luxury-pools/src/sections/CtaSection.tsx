@@ -65,10 +65,8 @@ export default function CtaSection({
             </div>
           </FadeIn>
         </ScrollParallax>
-
-
       </div>
     </section>
   );
 }
-
+

@@ -8,7 +8,7 @@ import styles from './FloatingShop.module.css';
 export default function FloatingShop() {
     return (
         <motion.a
-            href="https://buyonlineglobal.co.in"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.floatingContainer}

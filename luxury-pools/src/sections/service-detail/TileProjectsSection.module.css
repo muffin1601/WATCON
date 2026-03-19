@@ -73,14 +73,53 @@
   border-color: #bdb595;
 }
 
-/* ── Category Description ── */
+/* ── Category Description + Catalogue Row ── */
+.catMeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
 .catDesc {
   font-size: 15px;
   color: #888;
-  max-width: 580px;
-  margin: 0 auto 48px;
+  max-width: 480px;
+  margin: 0;
   line-height: 1.7;
   font-style: italic;
+  text-align: left;
+}
+
+/* ── Catalogue PDF Button ── */
+.catalogueBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #bdb595;
+  border: 1px solid rgba(189, 181, 149, 0.45);
+  background: rgba(189, 181, 149, 0.06);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.catalogueBtn:hover {
+  background: #bdb595;
+  color: #000;
+  border-color: #bdb595;
+}
+
+.catalogueIcon {
+  flex-shrink: 0;
 }
 
 /* ── Image Grid ── */
