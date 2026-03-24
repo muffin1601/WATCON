@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Watcon International | Luxury Swimming Pool Builders & Fountain Makers India",
   description: "Watcon International is India's premier luxury swimming pool builder and musical fountain maker. With 50+ years of expertise, we design bespoke pools, spas, and water features for elite homes and commercial landmarks.",
   alternates: {
-    canonical: "https://watcon.co.in",
+    canonical: "https://watcon.co.in/",
   },
   keywords: [
     "luxury swimming pool builders india",

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Olympic Size Pool Builders India | FINA Standard Competition Pools",
   description: "Watcon International is India's #1 contractor for Olympic-standard competition pools. We build FINA-compliant aquatic centers with advanced anti-wave technology and precision timing systems for institutions and sports academies.",
   alternates: {
-    canonical: "https://watcon.co.in/services/competition-pool",
+    canonical: "https://watcon.co.in/services/competition-pool/",
   },
   keywords: [
     "olympic size pool builders india",

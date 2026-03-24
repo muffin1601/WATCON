@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Frequently Asked Questions | Watcon International Pool Builders",
   description: "Get expert answers to common questions about luxury swimming pool construction, musical fountains, cold plunge pools, and aquatic engineering in India.",
   alternates: {
-    canonical: "https://watcon.co.in/faq",
+    canonical: "https://watcon.co.in/faq/",
   },
   keywords: [
     "swimming pool builder delhi faq",

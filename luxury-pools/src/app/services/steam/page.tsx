@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Custom Steam Room & Turkish Hammam Builders India | Watcon",
   description: "Design your private sanctuary with Watcon's custom steam rooms and traditional Turkish hammams. We combine high-performance steam generation with exquisite mosaic artistry for luxury homes and resorts.",
   alternates: {
-    canonical: "https://watcon.co.in/services/steam",
+    canonical: "https://watcon.co.in/services/steam/",
   },
   keywords: [
     "steam room builder india",

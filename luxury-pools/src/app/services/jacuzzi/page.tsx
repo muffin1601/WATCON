@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Premium Jacuzzi & Hot Tub Installation India | Watcon",
   description: "Immerse yourself in pure relaxation with Watcon's custom-engineered jacuzzis. We provide professional hydrotherapy solutions and luxury hot tub installations for homes and wellness suites across India.",
   alternates: {
-    canonical: "https://watcon.co.in/services/jacuzzi",
+    canonical: "https://watcon.co.in/services/jacuzzi/",
   },
   keywords: [
     "jacuzzi installation india",

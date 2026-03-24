@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Luxury Spa & Hydrotherapy Pool Construction India | Watcon",
   description: "Premier builders of vitality pools, hydrotherapy suites, and modern wellness retreats in India. Watcon provides professional spa engineering for 5-star hospitality and high-end residences.",
   alternates: {
-    canonical: "https://watcon.co.in/services/spa",
+    canonical: "https://watcon.co.in/services/spa/",
   },
   keywords: [
     "hydrotherapy pool builder india",

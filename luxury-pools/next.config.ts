@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
+  trailingSlash: true,
   images: {
     remotePatterns: [
       {
@@ -20,26 +21,35 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // Dead blog slugs Google crawled → redirect to /blog
-      {
-        source: '/blog/musical-fountains-luxury-hotels',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/blog/cold-plunge-pools-wellness-resorts',
-        destination: '/blog',
-        permanent: true,
-      },
       // Dead page URLs Google crawled → redirect to correct pages
       {
+        source: '/about-us',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/contact-us',
+        destination: '/contact/',
+        permanent: true,
+      },
+      {
+        source: '/water-bodies',
+        destination: '/services/water-bodies/',
+        permanent: true,
+      },
+      {
+        source: '/outdoor-firepalces',
+        destination: '/services/outdoor-fireplaces/',
+        permanent: true,
+      },
+      {
         source: '/jacuzzi',
-        destination: '/services/jacuzzi',
+        destination: '/services/jacuzzi/',
         permanent: true,
       },
       {
         source: '/clients-1',
-        destination: '/clients',
+        destination: '/clients/',
         permanent: true,
       },
     ];

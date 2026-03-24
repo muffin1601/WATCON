@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Top Swimming Pool Builders in India 2026 | Expert Guide",
   description: "A comprehensive guide to the best swimming pool builders in India. From luxury villa pools to Olympic centres, discover the leading pool construction companies including Watcon International, India's #1 aquatic engineer since 1972.",
   alternates: {
-    canonical: "https://watcon.co.in/top-swimming-pool-builders-india",
+    canonical: "https://watcon.co.in/top-swimming-pool-builders-india/",
   },
   keywords: [
     "top swimming pool builders india",

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Koi Pond Builders India | Luxury Garden Water Features Delhi NCR",
   description: "Watcon International is India's leading koi pond construction company. We design biological koi ponds, architectural waterfalls, and sustainable garden ecosystems for luxury homes in Delhi, Gurgaon, and Noida.",
   alternates: {
-    canonical: "https://watcon.co.in/services/koi-ponds",
+    canonical: "https://watcon.co.in/services/koi-ponds/",
   },
   keywords: [
     "koi pond builder india",

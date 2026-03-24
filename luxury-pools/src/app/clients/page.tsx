@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Distinguished Clients | Watcon International Pool Builders",
   description: "Explore the prestigious portfolio of Watcon International. We have served elite clients like the Oberoi Group, DLF, and prominent private residences across India for over 50 years.",
   alternates: {
-    canonical: "https://watcon.co.in/clients",
+    canonical: "https://watcon.co.in/clients/",
   },
   keywords: [
     "watcon international clients",

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Musical Fountain Makers India | Oase Fountain Partners Delhi NCR",
   description: "Watcon International is the best musical fountain maker in India. Official Oase partners, we specialize in synchronized light and sound fountains, architectural waterfalls, and luxury resort water bodies.",
   alternates: {
-    canonical: "https://watcon.co.in/services/water-bodies",
+    canonical: "https://watcon.co.in/services/water-bodies/",
   },
   keywords: [
     "musical fountain maker india",

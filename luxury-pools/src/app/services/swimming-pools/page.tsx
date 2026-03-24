@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Swimming Pool Builders in Delhi NCR | Luxury Pool Construction India",
   description: "Watcon International is India's #1 swimming pool maker since 1972. We design and build luxury residential pools, Olympic-size competition pools, and rooftop infinity pools for Delhi NCR's most exclusive residences.",
   alternates: {
-    canonical: "https://watcon.co.in/services/swimming-pools",
+    canonical: "https://watcon.co.in/services/swimming-pools/",
   },
   keywords: [
     "swimming pool builder delhi",

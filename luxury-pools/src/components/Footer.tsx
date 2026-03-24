@@ -3,7 +3,7 @@
 import styles from "./Footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
+// import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -37,6 +37,7 @@ export default function Footer() {
               <li><Link href="/services/cryo-room">Cold Plunge Pool India</Link></li>
               <li><Link href="/services/spa">Hydrotherapy Pools India</Link></li>
               <li><Link href="/services/tiles-in-pool">Best Tiles for Pool India</Link></li>
+              <li><Link href="/services">Services</Link></li>
             </ul>
           </div>
 
@@ -45,7 +46,6 @@ export default function Footer() {
             <ul>
               <li><Link href="/about">About Watcon</Link></li>
               <li><Link href="/portfolio">Our Projects</Link></li>
-              <li><Link href="/blog/spiritual-water-therapy-himalayas">Wellness Blog</Link></li>
               <li><Link href="/faq">FAQ</Link></li>
               <li><Link href="/top-swimming-pool-builders-india">Top Builders India</Link></li>
             </ul>

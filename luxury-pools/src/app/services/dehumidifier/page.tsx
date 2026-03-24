@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Indoor Pool Dehumidification Systems India | Climate Control Experts",
   description: "Watcon International provides high-performance dehumidification and air handling systems for indoor swimming pools and luxury spas in India. Protect your property from moisture damage and ensure hospital-grade air quality.",
   alternates: {
-    canonical: "https://watcon.co.in/services/dehumidifier",
+    canonical: "https://watcon.co.in/services/dehumidifier/",
   },
   keywords: [
     "indoor pool dehumidification india",

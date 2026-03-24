@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Cold Plunge Pool Manufacturer India | Cryotherapy Room Builders",
   description: "Watcon International is the best cold plunge pool manufacturer in India. We build professional ice bath systems, cryotherapy rooms, and contrast therapy pools for elite athletes and luxury wellness centers.",
   alternates: {
-    canonical: "https://watcon.co.in/services/cryo-room",
+    canonical: "https://watcon.co.in/services/cryo-room/",
   },
   keywords: [
     "cold plunge pool manufacturer india",

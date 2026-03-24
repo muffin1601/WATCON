@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Outdoor Fireplace & Fire Pit Builders India | Luxury Terrace Design",
   description: "Watcon International designs and builds custom outdoor fireplaces, automated gas fire pits, and integrated fire-and-water features for luxury homes and rooftop terraces in Delhi, Gurgaon, and across India.",
   alternates: {
-    canonical: "https://watcon.co.in/services/outdoor-fireplaces",
+    canonical: "https://watcon.co.in/services/outdoor-fireplaces/",
   },
   keywords: [
     "outdoor fireplace builder india",

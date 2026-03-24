@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "About Watcon International | 50+ Years of Aquatic Excellence",
   description: "Learn about Watcon International, India's most trusted luxury pool builders. With over five decades of experience, we specialize in high-end swimming pools, musical fountains, and premium wellness solutions.",
   alternates: {
-    canonical: "https://watcon.co.in/about",
+    canonical: "https://watcon.co.in/about/",
   },
   keywords: [
     "watcon international about",

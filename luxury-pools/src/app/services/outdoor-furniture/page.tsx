@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Luxury Outdoor Furniture India | Designer Poolside Seating Delhi",
   description: "Watcon International provides curated, weather-resistant outdoor furniture for luxury homes, terraces, and 5-star resorts in India. Explore our designer loungers, marine-grade sofas, and premium garden dining sets.",
   alternates: {
-    canonical: "https://watcon.co.in/services/outdoor-furniture",
+    canonical: "https://watcon.co.in/services/outdoor-furniture/",
   },
   keywords: [
     "luxury outdoor furniture india",

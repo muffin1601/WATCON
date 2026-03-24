@@ -43,7 +43,6 @@ export default function Navbar() {
 
   const menuLinks = [
     { name: "About", href: "/about" },
-    { name: "Blog", href: "/blog" },
     { name: "FAQ", href: "/faq" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Clients", href: "/clients" },

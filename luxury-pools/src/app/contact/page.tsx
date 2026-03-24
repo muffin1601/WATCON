@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Contact Watcon International | Luxury Pool & Fountain Consultations",
   description: "Get in touch with Watcon International for bespoke swimming pool design, musical fountain construction, or wellness spa installations. Contact our Delhi office for expert consultations across India.",
   alternates: {
-    canonical: "https://watcon.co.in/contact",
+    canonical: "https://watcon.co.in/contact/",
   },
   keywords: [
     "contact swimming pool builders delhi",

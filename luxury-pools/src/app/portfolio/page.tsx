@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Luxury Swimming Pool & Waterbody Portfolio India | Watcon Projects",
   description: "Explore Watcon International's curated gallery of luxury infinity pools, architectural fountains, and wellness hydrotherapy suites across India. See our master engineering in action.",
   alternates: {
-    canonical: "https://watcon.co.in/portfolio",
+    canonical: "https://watcon.co.in/portfolio/",
   },
   openGraph: {
     title: "Project Portfolio | Watcon International",

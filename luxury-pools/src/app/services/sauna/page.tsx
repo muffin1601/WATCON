@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Bespoke Sauna Builders India | Custom Cedar & Infrared Saunas",
   description: "Watcon International is India's premier sauna construction company. We build authentic Finnish saunas, modern infrared suites, and custom Canadian cedar cabins for luxury homes and 5-star hotels in Delhi, Mumbai, and beyond.",
   alternates: {
-    canonical: "https://watcon.co.in/services/sauna",
+    canonical: "https://watcon.co.in/services/sauna/",
   },
   keywords: [
     "sauna builder india",

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: "Watcon International | India's Leading Swimming Pool & Waterbody Builders",
   description: "Watcon International is India's premium waterbody engineering company since 1972. Experts in luxury swimming pools, hydrotherapy, and musical fountains across India.",
   alternates: {
-    canonical: "https://watcon.co.in",
+    canonical: "https://watcon.co.in/",
   },
   keywords: [
     "swimming pool builder delhi",

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Bisazza Glass Mosaic & Luxury Pool Tiling India | Watcon Finishes",
   description: "Watcon International is India's leading specialist in Bisazza glass mosaic tiling and luxury pool finishes. We offer iridescent glass tiles, large-format porcelain, and designer stone for high-end swimming pools in Delhi and Mumbai.",
   alternates: {
-    canonical: "https://watcon.co.in/services/tiles-in-pool",
+    canonical: "https://watcon.co.in/services/tiles-in-pool/",
   },
   keywords: [
     "bisazza glass mosaic india",
