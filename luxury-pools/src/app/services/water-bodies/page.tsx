@@ -142,6 +142,7 @@ export default function WaterBodiesPage() {
           answer: "Programmable fountains use digital DMX controls to synchronize water jets with music and LED lighting, creating complex, choreographed aquatic displays that can be managed remotely."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

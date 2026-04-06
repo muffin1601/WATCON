@@ -163,6 +163,7 @@ export default function SteamRoomPage() {
           answer: "A commercial steam room setup involves high-capacity steam generators, automated self-cleaning systems, and moisture-resistant structural engineering to handle high-traffic hospitality environments."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

@@ -11,6 +11,15 @@
     margin: 0 auto;
 }
 
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
 .subTitle {
     letter-spacing: 2px;
     font-size: 14px;
@@ -30,10 +39,38 @@
 .description {
     font-size: 16px;
     color: #aaaaaa;
-    margin-bottom: 60px;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+}
+
+.catalogueBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #bdb595;
+    border: 1px solid rgba(189, 181, 149, 0.45);
+    background: rgba(189, 181, 149, 0.05);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+.catalogueBtn:hover {
+    background: #bdb595;
+    color: #000;
+    border-color: #bdb595;
+    transform: translateY(-2px);
+}
+
+.catalogueIcon {
+    flex-shrink: 0;
 }
 
 .grid {
@@ -187,6 +224,13 @@
     .title {
         font-size: clamp(1.8rem, 8vw, 2.5rem);
         margin-bottom: 20px;
+    }
+
+    .headerRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        margin-bottom: 50px;
     }
 }
 

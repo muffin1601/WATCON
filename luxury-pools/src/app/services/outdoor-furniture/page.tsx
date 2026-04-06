@@ -164,6 +164,7 @@ export default function OutdoorFurniturePage() {
           answer: "Absolutely. Our garden furniture is specifically curated for India's harsh climate. We use UV-resistant fibers and quick-dry foams ensure your investment stays beautiful and functional for years."
         }
       ]}
+      catalogueUrl="/services/ourdoor furniture 2026_web.pdf"
     />
 
   );

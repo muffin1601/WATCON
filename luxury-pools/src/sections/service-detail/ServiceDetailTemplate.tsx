@@ -12,6 +12,7 @@ import ContactSection from "@/sections/ContactSection";
 import FAQAccordion from "@/components/FAQAccordion";
 import { FadeIn } from "@/components/FadeIn";
 import ServiceNavigation from "./ServiceNavigation";
+import ServiceCatalogue from "./ServiceCatalogue";
 import styles from "@/app/faq/FAQ.module.css";
 
 
@@ -102,6 +103,7 @@ interface ServiceDetailTemplateProps {
         description: string;
     };
     faqs?: FAQItem[];
+    catalogueUrl?: string;
 }
 
 
@@ -111,7 +113,8 @@ export default function ServiceDetailTemplate({
     projects,
     testimonials,
     contact,
-    faqs
+    faqs,
+    catalogueUrl
 }: ServiceDetailTemplateProps) {
 
     return (
@@ -140,6 +143,7 @@ export default function ServiceDetailTemplate({
                     description={projects.description}
                     projects={projects.items}
                     cta={projects.cta}
+                    catalogueUrl={catalogueUrl}
                 />
 
 
@@ -167,6 +171,11 @@ export default function ServiceDetailTemplate({
                 )}
 
                 <ServiceNavigation />
+
+                {catalogueUrl && (
+                  <ServiceCatalogue pdfUrl={catalogueUrl} />
+                )}
+                
                 <CtaSection />
 
                 <ContactSection

@@ -169,6 +169,7 @@ export default function SwimmingPoolsPage() {
           answer: "Absolutely. Watcon is India's leading Olympic size pool builder. We construct FINA-compliant competition pools for sports academies, schools, and international aquatic centers."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

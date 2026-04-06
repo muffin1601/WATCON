@@ -163,6 +163,7 @@ export default function JacuzziPage() {
           answer: "Yes, we are expert indoor jacuzzi designers. we handle the structural requirements, moisture control, and aesthetic integration to create a seamless spa experience inside your home."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

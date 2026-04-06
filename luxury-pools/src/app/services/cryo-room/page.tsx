@@ -165,6 +165,7 @@ export default function CryoRoomPage() {
           answer: "Yes, Watcon is a specialist cryotherapy room builder in Delhi. We design and install professional-grade cryo chambers that maintain consistent extreme low temperatures for effective therapy."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

@@ -168,6 +168,7 @@ export default function CompetitionPoolPage() {
           answer: "Yes, we provide end-to-end swimming pool timing system installation, integrating touch pads, scoreboards, and starting blocks for high-performance aquatic centers in Delhi and across India."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

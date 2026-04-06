@@ -163,6 +163,7 @@ export default function SpaPage() {
           answer: "Yes, Watcon is a top contractor for commercial spa setup in India, providing end-to-end engineering for 5-star hotel spas, wellness resorts, and high-end fitness franchises."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

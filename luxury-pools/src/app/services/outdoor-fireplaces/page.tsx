@@ -163,6 +163,7 @@ export default function OutdoorFireplacesPage() {
           answer: "Yes, we design and build bespoke stone fireplaces for outdoor spaces in India, using premium materials like travertine, granite, and marble to match your home's architecture."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

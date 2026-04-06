@@ -164,6 +164,7 @@ export default function DehumidifierPage() {
           answer: "Yes, we supply and install high-capacity commercial dehumidifiers for spas and wellness centers across India, ensuring that high-vapor environments remain comfortable and moisture-free."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

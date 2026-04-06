@@ -168,6 +168,7 @@ export default function KoiPondsPage() {
           answer: "Yes, Watcon is an expert Japanese garden pond builder in Delhi. We follow traditional design principles while integrating modern life support systems for the best of both worlds."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

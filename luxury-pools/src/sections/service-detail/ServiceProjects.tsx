@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import styles from './ServiceProjects.module.css';
 import { FadeIn } from '@/components/FadeIn';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 import Image from 'next/image';
 
 interface Project {
@@ -22,23 +22,40 @@ interface ServiceProjectsProps {
         label: string;
         href?: string;
     };
+    catalogueUrl?: string;
 }
 
-export default function ServiceProjects({ subtitle, title, description, projects, cta }: ServiceProjectsProps) {
+export default function ServiceProjects({ subtitle, title, description, projects, cta, catalogueUrl }: ServiceProjectsProps) {
     return (
         <section className={styles.section} id="projects">
             <div className={styles.container}>
-                <div className={styles.header}>
-                    <FadeIn delay={0.1} direction="up">
-                        <p className={styles.subTitle}>{subtitle}</p>
-                    </FadeIn>
-                    <FadeIn delay={0.2} direction="up">
-                        <h2 className={styles.title}>{title}</h2>
-                    </FadeIn>
-                    {description && (
-                      <FadeIn delay={0.3} direction="up">
-                        <p className={styles.description}>{description}</p>
-                      </FadeIn>
+                <div className={styles.headerRow}>
+                    <div className={styles.header}>
+                        <FadeIn delay={0.1} direction="up">
+                            <p className={styles.subTitle}>{subtitle}</p>
+                        </FadeIn>
+                        <FadeIn delay={0.2} direction="up">
+                            <h2 className={styles.title}>{title}</h2>
+                        </FadeIn>
+                        {description && (
+                            <FadeIn delay={0.3} direction="up">
+                                <p className={styles.description}>{description}</p>
+                            </FadeIn>
+                        )}
+                    </div>
+                    {catalogueUrl && (
+                        <FadeIn delay={0.3} direction="up">
+                            <a
+                                href={catalogueUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.catalogueBtn}
+                                aria-label="View Full Catalogue PDF"
+                            >
+                                <FileText size={18} className={styles.catalogueIcon} />
+                                View Full Catalogue
+                            </a>
+                        </FadeIn>
                     )}
                 </div>
 

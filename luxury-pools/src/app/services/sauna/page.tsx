@@ -164,6 +164,7 @@ export default function SaunaPage() {
           answer: "As a premier Canadian cedar sauna builder, we use this wood because it is naturally resistant to decay, does not warp under high heat, and releases a beautiful therapeutic aroma."
         }
       ]}
+      catalogueUrl="/services/watcon profile and fountain 2026_web 1.pdf"
     />
 
   );

@@ -5,6 +5,7 @@ import ServiceGrid from "@/sections/service-detail/ServiceGrid";
 import TileProjectsSection from "@/sections/service-detail/TileProjectsSection";
 import WhyChooseWatcon from "@/sections/service-detail/WhyChooseWatcon";
 import ServiceNavigation from "@/sections/service-detail/ServiceNavigation";
+import ServiceCatalogue from "@/sections/service-detail/ServiceCatalogue";
 import CtaSection from "@/sections/CtaSection";
 import ContactSection from "@/sections/ContactSection";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -120,6 +121,7 @@ export default function TilesInPoolPage() {
         )}
 
         <ServiceNavigation />
+        <ServiceCatalogue pdfUrl="/services/watcon profile and fountain 2026_web 1.pdf" />
         <CtaSection />
         <ContactSection
           title="Choose Your Perfect Palette"

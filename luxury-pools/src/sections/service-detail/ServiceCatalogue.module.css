@@ -1,0 +1,171 @@
+.section {
+    padding: 120px 20px;
+    background: #0c0c0c;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 0;
+    padding: 80px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1;
+}
+
+.iconWrapper {
+    width: 80px;
+    height: 80px;
+    background: rgba(189, 181, 149, 0.05);
+    border: 1px solid rgba(189, 181, 149, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icon {
+    color: #bdb595;
+    opacity: 0.8;
+}
+
+.subTitle {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #bdb595;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.textContent {
+    flex: 1;
+}
+
+.title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+.title span {
+    color: #bdb595;
+}
+
+.description {
+    font-size: 15px;
+    color: #c4c4c4;
+    line-height: 1.8;
+    max-width: 550px;
+    font-weight: 300;
+}
+
+.downloadBtn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #bdb595;
+    color: #000;
+    border: 1px solid #bdb595;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.downloadBtn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ffffff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
+
+.downloadBtn:hover::after {
+    transform: scaleX(1);
+}
+
+.downloadBtn:hover {
+    color: #000;
+    border-color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex-direction: column;
+        text-align: left;
+        padding: 60px 40px;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .description {
+        max-width: 100%;
+    }
+
+    .downloadBtn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 80px 20px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 60px 15px;
+    }
+    
+    .card {
+        padding: 30px 20px;
+    }
+}

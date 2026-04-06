@@ -10,6 +10,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { StaggerContainer, StaggerItem } from "@/components/StaggerContainer";
 import { ScrollParallax } from "@/components/ScrollParallax";
 import { PerspectiveReveal } from "@/components/PerspectiveReveal";
+import ServiceCatalogue from "@/sections/service-detail/ServiceCatalogue";
 
 export const metadata: Metadata = {
   title: "Premium Swimming Pool & Wellness Services | Watcon International",
@@ -81,6 +82,8 @@ export default function ServicesPage() {
             </StaggerContainer>
           </div>
         </section>
+
+        <ServiceCatalogue pdfUrl="/services/watcon profile and fountain 2026_web 1.pdf" />
 
         <CtaSection 
           subTitle="OUR MASTERPIECES"
