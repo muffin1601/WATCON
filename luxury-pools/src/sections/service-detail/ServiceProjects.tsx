@@ -63,9 +63,6 @@ export default function ServiceProjects({ subtitle, title, description, projects
                     {projects.map((project, index) => (
                         <FadeIn key={index} delay={0.4 + index * 0.1} direction="up">
                             <div className={styles.card}>
-                                {project.badge && (
-                                    <div className={styles.badge}>{project.badge}</div>
-                                )}
                                 <div className={styles.imageWrapper}>
                                     <Image
                                         src={project.image}
