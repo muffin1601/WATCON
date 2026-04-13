@@ -23,8 +23,18 @@ const nextConfig: NextConfig = {
     return [
       // Dead page URLs Google crawled → redirect to correct pages
       {
+        source: '/about-us/',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
         source: '/about-us',
         destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/contact-us/',
+        destination: '/contact/',
         permanent: true,
       },
       {
@@ -45,6 +55,11 @@ const nextConfig: NextConfig = {
       {
         source: '/jacuzzi',
         destination: '/services/jacuzzi/',
+        permanent: true,
+      },
+      {
+        source: '/clients-1/',
+        destination: '/clients/',
         permanent: true,
       },
       {

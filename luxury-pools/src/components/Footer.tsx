@@ -32,37 +32,37 @@ export default function Footer() {
           <div className={styles.column}>
             <h3>Expertise</h3>
             <ul>
-              <li><Link href="/services/swimming-pools">Swimming Pool Builder Delhi</Link></li>
-              <li><Link href="/services/water-bodies">Musical Fountain India</Link></li>
-              <li><Link href="/services/cryo-room">Cold Plunge Pool India</Link></li>
-              <li><Link href="/services/spa">Hydrotherapy Pools India</Link></li>
-              <li><Link href="/services/tiles-in-pool">Best Tiles for Pool India</Link></li>
-              <li><Link href="/services">Services</Link></li>
+              <li><Link href="/services/swimming-pools/">Swimming Pool Builder Delhi</Link></li>
+              <li><Link href="/services/water-bodies/">Musical Fountain India</Link></li>
+              <li><Link href="/services/cryo-room/">Cold Plunge Pool India</Link></li>
+              <li><Link href="/services/spa/">Hydrotherapy Pools India</Link></li>
+              <li><Link href="/services/tiles-in-pool/">Best Tiles for Pool India</Link></li>
+              <li><Link href="/services/">Services</Link></li>
             </ul>
           </div>
 
           <div className={styles.column}>
             <h3>Company</h3>
             <ul>
-              <li><Link href="/about">About Watcon</Link></li>
-              <li><Link href="/portfolio">Our Projects</Link></li>
-              <li><Link href="/faq">FAQ</Link></li>
-              <li><Link href="/top-swimming-pool-builders-india">Top Builders India</Link></li>
+              <li><Link href="/about/">About Watcon</Link></li>
+              <li><Link href="/portfolio/">Our Projects</Link></li>
+              <li><Link href="/faq/">FAQ</Link></li>
+              <li><Link href="/top-swimming-pool-builders-india/">Top Builders India</Link></li>
             </ul>
           </div>
 
         </div>
 
         <div className={styles.keywordBar}>
-          <Link href="/services/swimming-pools">Swimming Pool Builder Delhi</Link>
+          <Link href="/services/swimming-pools/">Swimming Pool Builder Delhi</Link>
           <span>•</span>
-          <Link href="/services/swimming-pools">Luxury Pool India</Link>
+          <Link href="/services/swimming-pools/">Luxury Pool India</Link>
           <span>•</span>
-          <Link href="/services/spa">Hydrotherapy Pool Builder</Link>
+          <Link href="/services/spa/">Hydrotherapy Pool Builder</Link>
           <span>•</span>
-          <Link href="/services/cryo-room">Cold Plunge manufacturer</Link>
+          <Link href="/services/cryo-room/">Cold Plunge manufacturer</Link>
           <span>•</span>
-          <Link href="/services/water-bodies">Oase Dealer India</Link>
+          <Link href="/services/water-bodies/">Oase Dealer India</Link>
         </div>
 
         <div className={styles.bottomBar}>

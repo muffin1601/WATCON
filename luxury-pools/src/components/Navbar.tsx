@@ -42,27 +42,27 @@ export default function Navbar() {
   };
 
   const menuLinks = [
-    { name: "About", href: "/about" },
-    { name: "FAQ", href: "/faq" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Clients", href: "/clients" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "About", href: "/about/" },
+    { name: "FAQ", href: "/faq/" },
+    { name: "Portfolio", href: "/portfolio/" },
+    { name: "Clients", href: "/clients/" },
+    { name: "Contact Us", href: "/contact/" },
   ];
 
   const services = [
-    { name: "Swimming Pools", href: "/services/swimming-pools" },
-    { name: "Tiles in Pool", href: "/services/tiles-in-pool" },
-    { name: "Water Bodies", href: "/services/water-bodies" },
-    { name: "Dehumidifier", href: "/services/dehumidifier" },
-    { name: "Koi Ponds", href: "/services/koi-ponds" },
-    { name: "Competition Pool", href: "/services/competition-pool" },
-    { name: "Spa", href: "/services/spa" },
-    { name: "Jacuzzi", href: "/services/jacuzzi" },
-    { name: "Sauna", href: "/services/sauna" },
-    { name: "Steam", href: "/services/steam" },
-    { name: "Cryo Room", href: "/services/cryo-room" },
-    { name: "Outdoor Furniture", href: "/services/outdoor-furniture" },
-    { name: "Outdoor Fireplaces", href: "/services/outdoor-fireplaces" },
+    { name: "Swimming Pools", href: "/services/swimming-pools/" },
+    { name: "Tiles in Pool", href: "/services/tiles-in-pool/" },
+    { name: "Water Bodies", href: "/services/water-bodies/" },
+    { name: "Dehumidifier", href: "/services/dehumidifier/" },
+    { name: "Koi Ponds", href: "/services/koi-ponds/" },
+    { name: "Competition Pool", href: "/services/competition-pool/" },
+    { name: "Spa", href: "/services/spa/" },
+    { name: "Jacuzzi", href: "/services/jacuzzi/" },
+    { name: "Sauna", href: "/services/sauna/" },
+    { name: "Steam", href: "/services/steam/" },
+    { name: "Cryo Room", href: "/services/cryo-room/" },
+    { name: "Outdoor Furniture", href: "/services/outdoor-furniture/" },
+    { name: "Outdoor Fireplaces", href: "/services/outdoor-fireplaces/" },
   ];
 
   return (
