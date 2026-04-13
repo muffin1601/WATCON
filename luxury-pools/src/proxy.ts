@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export default function proxy(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const host = request.headers.get('host') || '';
   const xForwardedProto = request.headers.get('x-forwarded-proto') || 'http';
   
@@ -10,28 +10,24 @@ export default function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  let shouldRedirect = false;
   const url = new URL(request.url);
 
-  // 1. Force non-www
-  if (host.startsWith('www.')) {
-    url.hostname = host.replace(/^www\./, '');
-    shouldRedirect = true;
-  }
-
-  // 2. Force HTTPS (if not on local and forwarded as http)
-  // Note: Only do this if we aren't already looping.
+  // 1. Force HTTPS
+  // If the request is over HTTP, redirect to HTTPS
   if (xForwardedProto === 'http') {
     url.protocol = 'https:';
-    shouldRedirect = true;
+    return NextResponse.redirect(url, 301);
   }
 
-  if (shouldRedirect) {
-    // Ensure we don't redirect to the exact same URL
+  // Temporary: Disable www to non-www to diagnose redirect loop
+  /*
+  if (host.startsWith('www.')) {
+    url.hostname = host.replace(/^www\./, '');
     if (url.toString() !== request.url) {
       return NextResponse.redirect(url, 301);
     }
   }
+  */
 
   return NextResponse.next();
 }
@@ -44,7 +40,7 @@ export const config = {
      * - _next/static (static files)
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
-     * - files with extensions (png, jpg, pdf, etc) - to avoid redirecting assets
+     * - files with extensions (png, jpg, pdf, icon, etc)
      */
     '/((?!api|_next/static|_next/image|favicon.ico|.*\\.).*)',
   ],
